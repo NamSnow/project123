@@ -1,0 +1,12 @@
+:root {
+  --e-global-color-primary: #0a2c0f;
+  --e-global-color-secondary: #faf6f1;
+  --e-global-color-text: #606060;
+  --e-global-color-accent: #d1a132;
+  --e-global-color-accentsecondary: #ffffff00;
+  --e-global-color-white: #ffffff;
+  --e-global-color-black: #000000;
+  --e-global-color-divider: #0a2c0f1a;
+  --e-global-color-darkdivider: #ffffff1a;
+  --e-global-color-background: #faf6f1;
+}
