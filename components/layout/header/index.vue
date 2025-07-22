@@ -250,12 +250,13 @@
             </li>
           </ul>
 
-          <div class="pl-7.5">
+          <div class="pl-7.5 hidden lg:block">
             <Button
               text="Shop Now"
               link="/"
               hoverTextColor="black"
               hoverBackgroundColor="white"
+              bgArrow="#ffffff1a"
             />
           </div>
 
