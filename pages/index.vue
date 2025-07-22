@@ -277,18 +277,18 @@
         class="absolute right-0 bottom-0"
       />
       <div
-        class="text-white flex flex-col items-center md:flex-row max-w-[1300px] mx-auto lg:py-[100px] py-[50px] gap-15"
+        class="text-white flex flex-col items-center md:flex-row max-w-[1300px] mx-auto lg:pt-[100px] pt-[50px] lg:pb-[250px] pb-[125px] gap-15"
       >
         <div class="relative lg:w-[49%]">
           <div class="relative flex flex-col">
             <img
               src="/public/images/what-we-image-1.jpg"
               alt="Chai dầu CBD và lá cần sa"
-              class="w-full h-auto z-0 rounded-[30px]"
+              class="w-full h-auto z-0 rounded-[30px] pr-10"
             />
 
             <img
-              class="object-contain -right-[70px] self-end -bottom-[90px] rounded-[30px] z-10"
+              class="absolute object-contain self-end -bottom-[175px] rounded-[30px] z-10"
               src="/public/images/what-we-image-2.jpg"
               alt="Chai dầu CBD trong môi trường nhiều cây cối"
               style="clip-path: inset(0px 0% 0px 0px)"
@@ -304,7 +304,9 @@
           ></div>
         </div>
 
-        <div class="lg:pl-7.5 h-auto lg:w-[51%] flex flex-col gap-5 lg:gap-10">
+        <div
+          class="lg:pl-7.5 h-auto lg:w-[51%] flex flex-col gap-5 lg:gap-10 mt-[150px] md:mt-0"
+        >
           <Title
             :title="{
               content: 'What We Do ?',
@@ -788,9 +790,13 @@
         class="flex max-w-[1300px] mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-[100px] items-center"
       >
         <div class="lg:w-1/2 w-full relative">
-          <img src="/images/faq-image.jpg" alt="" class="rounded-[20px]" />
+          <img
+            src="/images/faq-image.jpg"
+            alt=""
+            class="rounded-[20px] w-full max-w-full h-auto"
+          />
           <div
-            class="absolute px-5 py-[15px] flex w-[200px] bottom-[50px] right-[50px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[#d1a132] hover:text-white"
+            class="absolute px-5 py-[15px] flex w-[200px] lg:bottom-[50px] bottom-[25px] lg:right-[50px] right-[25px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[#d1a132] hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -820,27 +826,29 @@
           <div class="flex flex-col gap-7.5">
             <a
               class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-              :class="{ 'bg-[#d1a132]': isActive1 }"
-              @click="toggleAccordion1"
+              :class="{ 'bg-[#d1a132]': activeAccordion === 1 }"
+              @click="toggleAccordion(1)"
             >
               <div
                 class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
                 :class="
-                  isActive1 ? 'bg-[#d1a132] text-white' : 'bg-white text-black'
+                  activeAccordion === 1
+                    ? 'bg-[#d1a132] text-white'
+                    : 'bg-white text-black'
                 "
               >
                 What is an oil dropper used for?
                 <span>
                   <i
                     class="fas fa-chevron-down transform transition-transform duration-300"
-                    :class="{ 'rotate-180': isActive1 }"
+                    :class="{ 'rotate-180': activeAccordion === 1 }"
                   ></i>
                 </span>
               </div>
               <p
-                v-show="isActive1"
+                v-show="activeAccordion === 1"
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-                :class="{ 'text-white': isActive1 }"
+                :class="{ 'text-white': activeAccordion === 1 }"
               >
                 Yes, our dropper bottles are designed with secure, leak-proof
                 seals to prevent spills and maintain product integrity.
@@ -849,88 +857,94 @@
 
             <a
               class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-              :class="{ 'bg-[#d1a132]': isActive2 }"
-              @click="toggleAccordion2"
+              :class="{ 'bg-[#d1a132]': activeAccordion === 2 }"
+              @click="toggleAccordion(2)"
             >
               <div
                 class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
                 :class="
-                  isActive2 ? 'bg-[#d1a132] text-white' : 'bg-white text-black'
+                  activeAccordion === 2
+                    ? 'bg-[#d1a132] text-white'
+                    : 'bg-white text-black'
                 "
               >
                 What is an oil dropper used for?
                 <span>
                   <i
                     class="fas fa-chevron-down transform transition-transform duration-300"
-                    :class="{ 'rotate-180': isActive2 }"
+                    :class="{ 'rotate-180': activeAccordion === 2 }"
                   ></i>
                 </span>
               </div>
               <p
-                v-show="isActive2"
+                v-show="activeAccordion === 2"
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-                :class="{ 'text-white': isActive2 }"
+                :class="{ 'text-white': activeAccordion === 2 }"
               >
-                Yes, our dropper bottles are designed with secure, leak-proof
-                seals to prevent spills and maintain product integrity.
+                This is the content for the second accordion item. It expands
+                when active.
               </p>
             </a>
 
             <a
               class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-              :class="{ 'bg-[#d1a132]': isActive3 }"
-              @click="toggleAccordion3"
+              :class="{ 'bg-[#d1a132]': activeAccordion === 3 }"
+              @click="toggleAccordion(3)"
             >
               <div
                 class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
                 :class="
-                  isActive3 ? 'bg-[#d1a132] text-white' : 'bg-white text-black'
+                  activeAccordion === 3
+                    ? 'bg-[#d1a132] text-white'
+                    : 'bg-white text-black'
                 "
               >
-                What is an oil dropper used for?
+                How do I clean my oil dropper bottle?
                 <span>
                   <i
                     class="fas fa-chevron-down transform transition-transform duration-300"
-                    :class="{ 'rotate-180': isActive3 }"
+                    :class="{ 'rotate-180': activeAccordion === 3 }"
                   ></i>
                 </span>
               </div>
               <p
-                v-show="isActive3"
+                v-show="activeAccordion === 3"
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-                :class="{ 'text-white': isActive3 }"
+                :class="{ 'text-white': activeAccordion === 3 }"
               >
-                Yes, our dropper bottles are designed with secure, leak-proof
-                seals to prevent spills and maintain product integrity.
+                To clean, simply rinse with warm water and a mild soap. For a
+                deeper clean, you can use a small brush designed for bottles.
               </p>
             </a>
 
             <a
               class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-              :class="{ 'bg-[#d1a132]': isActive4 }"
-              @click="toggleAccordion4"
+              :class="{ 'bg-[#d1a132]': activeAccordion === 4 }"
+              @click="toggleAccordion(4)"
             >
               <div
                 class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
                 :class="
-                  isActive4 ? 'bg-[#d1a132] text-white' : 'bg-white text-black'
+                  activeAccordion === 4
+                    ? 'bg-[#d1a132] text-white'
+                    : 'bg-white text-black'
                 "
               >
-                What is an oil dropper used for?
+                Are these dropper bottles environmentally friendly?
                 <span>
                   <i
                     class="fas fa-chevron-down transform transition-transform duration-300"
-                    :class="{ 'rotate-180': isActive4 }"
+                    :class="{ 'rotate-180': activeAccordion === 4 }"
                   ></i>
                 </span>
               </div>
               <p
-                v-show="isActive4"
+                v-show="activeAccordion === 4"
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-                :class="{ 'text-white': isActive4 }"
+                :class="{ 'text-white': activeAccordion === 4 }"
               >
-                Yes, our dropper bottles are designed with secure, leak-proof
-                seals to prevent spills and maintain product integrity.
+                Yes, our bottles are made from recyclable materials, promoting
+                sustainability and reducing environmental impact.
               </p>
             </a>
           </div>
@@ -1208,25 +1222,13 @@ import Button from "~/components/Button.vue";
 import { ref } from "vue";
 import Title from "~/components/Title.vue";
 
-const isActive1 = ref(false);
-const isActive2 = ref(false);
-const isActive3 = ref(false);
-const isActive4 = ref(false);
-
-const toggleAccordion1 = () => {
-  isActive1.value = !isActive1.value;
-};
-
-const toggleAccordion2 = () => {
-  isActive2.value = !isActive2.value;
-};
-
-const toggleAccordion3 = () => {
-  isActive3.value = !isActive3.value;
-};
-
-const toggleAccordion4 = () => {
-  isActive4.value = !isActive4.value;
+const activeAccordion = ref(null);
+const toggleAccordion = (id) => {
+  if (activeAccordion.value === id) {
+    activeAccordion.value = null;
+  } else {
+    activeAccordion.value = id;
+  }
 };
 const productItems = ref([
   {
