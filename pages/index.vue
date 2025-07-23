@@ -390,18 +390,24 @@
       >
         <div class="relative lg:w-[49%]">
           <div class="relative flex flex-col">
-            <img
-              src="/public/images/what-we-image-1.jpg"
-              alt="Chai dầu CBD và lá cần sa"
-              class="w-full h-auto z-0 rounded-[30px] pr-10"
-            />
+            <div class="w-full h-auto z-0 pr-10 relative">
+              <img
+                class="rounded-[30px]"
+                src="/public/images/what-we-image-1.jpg"
+                alt="Chai dầu CBD và lá cần sa"
+              />
+              <div class="absolute top-0 left-0"></div>
+            </div>
 
-            <img
-              class="absolute object-contain self-end -bottom-[175px] rounded-[30px] z-10"
-              src="/public/images/what-we-image-2.jpg"
-              alt="Chai dầu CBD trong môi trường nhiều cây cối"
-              style="clip-path: inset(0px 0% 0px 0px)"
-            />
+            <div class="absolute object-contain self-end -bottom-[175px] z-10">
+              <img
+                class="rounded-[30px]"
+                src="/public/images/what-we-image-2.jpg"
+                alt="Chai dầu CBD trong môi trường nhiều cây cối"
+                style="clip-path: inset(0px 0% 0px 0px)"
+              />
+              <div class="absolute top-0 left-0"></div>
+            </div>
           </div>
           <div
             class="absolute -bottom-[116px] left-[132px] z-50 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
@@ -745,21 +751,33 @@
           </div>
 
           <div class="flex justify-between flex-col sm:flex-row gap-7.5">
-            <img
-              src="/images/premium-products-image-1.jpg"
-              class="rounded-[20px] object-cover max-w-full"
-              alt=""
-            />
-            <img
-              src="/images/premium-products-image-2.jpg"
-              class="rounded-[20px] object-cover max-w-full"
-              alt=""
-            />
-            <img
-              src="/images/premium-products-image-3.jpg"
-              class="rounded-[20px] object-cover max-w-full"
-              alt=""
-            />
+            <div
+              class="lg:w-[210px] lg:h-[210px] w-full h-auto overflow-hidden rounded-[20px]"
+            >
+              <img
+                src="/images/premium-products-image-1.jpg"
+                class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
+            >
+              <img
+                src="/images/premium-products-image-2.jpg"
+                class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
+            >
+              <img
+                src="/images/premium-products-image-3.jpg"
+                class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
