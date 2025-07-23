@@ -161,6 +161,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Title from "./Title.vue";
+</script>
 
 <style lang="scss" scoped></style>

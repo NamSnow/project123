@@ -1,0 +1,184 @@
+<template>
+  <div class="bg-[#FAF6F1]">
+    <div
+      class="flex max-w-[1300px] mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-[100px] items-center"
+    >
+      <div class="lg:w-1/2 w-full relative">
+        <img
+          src="/images/faq-image.jpg"
+          alt=""
+          class="rounded-[20px] w-full max-w-full h-auto"
+        />
+        <div
+          class="absolute px-5 py-[15px] flex w-[200px] lg:bottom-[50px] bottom-[25px] lg:right-[50px] right-[25px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[#d1a132] hover:text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="41"
+            viewBox="0 0 40 41"
+            class="group-hover:fill-white"
+          >
+            <path
+              d="M39.1445 8.86963C38.3922 5.47276 35.0992 2.36104 31.693 1.7001C29.618 1.28526 23.8289 0.772756 20 0.814944C16.1711 0.772756 10.382 1.28526 8.30703 1.7001C4.90078 2.36104 1.60781 5.47276 0.855469 8.86963C0.427344 10.9321 0.00625 13.7384 0 17.5688C0.00625 21.3993 0.427344 24.2048 0.855469 26.2673C1.60781 29.6642 4.90078 32.7759 8.30703 33.4368C9.42734 33.661 11.6305 33.9134 14.0234 34.0915C14.2945 34.5173 14.5883 34.9704 14.9063 35.4509C16.1758 37.3735 17.1477 38.7134 17.8836 39.647C19.1086 41.2009 20.8922 41.2009 22.1172 39.647C22.8531 38.7134 23.8242 37.3735 25.0945 35.4509C25.4125 34.9696 25.7055 34.5173 25.9773 34.0915C28.3703 33.9134 30.5734 33.661 31.6945 33.4368C35.1008 32.7759 38.3937 29.6642 39.1461 26.2673C39.5742 24.2048 39.9953 21.3993 40.0016 17.5688C39.9953 13.7384 39.5742 10.9329 39.1461 8.87041L39.1445 8.86963ZM22.2086 29.1821C22.1242 29.6579 21.693 30.0892 21.2172 30.1735C20.9289 30.2212 20.5359 30.2665 19.9992 30.2673C19.4633 30.2673 19.0703 30.222 18.7812 30.1735C18.3055 30.0892 17.8742 29.6579 17.7898 29.1821C17.7422 28.8939 17.6969 28.5009 17.6961 27.9642C17.6961 27.4282 17.7414 27.0353 17.7898 26.7462C17.8742 26.2704 18.3055 25.8392 18.7812 25.7548C19.0695 25.7071 19.4625 25.6618 19.9992 25.661C20.5352 25.661 20.9281 25.7064 21.2172 25.7548C21.693 25.8392 22.1242 26.2704 22.2086 26.7462C22.2562 27.0345 22.3016 27.4274 22.3023 27.9642C22.3023 28.5001 22.257 28.8931 22.2086 29.1821ZM26.9648 16.386C26.3617 17.2392 25.4578 18.0181 24.1203 18.836C22.4273 19.8798 22.1562 20.3087 22.1562 21.1485V21.4806C22.1562 22.6712 21.1875 23.6399 19.9969 23.6399C18.8062 23.6399 17.8375 22.6712 17.8375 21.4806V20.711C17.8375 19.7204 18.0852 18.8798 18.5945 18.1415C19.0883 17.4259 19.8281 16.7899 20.9258 16.1376C22.9484 14.9478 23.3188 14.2798 23.3188 13.3931C23.3188 12.279 22.3695 11.5587 20.9016 11.5587C19.2922 11.5587 18.2445 12.2899 17.7875 13.7329C17.4859 14.6845 16.6047 15.3235 15.5953 15.3235C15.5391 15.3235 15.4828 15.3212 15.4266 15.3173C14.7141 15.2657 14.0758 14.8962 13.6758 14.3032C13.2797 13.7165 13.1758 12.9954 13.3906 12.3243C13.8828 10.7899 14.8266 9.51338 16.1195 8.63213C17.4289 7.73994 19.0828 7.26885 20.9008 7.26885C22.7188 7.26885 24.5414 7.87119 25.8352 8.96494C27.1664 10.0907 27.9 11.6423 27.9 13.3353C27.9 14.4978 27.5945 15.4962 26.9648 16.386Z"
+              fill="#d1a132"
+              class="group-hover:fill-white w-10 h-10"
+            ></path>
+          </svg>
+          <div class="font-bold">Answers You Need !</div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 w-full flex flex-col gap-10">
+        <Title
+          :title="{
+            content: `FAQ's`,
+            mainTitle: 'Your questions,',
+            subTitle: 'our expert answers',
+          }"
+        />
+
+        <div class="flex flex-col gap-7.5">
+          <a
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
+            :class="{ 'bg-[#d1a132]': activeAccordion === 1 }"
+            @click="toggleAccordion(1)"
+          >
+            <div
+              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
+              :class="
+                activeAccordion === 1
+                  ? 'bg-[#d1a132] text-white'
+                  : 'bg-white text-black'
+              "
+            >
+              What is an oil dropper used for?
+              <span>
+                <i
+                  class="fas fa-chevron-down transform transition-transform duration-300"
+                  :class="{ 'rotate-180': activeAccordion === 1 }"
+                ></i>
+              </span>
+            </div>
+            <p
+              v-show="activeAccordion === 1"
+              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
+              :class="{ 'text-white': activeAccordion === 1 }"
+            >
+              Yes, our dropper bottles are designed with secure, leak-proof
+              seals to prevent spills and maintain product integrity.
+            </p>
+          </a>
+
+          <a
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
+            :class="{ 'bg-[#d1a132]': activeAccordion === 2 }"
+            @click="toggleAccordion(2)"
+          >
+            <div
+              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
+              :class="
+                activeAccordion === 2
+                  ? 'bg-[#d1a132] text-white'
+                  : 'bg-white text-black'
+              "
+            >
+              What is an oil dropper used for?
+              <span>
+                <i
+                  class="fas fa-chevron-down transform transition-transform duration-300"
+                  :class="{ 'rotate-180': activeAccordion === 2 }"
+                ></i>
+              </span>
+            </div>
+            <p
+              v-show="activeAccordion === 2"
+              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
+              :class="{ 'text-white': activeAccordion === 2 }"
+            >
+              Yes, our dropper bottles are designed with secure, leak-proof
+              seals to prevent spills and maintain product integrity.
+            </p>
+          </a>
+
+          <a
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
+            :class="{ 'bg-[#d1a132]': activeAccordion === 3 }"
+            @click="toggleAccordion(3)"
+          >
+            <div
+              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
+              :class="
+                activeAccordion === 3
+                  ? 'bg-[#d1a132] text-white'
+                  : 'bg-white text-black'
+              "
+            >
+              How do I clean my oil dropper bottle?
+              <span>
+                <i
+                  class="fas fa-chevron-down transform transition-transform duration-300"
+                  :class="{ 'rotate-180': activeAccordion === 3 }"
+                ></i>
+              </span>
+            </div>
+            <p
+              v-show="activeAccordion === 3"
+              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
+              :class="{ 'text-white': activeAccordion === 3 }"
+            >
+              Yes, our dropper bottles are designed with secure, leak-proof
+              seals to prevent spills and maintain product integrity.
+            </p>
+          </a>
+
+          <a
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
+            :class="{ 'bg-[#d1a132]': activeAccordion === 4 }"
+            @click="toggleAccordion(4)"
+          >
+            <div
+              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
+              :class="
+                activeAccordion === 4
+                  ? 'bg-[#d1a132] text-white'
+                  : 'bg-white text-black'
+              "
+            >
+              Are these dropper bottles environmentally friendly?
+              <span>
+                <i
+                  class="fas fa-chevron-down transform transition-transform duration-300"
+                  :class="{ 'rotate-180': activeAccordion === 4 }"
+                ></i>
+              </span>
+            </div>
+            <p
+              v-show="activeAccordion === 4"
+              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
+              :class="{ 'text-white': activeAccordion === 4 }"
+            >
+              Yes, our dropper bottles are designed with secure, leak-proof
+              seals to prevent spills and maintain product integrity.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import Title from "./Title.vue";
+
+const activeAccordion = ref(2);
+const toggleAccordion = (id) => {
+  if (activeAccordion.value === id) {
+    activeAccordion.value = null;
+  } else {
+    activeAccordion.value = id;
+  }
+};
+</script>
+
+<style lang="scss" scoped></style>
