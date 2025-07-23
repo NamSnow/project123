@@ -1,12 +1,5 @@
 <template>
-  <div>
-    <Button
-      text="Shop Now"
-      link="/"
-      hoverBackgroundColor="black"
-      bgArrow="#ffffff1a"
-    />
-  </div>
+  <div></div>
 </template>
 
 <script setup></script>
