@@ -14,3 +14,16 @@
   margin: 0 auto;
   padding: 0 15px;
 } */
+:root {
+  --hover-text-color: black; /* Default */
+  --hover-bg-color: black; /* Default */
+}
+
+@keyframes spin-svg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

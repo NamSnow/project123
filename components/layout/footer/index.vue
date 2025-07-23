@@ -74,7 +74,7 @@
             <button type="submit">
               <img
                 src="/public/icons/submit.svg"
-                class="p-2.5 sm:p-4 rounded-full bg-[#d1a132]"
+                class="p-2.5 sm:p-4 rounded-full bg-[#d1a132] hover:bg-[#ffffff1a] cursor-pointer"
                 alt=""
               />
             </button>

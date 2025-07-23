@@ -5,19 +5,21 @@
   >
     <button
       class="px-7.5 cursor-pointer bg-[#d1a132] rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
-      :class="`group-hover:text-${hoverTextColor}`"
+      :style="{ '--hover-text-color': hoverTextColor }"
     >
-      <span class="relative z-10">{{ text }}</span>
+      <span class="relative z-10 group-hover:text-[var(--hover-text-color)]">{{
+        text
+      }}</span>
       <span
         class="absolute left-1/2 top-0 bottom-0 w-0 transform -translate-x-1/2 group-hover:w-full transition-all duration-500 ease-out rounded-full"
-        :class="`bg-${hoverBackgroundColor}`"
+        :style="{ 'background-color': hoverBackgroundColor }"
       ></span>
     </button>
     <button
       class="w-[50px] h-full rounded-full cursor-pointer transform -rotate-45 group-hover:rotate-0 transition-transform duration-500"
-      :class="`bg-[${bgArrow}]`"
+      :style="{ 'background-color': bgArrow }"
     >
-      <i class="fa-solid fa-arrow-right text-black"></i>
+      <i class="fa-solid fa-arrow-right" :style="{ color: textIcon }"></i>
     </button>
   </NuxtLink>
 </template>
@@ -42,8 +44,11 @@ const props = defineProps({
   },
   bgArrow: {
     type: String,
-    default: "#E2E1DA",
-    // ffffff1a
+    default: "#ffffff1a",
+  },
+  textIcon: {
+    type: String,
+    default: "white",
   },
 });
 </script>

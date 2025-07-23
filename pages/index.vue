@@ -2,7 +2,7 @@
   <div>
     <Header />
 
-    <!-- 1.About -->
+    <!-- 1.About Us-->
     <div class="bg-[#faf6f1]">
       <div
         class="flex lg:flex-row flex-col max-w-[1300px] mx-auto lg:py-[100px] py-12.5 px-2.5 w-full"
@@ -16,7 +16,54 @@
           <div
             class="absolute top-0 right-0 w-[130px] h-[130px] bg-[#d1a132] rounded-full flex items-center justify-center mr-20"
           >
-            <img src="/public/icons/icon2.svg" alt="" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              viewBox="0 0 200 200"
+              fill="none"
+              class="[animation:spin-svg_10s_linear_infinite]"
+            >
+              <defs>
+                <path
+                  id="circlePath"
+                  d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                />
+                <clipPath id="clip0_461_42709">
+                  <rect
+                    width="60"
+                    height="60"
+                    fill="white"
+                    transform="translate(0 0.535156)"
+                  />
+                </clipPath>
+              </defs>
+
+              <g transform="translate(70, 70)">
+                <g clip-path="url(#clip0_461_42709)">
+                  <path
+                    d="M31.3211 0.541016C34.504 3.71338 37.3005 7.41271 38.653 11.7479C40.3639 16.7295 39.5489 22.3786 36.8824 26.8755C35.3998 29.6052 33.1725 31.8079 31.3457 34.2917C28.9813 37.6081 27.2002 41.6552 27.6569 45.8113C27.8747 48.7729 29.5223 51.5342 31.8726 53.3118C34.2932 55.1492 37.4269 55.9853 40.4447 55.6832C42.4612 55.4478 44.3724 54.682 46.1254 53.6772C44.2073 55.8764 41.5654 57.4503 38.6811 57.9667C34.5461 58.6975 30.0774 58.1389 26.4659 55.908C20.9362 52.69 17.7463 46.1907 17.9396 39.8741C17.8763 36.1186 18.853 32.4052 20.3636 28.9869C17.4196 32.76 15.6806 37.5168 15.8457 42.3298C16.06 48.0913 18.7019 53.7966 23.1671 57.4925C24.6883 58.7572 26.4378 59.6917 28.2225 60.5278C23.2163 60.0184 18.2803 57.9527 14.7848 54.2674C10.2528 49.5984 7.99739 42.8497 8.69651 36.3961C9.29022 31.035 12.2272 26.2361 15.8949 22.4032C18.2698 19.8351 21.1049 17.7519 23.5149 15.2189C26.1498 12.4541 28.5528 9.38707 30.0283 5.8388C30.7133 4.149 31.3773 2.39594 31.3211 0.541016Z"
+                    fill="#0B3311"
+                  />
+                  <path
+                    d="M42.5173 19.1422C42.8053 16.9184 42.3451 14.7051 42.2538 12.4883C46.1112 18.3763 49.5716 24.7316 50.7766 31.7508C51.7076 36.6973 51.9711 42.2094 49.2906 46.6851C46.6874 51.333 40.6518 53.6025 35.621 51.9268C32.684 50.915 30.5902 47.9183 30.6604 44.8126C30.4953 40.3791 33.2356 36.5603 35.9723 33.3387C39.4327 29.3654 42.0606 24.454 42.5173 19.1422Z"
+                    fill="#D1A132"
+                  />
+                </g>
+              </g>
+
+              <text
+                font-family="Arial"
+                font-size="16"
+                fill="#FFFFFF"
+                text-anchor="middle"
+                letter-spacing="4.8"
+              >
+                <textPath href="#circlePath" startOffset="50%">
+                  PREMIUM QUALITY * PREMIUM QUALITY *
+                </textPath>
+              </text>
+            </svg>
           </div>
         </div>
 
@@ -90,7 +137,14 @@
                 </div>
               </div>
 
-              <Button text="About Us" link="/" hoverBackgroundColor="black" />
+              <Button
+                text="About Us"
+                link="/"
+                hoverBackgroundColor="black"
+                hoverTextColor="white"
+                bgArrow="#e2e1da"
+                textIcon="black"
+              />
             </div>
 
             <div
@@ -130,7 +184,7 @@
           durable materials.
         </p>
         <div class="flex justify-between lg:flex-row flex-col my-6">
-          <div class="w-[calc(50%-15px)]">
+          <div class="md:w-[calc(50%-15px)]">
             <div
               class="bg-[#d1a132] flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
             >
@@ -164,7 +218,7 @@
             </div>
           </div>
 
-          <div class="w-[calc(50%-15px)]">
+          <div class="md:w-[calc(50%-15px)]">
             <div
               class="bg-[#d1a132] flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
             >
@@ -200,10 +254,59 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#faf6f1] flex rounded-[20px] p-7.5">
-          <img src="" alt="" />
+        <div
+          class="bg-[#faf6f1] flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="150"
+            viewBox="0 0 200 200"
+            fill="none"
+            class="[animation:spin-svg_10s_linear_infinite]"
+          >
+            <defs>
+              <path
+                id="circlePath"
+                d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+              />
+              <clipPath id="clip0_461_42709">
+                <rect
+                  width="60"
+                  height="60"
+                  fill="white"
+                  transform="translate(0 0.535156)"
+                />
+              </clipPath>
+            </defs>
 
-          <p class="text-[#606060]">
+            <g transform="translate(70, 70)">
+              <g clip-path="url(#clip0_461_42709)">
+                <path
+                  d="M31.3211 0.541016C34.504 3.71338 37.3005 7.41271 38.653 11.7479C40.3639 16.7295 39.5489 22.3786 36.8824 26.8755C35.3998 29.6052 33.1725 31.8079 31.3457 34.2917C28.9813 37.6081 27.2002 41.6552 27.6569 45.8113C27.8747 48.7729 29.5223 51.5342 31.8726 53.3118C34.2932 55.1492 37.4269 55.9853 40.4447 55.6832C42.4612 55.4478 44.3724 54.682 46.1254 53.6772C44.2073 55.8764 41.5654 57.4503 38.6811 57.9667C34.5461 58.6975 30.0774 58.1389 26.4659 55.908C20.9362 52.69 17.7463 46.1907 17.9396 39.8741C17.8763 36.1186 18.853 32.4052 20.3636 28.9869C17.4196 32.76 15.6806 37.5168 15.8457 42.3298C16.06 48.0913 18.7019 53.7966 23.1671 57.4925C24.6883 58.7572 26.4378 59.6917 28.2225 60.5278C23.2163 60.0184 18.2803 57.9527 14.7848 54.2674C10.2528 49.5984 7.99739 42.8497 8.69651 36.3961C9.29022 31.035 12.2272 26.2361 15.8949 22.4032C18.2698 19.8351 21.1049 17.7519 23.5149 15.2189C26.1498 12.4541 28.5528 9.38707 30.0283 5.8388C30.7133 4.149 31.3773 2.39594 31.3211 0.541016Z"
+                  fill="#0B3311"
+                />
+                <path
+                  d="M42.5173 19.1422C42.8053 16.9184 42.3451 14.7051 42.2538 12.4883C46.1112 18.3763 49.5716 24.7316 50.7766 31.7508C51.7076 36.6973 51.9711 42.2094 49.2906 46.6851C46.6874 51.333 40.6518 53.6025 35.621 51.9268C32.684 50.915 30.5902 47.9183 30.6604 44.8126C30.4953 40.3791 33.2356 36.5603 35.9723 33.3387C39.4327 29.3654 42.0606 24.454 42.5173 19.1422Z"
+                  fill="#D1A132"
+                />
+              </g>
+            </g>
+
+            <text
+              font-family="Arial"
+              font-size="16"
+              fill="#FFFFFF"
+              text-anchor="middle"
+              letter-spacing="4.8"
+            >
+              <textPath href="#circlePath" startOffset="50%" fill="black">
+                PREMIUM QUALITY * PREMIUM QUALITY *
+              </textPath>
+            </text>
+          </svg>
+
+          <p class="text-[#606060] md:w-[calc(100%-120px)]">
             With a commitment to sustainability and customer satisfaction, we
             provide reliable, stylish, and -friendly solutions you can trust.
             Experience the balance of function and care—one drop at a time.
@@ -243,7 +346,13 @@
             />
           </div>
 
-          <Button text="View All Products" link="/" />
+          <Button
+            text="View All Products"
+            link="/"
+            hoverTextColor="white"
+            bgArrow="#e2e1da"
+            textIcon="black"
+          />
         </div>
 
         <div
@@ -295,13 +404,57 @@
             />
           </div>
           <div
-            class="absolute -bottom-[116px] left-[132px] z-50 p-20 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
-            style="
-              background-image: url('https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-section-heading-icon-cbd.svg');
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
+            class="absolute -bottom-[116px] left-[132px] z-50 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              viewBox="0 0 200 200"
+              fill="none"
+              class="[animation:spin-svg_10s_linear_infinite]"
+            >
+              <defs>
+                <path
+                  id="circlePath"
+                  d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                />
+                <clipPath id="clip0_461_42709">
+                  <rect
+                    width="60"
+                    height="60"
+                    fill="white"
+                    transform="translate(0 0.535156)"
+                  />
+                </clipPath>
+              </defs>
+
+              <g transform="translate(70, 70)">
+                <g clip-path="url(#clip0_461_42709)">
+                  <path
+                    d="M31.3211 0.541016C34.504 3.71338 37.3005 7.41271 38.653 11.7479C40.3639 16.7295 39.5489 22.3786 36.8824 26.8755C35.3998 29.6052 33.1725 31.8079 31.3457 34.2917C28.9813 37.6081 27.2002 41.6552 27.6569 45.8113C27.8747 48.7729 29.5223 51.5342 31.8726 53.3118C34.2932 55.1492 37.4269 55.9853 40.4447 55.6832C42.4612 55.4478 44.3724 54.682 46.1254 53.6772C44.2073 55.8764 41.5654 57.4503 38.6811 57.9667C34.5461 58.6975 30.0774 58.1389 26.4659 55.908C20.9362 52.69 17.7463 46.1907 17.9396 39.8741C17.8763 36.1186 18.853 32.4052 20.3636 28.9869C17.4196 32.76 15.6806 37.5168 15.8457 42.3298C16.06 48.0913 18.7019 53.7966 23.1671 57.4925C24.6883 58.7572 26.4378 59.6917 28.2225 60.5278C23.2163 60.0184 18.2803 57.9527 14.7848 54.2674C10.2528 49.5984 7.99739 42.8497 8.69651 36.3961C9.29022 31.035 12.2272 26.2361 15.8949 22.4032C18.2698 19.8351 21.1049 17.7519 23.5149 15.2189C26.1498 12.4541 28.5528 9.38707 30.0283 5.8388C30.7133 4.149 31.3773 2.39594 31.3211 0.541016Z"
+                    fill="#0B3311"
+                  />
+                  <path
+                    d="M42.5173 19.1422C42.8053 16.9184 42.3451 14.7051 42.2538 12.4883C46.1112 18.3763 49.5716 24.7316 50.7766 31.7508C51.7076 36.6973 51.9711 42.2094 49.2906 46.6851C46.6874 51.333 40.6518 53.6025 35.621 51.9268C32.684 50.915 30.5902 47.9183 30.6604 44.8126C30.4953 40.3791 33.2356 36.5603 35.9723 33.3387C39.4327 29.3654 42.0606 24.454 42.5173 19.1422Z"
+                    fill="#D1A132"
+                  />
+                </g>
+              </g>
+
+              <text
+                font-family="Arial"
+                font-size="16"
+                fill="#FFFFFF"
+                text-anchor="middle"
+                letter-spacing="4.8"
+              >
+                <textPath href="#circlePath" startOffset="50%">
+                  PREMIUM QUALITY * PREMIUM QUALITY *
+                </textPath>
+              </text>
+            </svg>
+          </div>
         </div>
 
         <div
@@ -550,6 +703,8 @@
                 text="Expolre More"
                 link="/"
                 hoverBackgroundColor="white"
+                textIcon="black"
+                bgArrow="#e2e1da"
               />
             </div>
 
@@ -641,8 +796,57 @@
               class="lg:h-full lg:w-full sm:w-[61%] w-[276px] object-cover"
             />
             <div
-              class="rounded-full w-[7.5rem] h-[7.5rem] bg-[#d1a132] absolute top-0 right-0"
-            ></div>
+              class="rounded-full w-[7.5rem] h-[7.5rem] bg-[#d1a132] absolute top-0 right-0 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="110"
+                viewBox="0 0 200 200"
+                fill="none"
+                class="[animation:spin-svg_10s_linear_infinite]"
+              >
+                <defs>
+                  <path
+                    id="circlePath"
+                    d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                  />
+                  <clipPath id="clip0_461_42709">
+                    <rect
+                      width="60"
+                      height="60"
+                      fill="white"
+                      transform="translate(0 0.535156)"
+                    />
+                  </clipPath>
+                </defs>
+
+                <g transform="translate(70, 70)">
+                  <g clip-path="url(#clip0_461_42709)">
+                    <path
+                      d="M31.3211 0.541016C34.504 3.71338 37.3005 7.41271 38.653 11.7479C40.3639 16.7295 39.5489 22.3786 36.8824 26.8755C35.3998 29.6052 33.1725 31.8079 31.3457 34.2917C28.9813 37.6081 27.2002 41.6552 27.6569 45.8113C27.8747 48.7729 29.5223 51.5342 31.8726 53.3118C34.2932 55.1492 37.4269 55.9853 40.4447 55.6832C42.4612 55.4478 44.3724 54.682 46.1254 53.6772C44.2073 55.8764 41.5654 57.4503 38.6811 57.9667C34.5461 58.6975 30.0774 58.1389 26.4659 55.908C20.9362 52.69 17.7463 46.1907 17.9396 39.8741C17.8763 36.1186 18.853 32.4052 20.3636 28.9869C17.4196 32.76 15.6806 37.5168 15.8457 42.3298C16.06 48.0913 18.7019 53.7966 23.1671 57.4925C24.6883 58.7572 26.4378 59.6917 28.2225 60.5278C23.2163 60.0184 18.2803 57.9527 14.7848 54.2674C10.2528 49.5984 7.99739 42.8497 8.69651 36.3961C9.29022 31.035 12.2272 26.2361 15.8949 22.4032C18.2698 19.8351 21.1049 17.7519 23.5149 15.2189C26.1498 12.4541 28.5528 9.38707 30.0283 5.8388C30.7133 4.149 31.3773 2.39594 31.3211 0.541016Z"
+                      fill="#0B3311"
+                    />
+                    <path
+                      d="M42.5173 19.1422C42.8053 16.9184 42.3451 14.7051 42.2538 12.4883C46.1112 18.3763 49.5716 24.7316 50.7766 31.7508C51.7076 36.6973 51.9711 42.2094 49.2906 46.6851C46.6874 51.333 40.6518 53.6025 35.621 51.9268C32.684 50.915 30.5902 47.9183 30.6604 44.8126C30.4953 40.3791 33.2356 36.5603 35.9723 33.3387C39.4327 29.3654 42.0606 24.454 42.5173 19.1422Z"
+                      fill="#D1A132"
+                    />
+                  </g>
+                </g>
+
+                <text
+                  font-family="Arial"
+                  font-size="16"
+                  fill="#FFFFFF"
+                  text-anchor="middle"
+                  letter-spacing="4.8"
+                >
+                  <textPath href="#circlePath" startOffset="50%">
+                    PREMIUM QUALITY * PREMIUM QUALITY *
+                  </textPath>
+                </text>
+              </svg>
+            </div>
           </div>
 
           <div class="lg:w-3/5 flex flex-col gap-4 py-2.5">
@@ -803,11 +1007,12 @@
               width="40"
               height="41"
               viewBox="0 0 40 41"
-              class="fill-[#D1A132] group-hover:fill-white"
+              class="group-hover:fill-white"
             >
               <path
                 d="M39.1445 8.86963C38.3922 5.47276 35.0992 2.36104 31.693 1.7001C29.618 1.28526 23.8289 0.772756 20 0.814944C16.1711 0.772756 10.382 1.28526 8.30703 1.7001C4.90078 2.36104 1.60781 5.47276 0.855469 8.86963C0.427344 10.9321 0.00625 13.7384 0 17.5688C0.00625 21.3993 0.427344 24.2048 0.855469 26.2673C1.60781 29.6642 4.90078 32.7759 8.30703 33.4368C9.42734 33.661 11.6305 33.9134 14.0234 34.0915C14.2945 34.5173 14.5883 34.9704 14.9063 35.4509C16.1758 37.3735 17.1477 38.7134 17.8836 39.647C19.1086 41.2009 20.8922 41.2009 22.1172 39.647C22.8531 38.7134 23.8242 37.3735 25.0945 35.4509C25.4125 34.9696 25.7055 34.5173 25.9773 34.0915C28.3703 33.9134 30.5734 33.661 31.6945 33.4368C35.1008 32.7759 38.3937 29.6642 39.1461 26.2673C39.5742 24.2048 39.9953 21.3993 40.0016 17.5688C39.9953 13.7384 39.5742 10.9329 39.1461 8.87041L39.1445 8.86963ZM22.2086 29.1821C22.1242 29.6579 21.693 30.0892 21.2172 30.1735C20.9289 30.2212 20.5359 30.2665 19.9992 30.2673C19.4633 30.2673 19.0703 30.222 18.7812 30.1735C18.3055 30.0892 17.8742 29.6579 17.7898 29.1821C17.7422 28.8939 17.6969 28.5009 17.6961 27.9642C17.6961 27.4282 17.7414 27.0353 17.7898 26.7462C17.8742 26.2704 18.3055 25.8392 18.7812 25.7548C19.0695 25.7071 19.4625 25.6618 19.9992 25.661C20.5352 25.661 20.9281 25.7064 21.2172 25.7548C21.693 25.8392 22.1242 26.2704 22.2086 26.7462C22.2562 27.0345 22.3016 27.4274 22.3023 27.9642C22.3023 28.5001 22.257 28.8931 22.2086 29.1821ZM26.9648 16.386C26.3617 17.2392 25.4578 18.0181 24.1203 18.836C22.4273 19.8798 22.1562 20.3087 22.1562 21.1485V21.4806C22.1562 22.6712 21.1875 23.6399 19.9969 23.6399C18.8062 23.6399 17.8375 22.6712 17.8375 21.4806V20.711C17.8375 19.7204 18.0852 18.8798 18.5945 18.1415C19.0883 17.4259 19.8281 16.7899 20.9258 16.1376C22.9484 14.9478 23.3188 14.2798 23.3188 13.3931C23.3188 12.279 22.3695 11.5587 20.9016 11.5587C19.2922 11.5587 18.2445 12.2899 17.7875 13.7329C17.4859 14.6845 16.6047 15.3235 15.5953 15.3235C15.5391 15.3235 15.4828 15.3212 15.4266 15.3173C14.7141 15.2657 14.0758 14.8962 13.6758 14.3032C13.2797 13.7165 13.1758 12.9954 13.3906 12.3243C13.8828 10.7899 14.8266 9.51338 16.1195 8.63213C17.4289 7.73994 19.0828 7.26885 20.9008 7.26885C22.7188 7.26885 24.5414 7.87119 25.8352 8.96494C27.1664 10.0907 27.9 11.6423 27.9 13.3353C27.9 14.4978 27.5945 15.4962 26.9648 16.386Z"
-                fill="currentColor"
+                fill="#d1a132"
+                class="group-hover:fill-white w-10 h-10"
               ></path>
             </svg>
             <div class="font-bold">Answers You Need !</div>
@@ -881,8 +1086,8 @@
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
                 :class="{ 'text-white': activeAccordion === 2 }"
               >
-                This is the content for the second accordion item. It expands
-                when active.
+                Yes, our dropper bottles are designed with secure, leak-proof
+                seals to prevent spills and maintain product integrity.
               </p>
             </a>
 
@@ -912,8 +1117,8 @@
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
                 :class="{ 'text-white': activeAccordion === 3 }"
               >
-                To clean, simply rinse with warm water and a mild soap. For a
-                deeper clean, you can use a small brush designed for bottles.
+                Yes, our dropper bottles are designed with secure, leak-proof
+                seals to prevent spills and maintain product integrity.
               </p>
             </a>
 
@@ -943,8 +1148,8 @@
                 class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
                 :class="{ 'text-white': activeAccordion === 4 }"
               >
-                Yes, our bottles are made from recyclable materials, promoting
-                sustainability and reducing environmental impact.
+                Yes, our dropper bottles are designed with secure, leak-proof
+                seals to prevent spills and maintain product integrity.
               </p>
             </a>
           </div>
@@ -958,7 +1163,7 @@
         class="max-w-[1300px] mx-auto px-5 lg:py-[100px] py-12.5 text-white flex flex-col gap-17.5"
       >
         <div class="flex justify-between lg:flex-row flex-col py-2.5">
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <Title
               :title="{
                 content: `Testimonials`,
@@ -967,7 +1172,7 @@
               }"
             />
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center mt-4 lg:mt-0">
             <img
               src="/icons/google.svg"
               alt=""
@@ -986,105 +1191,48 @@
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row lg:gap-12.5">
           <img
             src="/images/testimonial-image.jpg"
             alt=""
             class="lg:w-3/10 w-full rounded-[20px]"
           />
 
-          <div class="flex flex-col items-center lg:pl-12.5 justify-between">
-            <div class="flex gap-4">
-              <div class="hidden">
+          <div class="flex flex-col items-center justify-between mt-10 lg:mt-0">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full justify-center"
+            >
+              <div
+                v-for="(testimonial, index) in testimonials"
+                :key="index"
+                v-show="currentIndex === index"
+                class="w-full"
+              >
                 <div
                   class="border-b border-solid border-[#FFFFFF1A] mb-7.5 pb-7.5"
                 >
                   <div class="flex text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
                   </div>
-                  <p class="mt-5">
-                    "These oil droppers are perfect for my essential oil blends!
-                    The precision and outstanding of Highly recommend many
-                    dropper bottles, but these are by far the best. No leaks, no
-                    waste—just pure convenience!"
-                  </p>
+                  <p class="mt-5">"{{ testimonial.text }}"</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between items-center">
                   <div class="flex gap-3.5">
-                    <img src="/images/author-1.jpg" alt="" class="rounded-md" />
-                    <div class="">
-                      <strong class="mb-[3px]">Michael Carter</strong>
-                      <div>Aromatherapist</div>
-                    </div>
-                  </div>
-
-                  <img src="/icons/phay.svg" alt="" class="text-white" />
-                </div>
-              </div>
-
-              <div>
-                <div
-                  class="border-b border-solid border-[#FFFFFF1A] mb-7.5 pb-7.5"
-                >
-                  <div class="flex text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p class="mt-5">
-                    "These oil droppers are perfect for my essential oil blends!
-                    The precision and outstanding of Highly recommend many
-                    dropper bottles, but these are by far the best. No leaks, no
-                    waste—just pure convenience!"
-                  </p>
-                </div>
-                <div class="flex justify-between">
-                  <div class="flex">
-                    <img src="/images/author-1.jpg" alt="" class="rounded-md" />
+                    <img
+                      :src="testimonial.image"
+                      :alt="testimonial.author"
+                      class="rounded-md w-12 h-12 object-cover"
+                    />
                     <div>
-                      <strong class="mb-[3px]">Michael Carter</strong>
-                      <div>Aromatherapist</div>
+                      <strong class="mb-[3px]">{{ testimonial.author }}</strong>
+                      <div>{{ testimonial.role }}</div>
                     </div>
                   </div>
-
-                  <img src="/icons/phay.svg" alt="" class="text-white" />
-                </div>
-              </div>
-
-              <div>
-                <div
-                  class="border-b border-solid border-[#FFFFFF1A] mb-7.5 pb-7.5"
-                >
-                  <div class="flex text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <p class="mt-5">
-                    "These oil droppers are perfect for my essential oil blends!
-                    The precision and outstanding of Highly recommend many
-                    dropper bottles, but these are by far the best. No leaks, no
-                    waste—just pure convenience!"
-                  </p>
-                </div>
-                <div class="flex justify-between">
-                  <div class="flex">
-                    <img src="/images/author-1.jpg" alt="" class="rounded-md" />
-                    <div>
-                      <strong class="mb-[3px]">Michael Carter</strong>
-                      <div>Aromatherapist</div>
-                    </div>
-                  </div>
-
-                  <img src="/icons/phay.svg" alt="" class="text-white" />
+                  <img
+                    src="/icons/phay.svg"
+                    alt="Quote icon"
+                    class="text-white w-8 h-8"
+                  />
                 </div>
               </div>
             </div>
@@ -1092,12 +1240,14 @@
             <div class="flex gap-5 mt-8 lg:mt-0">
               <div
                 class="text-white w-10 h-10 bg-[#ffffff1a] rounded-full flex justify-center items-center hover:bg-[#d1a132] cursor-pointer transition duration-500 ease-in-out"
+                @click="prevTestimonial"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </div>
 
               <div
                 class="text-white w-10 h-10 bg-[#ffffff1a] rounded-full flex justify-center items-center hover:bg-[#d1a132] cursor-pointer transition duration-500 ease-in-out"
+                @click="nextTestimonial"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
@@ -1122,7 +1272,14 @@
               }"
             />
           </div>
-          <Button text="View All Blog" link="/" hoverBackgroundColor="black" />
+          <Button
+            text="View All Blog"
+            link="/"
+            hoverBackgroundColor="black"
+            hoverTextColor="white"
+            bgArrow="#e2e1da"
+            textIcon="black"
+          />
         </div>
 
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
@@ -1222,7 +1379,7 @@ import Button from "~/components/Button.vue";
 import { ref } from "vue";
 import Title from "~/components/Title.vue";
 
-const activeAccordion = ref(null);
+const activeAccordion = ref(2);
 const toggleAccordion = (id) => {
   if (activeAccordion.value === id) {
     activeAccordion.value = null;
@@ -1256,4 +1413,37 @@ const productItems = ref([
     account: "62.00",
   },
 ]);
+
+const currentIndex = ref(0);
+
+const testimonials = ref([
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "Michael Carter",
+    role: "Aromatherapist",
+    image: "/images/author-1.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "Sarah Johnson",
+    role: "DIY Enthusiast",
+    image: "/images/author-2.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+]);
+
+const nextTestimonial = () => {
+  currentIndex.value = (currentIndex.value + 1) % testimonials.value.length;
+};
+
+const prevTestimonial = () => {
+  currentIndex.value =
+    (currentIndex.value - 1 + testimonials.value.length) %
+    testimonials.value.length;
+};
 </script>
