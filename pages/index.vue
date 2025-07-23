@@ -410,7 +410,7 @@
             </div>
           </div>
           <div
-            class="absolute -bottom-[116px] left-[132px] z-50 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
+            class="absolute -bottom-[116px] left-0 z-50 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -682,11 +682,11 @@
     <div class="relative">
       <img
         src="/images/section-bg-shape-1.png"
-        class="absolute bottom-0 left-0"
+        class="absolute bottom-0 left-0 z-0"
         alt=""
       />
       <div
-        class="flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-[100px] max-w-[1300px] py-12.5 mx-auto px-5 items-center"
+        class="flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-[100px] max-w-[1300px] py-12.5 mx-auto px-5 items-center z-10"
       >
         <div class="flex flex-col gap-4 lg:w-[68%]">
           <Title
@@ -752,31 +752,46 @@
 
           <div class="flex justify-between flex-col sm:flex-row gap-7.5">
             <div
-              class="lg:w-[210px] lg:h-[210px] w-full h-auto overflow-hidden rounded-[20px]"
+              class="relative lg:w-[210px] lg:h-[210px] w-full h-auto overflow-hidden rounded-[20px]"
             >
               <img
                 src="/images/premium-products-image-1.jpg"
                 class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
                 alt=""
               />
+              <div
+                class="absolute bottom-1/15 text-white font-bold text-[20px] text-center flex justify-center w-full"
+              >
+                Leak-Proof Seal
+              </div>
             </div>
             <div
-              class="lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
+              class="relative lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
             >
               <img
                 src="/images/premium-products-image-2.jpg"
                 class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
                 alt=""
               />
+              <div
+                class="absolute bottom-1/15 text-white font-bold text-[20px] text-center flex justify-center w-full"
+              >
+                Leak-Proof Seal
+              </div>
             </div>
             <div
-              class="lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
+              class="relative lg:w-[210px] lg:h-[210px] w-full overflow-hidden rounded-[20px]"
             >
               <img
                 src="/images/premium-products-image-3.jpg"
                 class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
                 alt=""
               />
+              <div
+                class="absolute bottom-1/15 text-white font-bold text-[20px] text-center flex justify-center w-full"
+              >
+                Durable Glass
+              </div>
             </div>
           </div>
         </div>
@@ -883,7 +898,7 @@
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
                 <div class="mb-2.5 font-bold text-[20px]">
-                  Natural Healing & Wellness
+                  Natural Healing & Wellness 1
                 </div>
                 <p>
                   Supports overall health, immunity, and promotes well-being.
@@ -897,35 +912,37 @@
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
                 <div class="mb-2.5 font-bold text-[20px]">
-                  Natural Healing & Wellness
+                  Natural Healing & Wellness 2
                 </div>
                 <p>
                   Supports overall health, immunity, and promotes well-being.
                 </p>
               </div>
 
-              <div class="lg:p-7.5 p-5">
+              <div class="lg:p-7.5 p-5 order-4 sm:order-none">
                 <div
                   class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
                 <div class="mb-2.5 font-bold text-[20px]">
-                  Natural Healing & Wellness
+                  Natural Healing & Wellness 3
                 </div>
                 <p>
                   Supports overall health, immunity, and promotes well-being.
                 </p>
               </div>
 
-              <div class="lg:p-7.5 p-5 rounded-[20px] bg-white">
+              <div
+                class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none"
+              >
                 <div
                   class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
                 <div class="mb-2.5 font-bold text-[20px]">
-                  Natural Healing & Wellness
+                  Natural Healing & Wellness 4
                 </div>
                 <p>
                   Supports overall health, immunity, and promotes well-being.
@@ -1178,7 +1195,7 @@
     <!-- 10.Testimonials -->
     <div class="bg-[#0A2C0F]">
       <div
-        class="max-w-[1300px] mx-auto px-5 lg:py-[100px] py-12.5 text-white flex flex-col gap-17.5"
+        class="max-w-[1300px] mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5"
       >
         <div class="flex justify-between lg:flex-row flex-col py-2.5">
           <div class="lg:w-1/2">
@@ -1197,7 +1214,7 @@
               class="pr-10 border-r border-[#FFFFFF1A] border-solid"
             />
             <div class="pl-10 flex flex-col justify-between">
-              <div class="flex text-yellow-500">
+              <div class="flex text-yellow-500 flex-col 3xs:flex-row">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -1221,9 +1238,8 @@
               class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full justify-center"
             >
               <div
-                v-for="(testimonial, index) in testimonials"
+                v-for="(testimonial, index) in currentTestimonials"
                 :key="index"
-                v-show="currentIndex === index"
                 class="w-full"
               >
                 <div
@@ -1432,36 +1448,54 @@ const productItems = ref([
   },
 ]);
 
-const currentIndex = ref(0);
-
 const testimonials = ref([
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "Michael Carter",
+    author: "Michael Carter 1",
     role: "Aromatherapist",
     image: "/images/author-1.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "Sarah Johnson",
+    author: "Sarah Johnson 2",
     role: "DIY Enthusiast",
     image: "/images/author-2.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee",
+    author: "David Lee 3",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee 4",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee 5",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee 6",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee 7",
+    role: "Small Business Owner",
+    image: "/images/author-3.jpg",
+  },
+  {
+    text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
+    author: "David Lee 8",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
 ]);
-
-const nextTestimonial = () => {
-  currentIndex.value = (currentIndex.value + 1) % testimonials.value.length;
-};
-
-const prevTestimonial = () => {
-  currentIndex.value =
-    (currentIndex.value - 1 + testimonials.value.length) %
-    testimonials.value.length;
-};
 </script>

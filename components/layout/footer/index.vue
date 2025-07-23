@@ -64,24 +64,22 @@
         <div
           class="sm:w-1/2 py-2.5 sm:pl-5 pr-2.5 lg:pl-17.5 pl-2.5 gap-[15px] lg:gap-7.5 flex flex-col"
         >
-          <div>Newsletter</div>
+          <div class="font-bold text-[20px]">Newsletter</div>
           <form class="flex items-center">
             <input
               type="text"
               placeholder="Enter Your Email"
-              class="bg-[#ffffff1a] py-[15px] px-4 rounded-full text-white placeholder:text-white w-full"
+              class="bg-[#ffffff1a] py-4.5 px-4 rounded-full text-white placeholder:text-white w-full"
             />
             <button type="submit">
               <img
                 src="/public/icons/submit.svg"
-                class="p-2.5 sm:p-4 rounded-full bg-[#d1a132] hover:bg-[#ffffff1a] cursor-pointer"
+                class="p-2.5 sm:p-5 rounded-full bg-[#d1a132] hover:bg-[#ffffff1a] cursor-pointer"
                 alt=""
               />
             </button>
           </form>
-          <ul
-            class="text-white gap-[15px] items-center flex border-r border-solid border-[#ffffff1a]"
-          >
+          <ul class="text-white gap-[15px] items-center flex">
             <li
               class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[#d1a132] hover:text-[#d1a132]"
             >
