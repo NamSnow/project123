@@ -15,11 +15,7 @@
     >
       <div class="mx-auto flex justify-between items-center py-5 container p-5">
         <div class="flex">
-          <img
-            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/logo.svg"
-            alt=""
-            class="cursor-pointer"
-          />
+          <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
           <div class="text-white hidden lg:flex items-center pl-9">
             <div class="relative group">

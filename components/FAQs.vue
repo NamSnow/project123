@@ -40,14 +40,21 @@
 
         <div class="flex flex-col gap-7.5">
           <div
-            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300 bg-[var(--color-accent)]"
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
+            :class="{
+              'bg-[var(--color-accent)]': activeBtn,
+              'bg-white': !activeBtn,
+            }"
             v-for="(faq, index) in faqs"
             :key="index"
+            @click="activeFaq(index)"
           >
             <div
               class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
-              :class="'border-b border-solid border-[var(--color-darkdivider)]'"
-              @click="activeFaq()"
+              :class="{
+                'border-b border-solid border-[var(--color-darkdivider)] text-white':
+                  activeBtn,
+              }"
             >
               {{ faq.title }}
               <span>
@@ -58,6 +65,7 @@
             </div>
             <p
               class="pt-4 pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
+              :class="{ 'hidden m-0': !activeBtn }"
             >
               {{ faq.content }}
             </p>
@@ -95,7 +103,7 @@ const faqs = ref([
   },
 ]);
 
-const test = ref(1);
+const activeBtn = ref(true);
 </script>
 
 <style lang="scss" scoped></style>

@@ -2,8 +2,13 @@
   <div class="bg-[var(--color-primary)] relative">
     <img
       src="/images/section-bg-shape-1.png"
-      class="absolute bottom-0 right-0 z-0"
+      class="absolute bottom-0 right-0 z-0 transform scale-x-[-1]"
       alt=""
+    />
+    <img
+      src="/images/section-bg-shape-3.png"
+      alt=""
+      class="absolute top-0 left-0"
     />
     <div
       class="container mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-25 pt-12.5 lg:gap-7.5 gap-5"

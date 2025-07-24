@@ -3,7 +3,7 @@
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
-      class="absolute right-0 bottom-0"
+      class="absolute right-0 bottom-0 transform scale-x-[-1]"
     />
     <div
       class="text-white flex flex-col items-center md:flex-row container mx-auto lg:pt-25 pt-12.5 lg:pb-62.5 pb-31.25 gap-15 px-5"

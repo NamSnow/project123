@@ -1,5 +1,15 @@
 <template>
-  <div class="bg-[var(--color-primary)] text-white px-2.5">
+  <div class="relative bg-[var(--color-primary)] text-white px-2.5">
+    <img
+      src="/images/section-bg-shape-3.png"
+      alt=""
+      class="absolute top-0 right-0"
+    />
+    <img
+      src="/images/section-bg-shape-3.png"
+      alt=""
+      class="absolute bottom-0 left-0 scale-y-[-1]"
+    />
     <div
       class="container lg:pt-25 pt-12.5 lg:pb-12.5 pb-6.25 mx-auto flex lg:flex-row flex-col lg:gap-0 gap-2.5 px-4"
     >
@@ -45,7 +55,7 @@
 
       <div class="lg:w-2/3 flex sm:flex-row flex-col gap-3.75 sm:gap-0">
         <div class="sm:w-1/2 flex flex-col gap-7.5 p-2.5">
-          <img src="/icons/icon.svg" alt="" class="max-w-45.5 lg:mx-auto" />
+          <img src="/icons/logo.svg" alt="" class="max-w-45.5 lg:mx-auto" />
           <div class="lg:text-center">
             123 High Street, London, W1A 1AA, United Kingdom
           </div>

@@ -1,5 +1,10 @@
 <template>
-  <div class="flex 2xl:pl-[10vw] lg:flex-row flex-col">
+  <div class="flex 2xl:pl-[7.5vw] lg:flex-row flex-col relative">
+    <img
+      src="/images/section-bg-shape-1.png"
+      alt=""
+      class="absolute bottom-0 left-0"
+    />
     <div
       class="w-full flex flex-col gap-4 justify-center lg:w-1/2 xl:py-25 xl:pr-50 xl:pl-0 lg:py-12.5 lg:pr-20 px-5 py-12.5"
     >

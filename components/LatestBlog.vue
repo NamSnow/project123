@@ -24,88 +24,38 @@
       </div>
 
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
-        <div class="rounded-[20px] overflow-hidden">
-          <img src="/images/post-1.jpg" alt="" />
-          <div class="bg-white p-6.5">
-            <div
-              class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
-            >
-              Glass vs. Plastic Droppers Which One is Right for You?
-            </div>
-            <div class="flex justify-between flex-col sm:flex-row">
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
-                <div class="text-[#606060]">May 5, 2025</div>
-              </div>
-
-              <div class="flex items-center gap-2">
-                <div
-                  class="text-[var(--color-accent)] font-bold hover:text-black"
-                >
-                  Read More
-                </div>
-                <div
-                  class="text-xl bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
+        <div
+          class="rounded-[20px] overflow-hidden h-full"
+          v-for="(product, index) in productItems"
+          :key="index"
+        >
+          <div>
+            <img
+              :src="product.image"
+              alt=""
+              class="transform hover:scale-110 h-auto object-cover"
+            />
           </div>
-        </div>
-
-        <div class="rounded-[20px] overflow-hidden">
-          <img src="/images/post-1.jpg" alt="" />
           <div class="bg-white p-6.5">
             <div
               class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
             >
-              Glass vs. Plastic Droppers Which One is Right for You?
+              {{ product.title }}
             </div>
             <div class="flex justify-between flex-col sm:flex-row">
               <div class="flex items-center gap-2">
                 <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
-                <div class="text-[#606060]">May 5, 2025</div>
+                <div class="text-[#606060]">{{ product.time }}</div>
               </div>
 
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 group cursor-pointer">
                 <div
-                  class="text-[var(--color-accent)] font-bold hover:text-black"
+                  class="text-[var(--color-accent)] font-bold group-hover:text-black"
                 >
                   Read More
                 </div>
                 <div
-                  class="text-xl bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rounded-[20px] overflow-hidden">
-          <img src="/images/post-1.jpg" alt="" />
-          <div class="bg-white p-6.5">
-            <div
-              class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
-            >
-              Glass vs. Plastic Droppers Which One is Right for You?
-            </div>
-            <div class="flex justify-between flex-col sm:flex-row">
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
-                <div class="text-[#606060]">May 5, 2025</div>
-              </div>
-
-              <div class="flex items-center gap-2">
-                <div
-                  class="text-[var(--color-accent)] font-bold hover:text-black"
-                >
-                  Read More
-                </div>
-                <div
-                  class="text-xl bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
+                  class="text-xl bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 group-hover:rotate-0 group-hover:bg-black"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
@@ -120,6 +70,24 @@
 
 <script setup>
 import Title from "./Title.vue";
+
+const productItems = ref([
+  {
+    image: "/images/post-1.jpg",
+    title: "Glass vs. Plastic Droppers Which One is Right for You?",
+    time: "May 5, 2025",
+  },
+  {
+    image: "/images/post-2.jpg",
+    title: "Sustainable Beauty Why Reusable dropper are the future",
+    time: "May 5, 2025",
+  },
+  {
+    image: "/images/post-3.jpg",
+    title: "Science Behind Precision Droppers and Their Benefits",
+    time: "May 5, 2025",
+  },
+]);
 </script>
 
 <style lang="scss" scoped></style>
