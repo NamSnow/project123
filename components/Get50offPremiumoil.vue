@@ -6,7 +6,7 @@
       alt=""
     />
     <div
-      class="container mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-[100px] pt-12.5 lg:gap-7.5 gap-5"
+      class="container mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-25 pt-12.5 lg:gap-7.5 gap-5"
     >
       <div
         class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"
@@ -27,6 +27,7 @@
           link="/"
           hoverBackgroundColor="white"
           hoverTextColor="black"
+          bgArrow="#ffffff1a"
         />
       </div>
 

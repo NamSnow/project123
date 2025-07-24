@@ -1,9 +1,9 @@
 <template>
   <div class="bg-[var(--color-secondary)]">
     <div
-      class="mx-auto lg:py-[100px] container flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-[50px] flex-col"
+      class="mx-auto lg:py-25 container flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
     >
-      <div class="flex flex-col lg:flex-row">
+      <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2">
           <Title
             :title="{
@@ -35,9 +35,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>
@@ -54,9 +52,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>
@@ -73,9 +69,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>
@@ -86,7 +80,7 @@
         <img
           src="/images/key-points-image.png"
           alt=""
-          class="lg:max-w-[340px] sm:max-w-[240px] object-cover"
+          class="lg:max-w-85 sm:max-w-60 object-cover"
         />
 
         <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
@@ -98,9 +92,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>
@@ -115,9 +107,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>
@@ -132,9 +122,7 @@
             </div>
 
             <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-[20px]">
-                100% Organic & Pure
-              </div>
+              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
               <div class="text-[#606060] text-base">
                 Helping to restore balance and promote overall wellness.
               </div>

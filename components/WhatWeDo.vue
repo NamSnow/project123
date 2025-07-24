@@ -6,7 +6,7 @@
       class="absolute right-0 bottom-0"
     />
     <div
-      class="text-white flex flex-col items-center md:flex-row container mx-auto lg:pt-[100px] pt-[50px] lg:pb-[250px] pb-[125px] gap-15"
+      class="text-white flex flex-col items-center md:flex-row container mx-auto lg:pt-25 pt-12.5 lg:pb-62.5 pb-31.25 gap-15 px-5"
     >
       <div class="relative lg:w-[49%]">
         <div class="relative flex flex-col">
@@ -19,7 +19,7 @@
             <div class="absolute top-0 left-0"></div>
           </div>
 
-          <div class="absolute object-contain self-end -bottom-[175px] z-10">
+          <div class="absolute object-contain self-end -bottom-43.75 z-10">
             <img
               class="rounded-[30px]"
               src="/images/what-we-image-2.jpg"
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div
-          class="absolute -bottom-[116px] left-0 z-50 border-[var(--color-primary)] border-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center"
+          class="absolute -bottom-29 left-0 z-50 border-[var(--color-primary)] border-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@
       </div>
 
       <div
-        class="lg:pl-7.5 h-auto lg:w-[51%] flex flex-col gap-5 lg:gap-10 mt-[150px] md:mt-0"
+        class="lg:pl-7.5 h-auto lg:w-[51%] flex flex-col gap-5 lg:gap-10 mt-37.5 md:mt-0"
       >
         <Title
           :title="{
@@ -96,7 +96,7 @@
 
         <div class="flex flex-col gap-5 lg:gap-10">
           <div
-            class="border-b border-solid border-[var(--color-darkdivider)] pb-10 flex flex-col gap-[15px]"
+            class="border-b border-solid border-[var(--color-darkdivider)] pb-10 flex flex-col gap-3.75"
           >
             <div class="flex">
               <div
@@ -104,7 +104,7 @@
               >
                 <i class="fa-solid fa-check"></i>
               </div>
-              <div class="font-bold text-[20px]">
+              <div class="font-bold text-xl">
                 Crafting Precision for Every Drop
               </div>
             </div>
@@ -116,16 +116,14 @@
             </p>
           </div>
 
-          <div class="flex flex-col gap-[15px]">
+          <div class="flex flex-col gap-3.75">
             <div class="flex">
               <div
                 class="bg-[var(--color-accent)] w-5 h-5 text-black rounded-full flex justify-center items-center mr-3"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
-              <div class="font-bold text-[20px]">
-                Designed for Essential Oils
-              </div>
+              <div class="font-bold text-xl">Designed for Essential Oils</div>
             </div>
 
             <p>

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[var(--color-secondary)]">
     <div
-      class="flex lg:flex-row flex-col container mx-auto lg:py-[100px] py-12.5 px-2.5 w-full"
+      class="flex lg:flex-row flex-col container mx-auto lg:py-25 py-12.5 px-2.5 w-full"
     >
       <div class="lg:w-1/2 w-full relative">
         <img
@@ -10,7 +10,7 @@
           class="max-w-full py-2.5 pl-2.5 lg:pr-20 pr-2.5 mx-auto object-cover"
         />
         <div
-          class="absolute top-0 right-0 w-[130px] h-[130px] bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-20"
+          class="absolute top-0 right-0 w-32.5 h-32.5 bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-20"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@
           <div class="flex flex-col justify-between lg:w-1/2 gap-7.5">
             <div class="flex">
               <div
-                class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black mr-[15px] p-2.5 w-12.5 h-12.5"
+                class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black mr-4 p-2.5 w-12.5 h-12.5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@
 
           <div class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/2">
             <img src="/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
-            <div class="font-bold text-[20px]">Nature's Best in Every Drop</div>
+            <div class="font-bold text-xl">Nature's Best in Every Drop</div>
           </div>
         </div>
       </div>

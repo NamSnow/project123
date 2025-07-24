@@ -12,9 +12,9 @@
   font-family: var(--font-plus);
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1536px) {
   .container {
-    max-width: 80vw;
+    width: 85vw;
   }
 }
 

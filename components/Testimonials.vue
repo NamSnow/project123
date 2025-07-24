@@ -44,7 +44,7 @@
             class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full justify-center"
           >
             <div
-              v-for="(testimonial, index) in currentTestimonials"
+              v-for="(testimonial, index) in showTes"
               :key="index"
               class="w-full"
             >
@@ -64,7 +64,7 @@
                     class="rounded-md w-12 h-12 object-cover"
                   />
                   <div>
-                    <strong class="mb-[3px]">{{ testimonial.author }}</strong>
+                    <strong class="mb-1">{{ testimonial.author }}</strong>
                     <div>{{ testimonial.role }}</div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <div class="flex gap-5 mt-8 lg:mt-0">
+          <div class="flex gap-5 mt-8 lg:mt-0 justify-evenly">
             <div
               class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
               @click="prevTestimonial"
@@ -101,7 +101,7 @@
 <script setup>
 import Title from "./Title.vue";
 
-const testimonials = ref([
+const testis = ref([
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
     author: "Michael Carter 1",
@@ -151,6 +151,41 @@ const testimonials = ref([
     image: "/images/author-3.jpg",
   },
 ]);
+
+const currentIndex = ref(1);
+
+const showTes = ref([
+  testis.value[currentIndex.value - 1],
+  testis.value[currentIndex.value],
+]);
+
+// const computedShowTes = computed(() => {
+//   return testis.value[currentIndex.value - 1], testis.value[currentIndex.value];
+// });
+
+console.log("Chung", currentIndex.value);
+
+const nextTestimonial = () => {
+  currentIndex.value++;
+  console.log("Next", currentIndex.value);
+  if (currentIndex.value >= testis.value.length) {
+    currentIndex.value = 0;
+  }
+  // console.log(1);
+  showTes.value.splice(0, 1);
+  showTes.value.push(testis.value[currentIndex.value]);
+};
+
+const prevTestimonial = () => {
+  currentIndex.value--;
+  console.log("Prev", currentIndex.value);
+  if (currentIndex.value < 0) {
+    currentIndex.value = testis.value.length - 1;
+  }
+  // console.log(currentIndex.value);
+  showTes.value.splice(1, 1);
+  showTes.value.unshift(testis.value[currentIndex.value]);
+};
 </script>
 
 <style lang="scss" scoped></style>

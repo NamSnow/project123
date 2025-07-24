@@ -42,7 +42,7 @@
       text-anchor="middle"
       letter-spacing="4.8"
     >
-      <textPath href="#circlePath" startOffset="50%">
+      <textPath href="#circlePath" startOffset="50%" class="font-bold">
         PREMIUM QUALITY * PREMIUM QUALITY *
       </textPath>
     </text>

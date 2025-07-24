@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="relative lg:mr-[55px] lg:ml-[75px]">
+    <div class="relative lg:mr-14 lg:ml-19">
       <img src="/images/hero-image.png" alt="" />
       <div class="absolute top-0 left-0">
         <icons-test />

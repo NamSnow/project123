@@ -4,7 +4,7 @@
       <img :src="product.image" :alt="product.content" class="rounded-3xl" />
     </a>
 
-    <div class="font-bold text-[20px] pt-3">{{ product.content }}</div>
+    <div class="font-bold text-xl pt-3">{{ product.content }}</div>
 
     <div class="text-[var(--color-accent)] font-bold">
       ${{ product.account }}

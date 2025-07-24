@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[var(--color-secondary)]">
     <div
-      class="flex container mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-[100px] items-center"
+      class="flex container mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
     >
       <div class="lg:w-1/2 w-full relative">
         <img
@@ -10,7 +10,7 @@
           class="rounded-[20px] w-full max-w-full h-auto"
         />
         <div
-          class="absolute px-5 py-[15px] flex w-[200px] lg:bottom-[50px] bottom-[25px] lg:right-[50px] right-[25px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[var(--color-accent)] hover:text-white"
+          class="absolute px-5 py-4 flex w-50 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[var(--color-accent)] hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +47,7 @@
             <div
               class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
               :class="'border-b border-solid border-[var(--color-darkdivider)]'"
+              @click="activeFaq()"
             >
               {{ faq.title }}
               <span>
@@ -56,7 +57,7 @@
               </span>
             </div>
             <p
-              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
+              class="pt-4 pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
             >
               {{ faq.content }}
             </p>

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex lg:pl-[calc(10vw+10px)] lg:flex-row flex-col">
+  <div class="flex 2xl:pl-[10vw] lg:flex-row flex-col">
     <div
-      class="w-full flex flex-col gap-4 justify-center lg:w-[52%] xl:py-[100px] xl:pr-[200px] xl:pl-0 lg:py-12.5 lg:pr-20 px-5 py-12.5"
+      class="w-full flex flex-col gap-4 justify-center lg:w-1/2 xl:py-25 xl:pr-50 xl:pl-0 lg:py-12.5 lg:pr-20 px-5 py-12.5"
     >
       <Title
         :title="{
@@ -43,7 +43,7 @@
           </div>
 
           <div class="flex flex-col">
-            <div class="mb-2.5 font-bold text-[20px]">Premium Quality</div>
+            <div class="mb-2.5 font-bold text-xl">Premium Quality</div>
             <div class="text-[#606060]">
               Carefully sourced, 100%, rigorously tested for excellence.
             </div>
@@ -77,9 +77,7 @@
           </div>
 
           <div class="flex flex-col">
-            <div class="mb-2.5 font-bold text-[20px]">
-              Fast & Reliable Shipping
-            </div>
+            <div class="mb-2.5 font-bold text-xl">Fast & Reliable Shipping</div>
             <div class="text-[#606060]">
               Carefully sourced, 100%, rigorously tested for excellence.
             </div>
@@ -148,7 +146,7 @@
       </div>
     </div>
 
-    <div class="relative lg:w-[48%]">
+    <div class="relative lg:w-1/2">
       <img src="/images/why-choose-image.png" alt="" class="w-full h-full" />
       <img
         src="/images/why-choose-product-image.png"

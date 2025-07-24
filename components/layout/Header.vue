@@ -11,9 +11,9 @@
     </div>
 
     <div
-      class="relative z-20 border-b border-solid w-full p-5 border-[var(--color-darkdivider)]"
+      class="relative z-20 border-b border-solid w-full border-[var(--color-darkdivider)]"
     >
-      <div class="mx-auto flex justify-between items-center py-5 container">
+      <div class="mx-auto flex justify-between items-center py-5 container p-5">
         <div class="flex">
           <img
             src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/logo.svg"
@@ -30,7 +30,7 @@
                 Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
               <ul
-                class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
               >
                 <li class="my-2 mx-4">
                   <a
@@ -74,7 +74,7 @@
                 Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
               <ul
-                class="absolute hidden group-hover:block text-white bg-[var(--color-accent)] min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                class="absolute hidden group-hover:block text-white bg-[var(--color-accent)] min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
               >
                 <li class="my-2 mx-4">
                   <a href="#" class="block text-base hover:text-black"
@@ -107,7 +107,7 @@
                 Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
               <ul
-                class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
               >
                 <li>
                   <a
@@ -146,7 +146,7 @@
                     <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
                   </a>
                   <ul
-                    class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-[10rem] left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                    class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
                   >
                     <li>
                       <a
@@ -188,7 +188,7 @@
                     <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
                   </a>
                   <ul
-                    class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-[10rem] left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                    class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
                   >
                     <li>
                       <a
@@ -233,7 +233,7 @@
 
         <div class="flex">
           <ul
-            class="text-white gap-[15px] items-center hidden lg:flex border-r border-solid border-[var(--color-darkdivider)] pr-7.5"
+            class="text-white gap-3.75 items-center hidden lg:flex border-r border-solid border-[var(--color-darkdivider)] pr-7.5"
           >
             <li
               class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
@@ -283,7 +283,7 @@
     class="bg-[var(--color-accent)] fixed top-0 left-0 w-screen h-screen z-[100] transform transition-transform duration-300 ease-in-out lg:hidden"
   >
     <div
-      class="h-[78px] flex justify-end items-center border-b border-solid border-white p-5"
+      class="h-19.5 flex justify-end items-center border-b border-solid border-white p-5"
     >
       <button
         class="bg-white w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-black"
@@ -302,7 +302,7 @@
           Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
         </a>
         <ul
-          class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+          class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
         >
           <li class="my-2 mx-4">
             <a href="#" class="block text-base rounded-t-md hover:text-black"
@@ -342,7 +342,7 @@
           Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
         </a>
         <ul
-          class="absolute hidden group-hover:block text-white bg-[var(--color-accent)] min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+          class="absolute hidden group-hover:block text-white bg-[var(--color-accent)] min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
         >
           <li class="my-2 mx-4">
             <a href="#" class="block text-base hover:text-black">Products</a>
@@ -371,7 +371,7 @@
           Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
         </a>
         <ul
-          class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-[14.6875rem] rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+          class="absolute hidden group-hover:block bg-[var(--color-accent)] text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
         >
           <li>
             <a
@@ -410,7 +410,7 @@
               <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
             </a>
             <ul
-              class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-[10rem] left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+              class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
             >
               <li>
                 <a
@@ -448,7 +448,7 @@
               <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
             </a>
             <ul
-              class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-[10rem] left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+              class="absolute hidden group-hover/nested:block bg-[var(--color-accent)] text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
             >
               <li>
                 <a
