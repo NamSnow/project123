@@ -42,8 +42,8 @@
           <div
             class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
             :class="{
-              'bg-[var(--color-accent)]': activeBtn,
-              'bg-white': !activeBtn,
+              'bg-[var(--color-accent)]': activeBtn === index,
+              'bg-white': activeBtn !== index,
             }"
             v-for="(faq, index) in faqs"
             :key="index"
@@ -53,7 +53,7 @@
               class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
               :class="{
                 'border-b border-solid border-[var(--color-darkdivider)] text-white':
-                  activeBtn,
+                  activeBtn === index,
               }"
             >
               {{ faq.title }}
@@ -65,7 +65,7 @@
             </div>
             <p
               class="pt-4 pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
-              :class="{ 'hidden m-0': !activeBtn }"
+              :class="{ 'hidden m-0': activeBtn !== index }"
             >
               {{ faq.content }}
             </p>
@@ -103,7 +103,11 @@ const faqs = ref([
   },
 ]);
 
-const activeBtn = ref(true);
+const activeBtn = ref(null);
+
+const activeFaq = () => {
+  activeBtn.value = !activeBtn.value === index ? null : index;
+};
 </script>
 
 <style lang="scss" scoped></style>
