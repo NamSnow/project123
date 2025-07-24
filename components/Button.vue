@@ -4,7 +4,7 @@
     class="text-white h-[50px] items-center group flex lg:m-0"
   >
     <button
-      class="px-7.5 cursor-pointer bg-[#d1a132] rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
+      class="px-7.5 cursor-pointer bg-[var(--color-accent)] rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
       :style="{ '--hover-text-color': hoverTextColor }"
     >
       <span class="relative z-10 group-hover:text-[var(--hover-text-color)]">{{
@@ -44,7 +44,7 @@ const props = defineProps({
   },
   bgArrow: {
     type: String,
-    default: "#ffffff1a",
+    default: "color-darkdivider",
   },
   textIcon: {
     type: String,

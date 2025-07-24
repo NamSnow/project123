@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#faf6f1]">
+  <div class="bg-[var(--color-secondary)]">
     <div
-      class="max-w-[1300px] mx-auto px-2.5 lg:py-[100px] py-12.5 flex flex-col lg:gap-10 gap-5"
+      class="container mx-auto px-2.5 lg:py-[100px] py-12.5 flex flex-col lg:gap-10 gap-5"
     >
       <div
         class="flex flex-col lg:flex-row justify-between items-center p-2.5 lg:mb-5 gap-5 lg:gap-0"
@@ -35,11 +35,11 @@
 
       <div class="p-2.5 text-[#606060] text-center">
         <span
-          class="bg-[#d1a132] text-white px-2.5 py-1 mr- rounded-full font-bold mr-3"
+          class="bg-[var(--color-accent)] text-white px-2.5 py-1 mr- rounded-full font-bold mr-3"
           >Free</span
         >Let’s make something great work together.
         <span
-          class="cursor-pointer text-[#d1a132] font-lora hover:text-black transition-all duration-500 ease-out font-semibold"
+          class="cursor-pointer text-[var(--color-accent)] font-lora hover:text-black transition-all duration-500 ease-out font-semibold"
           >Get Free Quote</span
         >
       </div>

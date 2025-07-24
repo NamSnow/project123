@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#0A2C0F]">
+  <div class="bg-[var(--color-primary)]">
     <div
-      class="max-w-[1300px] mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5"
+      class="container mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5"
     >
       <div class="flex justify-between lg:flex-row flex-col py-2.5">
         <div class="lg:w-1/2">
@@ -17,10 +17,10 @@
           <img
             src="/icons/google.svg"
             alt=""
-            class="pr-10 border-r border-[#FFFFFF1A] border-solid"
+            class="pr-10 border-r border-[var(--color-darkdivider)] border-solid"
           />
           <div class="pl-10 flex flex-col justify-between">
-            <div class="flex text-yellow-500 flex-col 3xs:flex-row">
+            <div class="flex text-yellow-500 flex-col md:flex-row">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -49,7 +49,7 @@
               class="w-full"
             >
               <div
-                class="border-b border-solid border-[#FFFFFF1A] mb-7.5 pb-7.5"
+                class="border-b border-solid border-[var(--color-darkdivider)] mb-7.5 pb-7.5"
               >
                 <div class="flex text-yellow-500">
                   <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
@@ -79,14 +79,14 @@
 
           <div class="flex gap-5 mt-8 lg:mt-0">
             <div
-              class="text-white w-10 h-10 bg-[#ffffff1a] rounded-full flex justify-center items-center hover:bg-[#d1a132] cursor-pointer transition duration-500 ease-in-out"
+              class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
               @click="prevTestimonial"
             >
               <i class="fa-solid fa-arrow-left"></i>
             </div>
 
             <div
-              class="text-white w-10 h-10 bg-[#ffffff1a] rounded-full flex justify-center items-center hover:bg-[#d1a132] cursor-pointer transition duration-500 ease-in-out"
+              class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
               @click="nextTestimonial"
             >
               <i class="fa-solid fa-arrow-right"></i>

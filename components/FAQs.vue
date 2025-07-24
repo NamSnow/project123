@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#FAF6F1]">
+  <div class="bg-[var(--color-secondary)]">
     <div
-      class="flex max-w-[1300px] mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-[100px] items-center"
+      class="flex container mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-[100px] items-center"
     >
       <div class="lg:w-1/2 w-full relative">
         <img
@@ -10,7 +10,7 @@
           class="rounded-[20px] w-full max-w-full h-auto"
         />
         <div
-          class="absolute px-5 py-[15px] flex w-[200px] lg:bottom-[50px] bottom-[25px] lg:right-[50px] right-[25px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[#d1a132] hover:text-white"
+          class="absolute px-5 py-[15px] flex w-[200px] lg:bottom-[50px] bottom-[25px] lg:right-[50px] right-[25px] bg-white rounded-[10px] gap-2.5 justify-center items-center group hover:bg-[var(--color-accent)] hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,129 +39,28 @@
         />
 
         <div class="flex flex-col gap-7.5">
-          <a
-            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-            :class="{ 'bg-[#d1a132]': activeAccordion === 1 }"
-            @click="toggleAccordion(1)"
+          <div
+            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300 bg-[var(--color-accent)]"
+            v-for="(faq, index) in faqs"
+            :key="index"
           >
             <div
               class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
-              :class="
-                activeAccordion === 1
-                  ? 'bg-[#d1a132] text-white'
-                  : 'bg-white text-black'
-              "
+              :class="'border-b border-solid border-[var(--color-darkdivider)]'"
             >
-              What is an oil dropper used for?
+              {{ faq.title }}
               <span>
                 <i
                   class="fas fa-chevron-down transform transition-transform duration-300"
-                  :class="{ 'rotate-180': activeAccordion === 1 }"
                 ></i>
               </span>
             </div>
             <p
-              v-show="activeAccordion === 1"
-              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-              :class="{ 'text-white': activeAccordion === 1 }"
+              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
             >
-              Yes, our dropper bottles are designed with secure, leak-proof
-              seals to prevent spills and maintain product integrity.
+              {{ faq.content }}
             </p>
-          </a>
-
-          <a
-            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-            :class="{ 'bg-[#d1a132]': activeAccordion === 2 }"
-            @click="toggleAccordion(2)"
-          >
-            <div
-              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
-              :class="
-                activeAccordion === 2
-                  ? 'bg-[#d1a132] text-white'
-                  : 'bg-white text-black'
-              "
-            >
-              What is an oil dropper used for?
-              <span>
-                <i
-                  class="fas fa-chevron-down transform transition-transform duration-300"
-                  :class="{ 'rotate-180': activeAccordion === 2 }"
-                ></i>
-              </span>
-            </div>
-            <p
-              v-show="activeAccordion === 2"
-              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-              :class="{ 'text-white': activeAccordion === 2 }"
-            >
-              Yes, our dropper bottles are designed with secure, leak-proof
-              seals to prevent spills and maintain product integrity.
-            </p>
-          </a>
-
-          <a
-            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-            :class="{ 'bg-[#d1a132]': activeAccordion === 3 }"
-            @click="toggleAccordion(3)"
-          >
-            <div
-              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
-              :class="
-                activeAccordion === 3
-                  ? 'bg-[#d1a132] text-white'
-                  : 'bg-white text-black'
-              "
-            >
-              How do I clean my oil dropper bottle?
-              <span>
-                <i
-                  class="fas fa-chevron-down transform transition-transform duration-300"
-                  :class="{ 'rotate-180': activeAccordion === 3 }"
-                ></i>
-              </span>
-            </div>
-            <p
-              v-show="activeAccordion === 3"
-              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-              :class="{ 'text-white': activeAccordion === 3 }"
-            >
-              Yes, our dropper bottles are designed with secure, leak-proof
-              seals to prevent spills and maintain product integrity.
-            </p>
-          </a>
-
-          <a
-            class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-300"
-            :class="{ 'bg-[#d1a132]': activeAccordion === 4 }"
-            @click="toggleAccordion(4)"
-          >
-            <div
-              class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
-              :class="
-                activeAccordion === 4
-                  ? 'bg-[#d1a132] text-white'
-                  : 'bg-white text-black'
-              "
-            >
-              Are these dropper bottles environmentally friendly?
-              <span>
-                <i
-                  class="fas fa-chevron-down transform transition-transform duration-300"
-                  :class="{ 'rotate-180': activeAccordion === 4 }"
-                ></i>
-              </span>
-            </div>
-            <p
-              v-show="activeAccordion === 4"
-              class="pt-[15px] pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out"
-              :class="{ 'text-white': activeAccordion === 4 }"
-            >
-              Yes, our dropper bottles are designed with secure, leak-proof
-              seals to prevent spills and maintain product integrity.
-            </p>
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -170,15 +69,32 @@
 
 <script setup>
 import Title from "./Title.vue";
+import { ref } from "vue";
 
-const activeAccordion = ref(2);
-const toggleAccordion = (id) => {
-  if (activeAccordion.value === id) {
-    activeAccordion.value = null;
-  } else {
-    activeAccordion.value = id;
-  }
-};
+const faqs = ref([
+  {
+    title: "What is an oil dropper used for?",
+    content:
+      "Yes, our dropper bottles are designed with secure, leak-proof seals to prevent spills and maintain product integrity.",
+  },
+  {
+    title: "Are your dropper bottles leak-proof?",
+    content:
+      "Yes, our dropper bottles are designed with secure, leak-proof seals to prevent spills and maintain product integrity.",
+  },
+  {
+    title: "How do I clean my oil dropper bottle?",
+    content:
+      "Yes, our dropper bottles are designed with secure, leak-proof seals to prevent spills and maintain product integrity.",
+  },
+  {
+    title: "Do you offer bulk or wholesale options?",
+    content:
+      "Yes, our dropper bottles are designed with secure, leak-proof seals to prevent spills and maintain product integrity.",
+  },
+]);
+
+const test = ref(1);
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,16 +1,16 @@
 <template>
-  <div class="bg-[#faf6f1]">
+  <div class="bg-[var(--color-secondary)]">
     <div
-      class="flex lg:flex-row flex-col max-w-[1300px] mx-auto lg:py-[100px] py-12.5 px-2.5 w-full"
+      class="flex lg:flex-row flex-col container mx-auto lg:py-[100px] py-12.5 px-2.5 w-full"
     >
       <div class="lg:w-1/2 w-full relative">
         <img
-          src="/public/images/about-image.png"
+          src="/images/about-image.png"
           alt=""
           class="max-w-full py-2.5 pl-2.5 lg:pr-20 pr-2.5 mx-auto object-cover"
         />
         <div
-          class="absolute top-0 right-0 w-[130px] h-[130px] bg-[#d1a132] rounded-full flex items-center justify-center mr-20"
+          class="absolute top-0 right-0 w-[130px] h-[130px] bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-20"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,13 +71,13 @@
             subTitle: 'care you can trust.',
           }"
         />
-        <p class="text-[#606060]">
+        <p class="text---color-red">
           We believe that every drop matters. Our premium oil dropper bottles
           are designed to deliver purity, precision, and care with every use.
         </p>
         <div class="flex">
           <div
-            class="bg-[#D1A132] w-5 h-5 text-white rounded-full flex justify-center items-center"
+            class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-check"></i>
           </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="flex">
           <div
-            class="bg-[#D1A132] w-5 h-5 text-white rounded-full flex justify-center items-center"
+            class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-check"></i>
           </div>
@@ -96,12 +96,10 @@
           </div>
         </div>
         <div class="flex justify-between md:flex-row flex-col gap-7.5">
-          <div
-            class="flex flex-col justify-between lg:w-[calc(68%-15px)] gap-7.5"
-          >
+          <div class="flex flex-col justify-between lg:w-1/2 gap-7.5">
             <div class="flex">
               <div
-                class="bg-[#d1a132] flex items-center justify-center rounded-full text-white hover:bg-black mr-[15px] p-2.5 w-12.5 h-12.5"
+                class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black mr-[15px] p-2.5 w-12.5 h-12.5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,10 +141,8 @@
             />
           </div>
 
-          <div
-            class="bg-white max-w-full p-5 rounded-[20px] lg:w-[calc(32%-15px)]"
-          >
-            <img src="/public/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
+          <div class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/2">
+            <img src="/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
             <div class="font-bold text-[20px]">Nature's Best in Every Drop</div>
           </div>
         </div>

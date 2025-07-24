@@ -6,7 +6,7 @@
       alt=""
     />
     <div
-      class="flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-[100px] max-w-[1300px] py-12.5 mx-auto px-5 items-center z-10"
+      class="flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-[100px] container py-12.5 mx-auto px-5 items-center z-10"
     >
       <div class="flex flex-col gap-4 lg:w-[68%]">
         <Title
@@ -37,7 +37,7 @@
           <div class="flex flex-col gap-4">
             <div class="flex">
               <div
-                class="bg-[#D1A132] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -48,7 +48,7 @@
 
             <div class="flex">
               <div
-                class="bg-[#D1A132] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -59,7 +59,7 @@
 
             <div class="flex">
               <div
-                class="bg-[#D1A132] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -127,7 +127,7 @@
           href="https://www.youtube.com/embed/Y-x0efG1seA?feature=oembed?playlist=Y-x0efG1seA&mute=0&autoplay=0&loop=1&controls=0&start=0&end="
         >
           <div
-            class="rounded-full bg-[#284731] w-17.5 h-17.5 hover:bg-[#d1a132] flex items-center justify-center"
+            class="rounded-full bg-[#284731] w-17.5 h-17.5 hover:bg-[var(--color-accent)] flex items-center justify-center"
           >
             <i class="fa-solid fa-play text-white text-[20px]"></i>
           </div>

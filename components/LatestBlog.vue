@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#FAF6F1]">
+  <div class="bg-[var(--color-secondary)]">
     <div
-      class="max-w-[1300px] mx-auto px-5 py-[100px] flex flex-col gap-5 sm:gap-10 lg:gap-20"
+      class="container mx-auto px-5 py-[100px] flex flex-col gap-5 sm:gap-10 lg:gap-20"
     >
       <div class="flex justify-between flex-col lg:flex-row">
         <div class="lg:w-1/2 lg:pr-7.5 pb-4 lg:pb-0">
@@ -34,16 +34,18 @@
             </div>
             <div class="flex justify-between flex-col sm:flex-row">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[#d1a132]"></i>
+                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
                 <div class="text-[#606060]">May 5, 2025</div>
               </div>
 
               <div class="flex items-center gap-2">
-                <div class="text-[#d1a132] font-bold hover:text-black">
+                <div
+                  class="text-[var(--color-accent)] font-bold hover:text-black"
+                >
                   Read More
                 </div>
                 <div
-                  class="text-[20px] bg-[#d1a132] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
+                  class="text-[20px] bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
@@ -62,16 +64,18 @@
             </div>
             <div class="flex justify-between flex-col sm:flex-row">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[#d1a132]"></i>
+                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
                 <div class="text-[#606060]">May 5, 2025</div>
               </div>
 
               <div class="flex items-center gap-2">
-                <div class="text-[#d1a132] font-bold hover:text-black">
+                <div
+                  class="text-[var(--color-accent)] font-bold hover:text-black"
+                >
                   Read More
                 </div>
                 <div
-                  class="text-[20px] bg-[#d1a132] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
+                  class="text-[20px] bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
@@ -90,16 +94,18 @@
             </div>
             <div class="flex justify-between flex-col sm:flex-row">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[#d1a132]"></i>
+                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
                 <div class="text-[#606060]">May 5, 2025</div>
               </div>
 
               <div class="flex items-center gap-2">
-                <div class="text-[#d1a132] font-bold hover:text-black">
+                <div
+                  class="text-[var(--color-accent)] font-bold hover:text-black"
+                >
                   Read More
                 </div>
                 <div
-                  class="text-[20px] bg-[#d1a132] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
+                  class="text-[20px] bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 hover:rotate-0 hover:bg-black"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>

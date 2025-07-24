@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-[#0A2C0F] px-5 relative">
+  <div class="bg-[var(--color-primary)] px-5 relative">
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
       class="absolute right-0 bottom-0"
     />
     <div
-      class="text-white flex flex-col items-center md:flex-row max-w-[1300px] mx-auto lg:pt-[100px] pt-[50px] lg:pb-[250px] pb-[125px] gap-15"
+      class="text-white flex flex-col items-center md:flex-row container mx-auto lg:pt-[100px] pt-[50px] lg:pb-[250px] pb-[125px] gap-15"
     >
       <div class="relative lg:w-[49%]">
         <div class="relative flex flex-col">
           <div class="w-full h-auto z-0 pr-10 relative">
             <img
               class="rounded-[30px]"
-              src="/public/images/what-we-image-1.jpg"
+              src="/images/what-we-image-1.jpg"
               alt="Chai dầu CBD và lá cần sa"
             />
             <div class="absolute top-0 left-0"></div>
@@ -22,7 +22,7 @@
           <div class="absolute object-contain self-end -bottom-[175px] z-10">
             <img
               class="rounded-[30px]"
-              src="/public/images/what-we-image-2.jpg"
+              src="/images/what-we-image-2.jpg"
               alt="Chai dầu CBD trong môi trường nhiều cây cối"
               style="clip-path: inset(0px 0% 0px 0px)"
             />
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div
-          class="absolute -bottom-[116px] left-0 z-50 border-[#0A2C0F] border-10 bg-[#d1a132] rounded-full flex items-center justify-center"
+          class="absolute -bottom-[116px] left-0 z-50 border-[var(--color-primary)] border-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,11 +96,11 @@
 
         <div class="flex flex-col gap-5 lg:gap-10">
           <div
-            class="border-b border-solid border-[#ffffff1a] pb-10 flex flex-col gap-[15px]"
+            class="border-b border-solid border-[var(--color-darkdivider)] pb-10 flex flex-col gap-[15px]"
           >
             <div class="flex">
               <div
-                class="bg-[#D1A132] w-5 h-5 text-black rounded-full flex justify-center items-center mr-3 border-b border-solid border-[]"
+                class="bg-[var(--color-accent)] w-5 h-5 text-black rounded-full flex justify-center items-center mr-3 border-b border-solid border-[]"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -119,7 +119,7 @@
           <div class="flex flex-col gap-[15px]">
             <div class="flex">
               <div
-                class="bg-[#D1A132] w-5 h-5 text-black rounded-full flex justify-center items-center mr-3"
+                class="bg-[var(--color-accent)] w-5 h-5 text-black rounded-full flex justify-center items-center mr-3"
               >
                 <i class="fa-solid fa-check"></i>
               </div>

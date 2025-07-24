@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-[#0A2C0F] relative">
+  <div class="bg-[var(--color-primary)] relative">
     <img
       src="/images/section-bg-shape-1.png"
       class="absolute bottom-0 right-0 z-0"
       alt=""
     />
     <div
-      class="max-w-[1300px] mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-[100px] pt-12.5 lg:gap-7.5 gap-5"
+      class="container mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-[100px] pt-12.5 lg:gap-7.5 gap-5"
     >
       <div
         class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"

@@ -6,7 +6,9 @@
 
     <div class="font-bold text-[20px] pt-3">{{ product.content }}</div>
 
-    <div class="text-[#d1a132] font-bold">${{ product.account }}</div>
+    <div class="text-[var(--color-accent)] font-bold">
+      ${{ product.account }}
+    </div>
   </div>
 </template>
 

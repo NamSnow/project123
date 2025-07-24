@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#FAF6F1]">
-    <div class="max-w-[1300px] mx-auto lg:py-[100px] py-12.5 px-5">
+  <div class="bg-[var(--color-secondary)]">
+    <div class="container mx-auto lg:py-[100px] py-12.5 px-5">
       <div
         class="flex gap-11.5 flex-col lg:flex-row justify-center lg:mb-17.5 sm:mb-7.5 mb-5"
       >
@@ -11,7 +11,7 @@
             class="lg:h-full lg:w-full sm:w-[61%] w-[276px] object-cover"
           />
           <div
-            class="rounded-full w-[7.5rem] h-[7.5rem] bg-[#d1a132] absolute top-0 right-0 flex items-center justify-center"
+            class="rounded-full w-[7.5rem] h-[7.5rem] bg-[var(--color-accent)] absolute top-0 right-0 flex items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@
           <div class="grid sm:grid-cols-2 grid-cols-1 gap-7.5 lg:mt-7.5">
             <div class="lg:p-7.5 p-5 rounded-[20px] bg-white">
               <div
-                class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -87,7 +87,7 @@
 
             <div class="lg:p-7.5 p-5">
               <div
-                class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -99,7 +99,7 @@
 
             <div class="lg:p-7.5 p-5 order-4 sm:order-none">
               <div
-                class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -113,7 +113,7 @@
               class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none"
             >
               <div
-                class="w-15 h-15 bg-[#d1a132] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
