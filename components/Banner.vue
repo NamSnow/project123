@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative z-20 flex lg:flex-row flex-col text-white container mx-auto p-5 mt-20 pb-20 items-center flex-1"
+    class="container relative z-20 flex lg:flex-row flex-col text-white mx-auto p-5 mt-20 pb-20 items-center flex-1"
   >
     <div class="lg:w-1/2 flex flex-col gap-8.5 w-full mb-5">
       <div class="flex items-center">

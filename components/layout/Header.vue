@@ -2,7 +2,7 @@
   <div class="relative mx-auto h-auto w-full max-w-full">
     <div class="absolute inset-0 z-0">
       <div
-        class="absolute inset-0 w-full h-full bg-cover bg-center"
+        class="absolute inset-0 w-full h-full bg-cover bg-center object-cover"
         style="background-image: url('/images/hero-bg.jpg')"
       ></div>
       <div
@@ -13,15 +13,17 @@
     <div
       class="relative z-20 border-b border-solid w-full border-[var(--color-darkdivider)]"
     >
-      <div class="mx-auto flex justify-between items-center py-5 container p-5">
+      <div class="container mx-auto flex justify-between items-center py-5 p-5">
         <div class="flex">
           <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
-          <div class="text-white hidden lg:flex items-center pl-9">
+          <div
+            class="text-white hidden lg:grid grid-cols-6 items-center justify-items-center-safe pl-9 z-10"
+          >
             <div class="relative group">
               <a
                 href="#"
-                class="inline-flex items-center text-lg hover:text-[var(--color-accent)] mx-4"
+                class="inline-flex items-center text-lg hover:text-[var(--color-accent)]"
               >
                 Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
@@ -51,13 +53,13 @@
             </div>
 
             <div class="">
-              <a href="#" class="text-lg hover:text-[var(--color-accent)] mx-4"
+              <a href="#" class="text-lg hover:text-[var(--color-accent)]"
                 >About Us</a
               >
             </div>
 
             <div class="">
-              <a href="#" class="text-lg hover:text-[var(--color-accent)] mx-4"
+              <a href="#" class="text-lg hover:text-[var(--color-accent)]"
                 >Blog</a
               >
             </div>
@@ -65,7 +67,7 @@
             <div class="relative group">
               <a
                 href="#"
-                class="inline-flex items-center text-lg hover:text-[var(--color-accent)] mx-4"
+                class="inline-flex items-center text-lg hover:text-[var(--color-accent)]"
               >
                 Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
@@ -98,7 +100,7 @@
             <div class="relative group">
               <a
                 href="#"
-                class="inline-flex items-center text-lg hover:text-[var(--color-accent)] mx-4"
+                class="inline-flex items-center text-lg hover:text-[var(--color-accent)]"
               >
                 Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
               </a>
@@ -220,7 +222,7 @@
             </div>
 
             <div class="">
-              <a href="#" class="text-lg hover:text-[var(--color-accent)] mx-4"
+              <a href="#" class="text-lg hover:text-[var(--color-accent)]"
                 >Contact Us</a
               >
             </div>

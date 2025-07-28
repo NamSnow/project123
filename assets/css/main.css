@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @import "@nuxt/ui";
 @import "../theme/breakpoints.css";
 @import "../theme/color.css";
@@ -12,7 +13,7 @@
   font-family: var(--font-plus);
 }
 
-@media (max-width: 1536px) {
+@media (max-width: 1024px) {
   .container {
     width: 85vw;
   }

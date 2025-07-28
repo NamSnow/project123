@@ -6,7 +6,7 @@
       alt=""
     />
     <div
-      class="flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-25 container py-12.5 mx-auto px-5 items-center z-10"
+      class="container flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-25 py-12.5 mx-auto px-5 items-center z-10"
     >
       <div class="flex flex-col gap-4 lg:w-[68%]">
         <Title
@@ -28,7 +28,8 @@
             <Button
               text="Expolre More"
               link="/"
-              hoverBackgroundColor="white"
+              hoverBackgroundColor="black"
+              hoverTextColor="white"
               textIcon="black"
               bgArrow="#e2e1da"
             />
@@ -120,7 +121,7 @@
         <img
           src="/images/products-intro-image.jpg"
           alt=""
-          class="relative z-0 rounded-[20px] lg:min-h-175 sm:min-h-129 w-screen lg:w-full object-cover"
+          class="relative z-0 rounded-[20px] lg:min-h-175 sm:min-h-129 w-screen lg:w-full object-cover aspect-3/2 md:aspect-square"
         />
         <a
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"

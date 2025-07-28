@@ -25,18 +25,21 @@
 
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
         <div
-          class="rounded-[20px] overflow-hidden h-full"
+          class="rounded-t-[20px] overflow-hidden group"
           v-for="(product, index) in productItems"
           :key="index"
         >
-          <div>
+          <div class="relative h-60 w-full object-cover">
             <img
               :src="product.image"
               alt=""
-              class="transform hover:scale-110 h-auto object-cover"
+              class="relative transform transition duration-300 ease-in-out object-cover w-full h-full aspect-3/4 group-hover:scale-110"
             />
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-1600 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
+            ></div>
           </div>
-          <div class="bg-white p-6.5">
+          <div class="relative bg-white p-6.5 rounded-b-[20px] z-10">
             <div
               class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
             >
@@ -78,7 +81,7 @@ const productItems = ref([
     time: "May 5, 2025",
   },
   {
-    image: "/images/post-2.jpg",
+    image: "/images/why-choose-image.png",
     title: "Sustainable Beauty Why Reusable dropper are the future",
     time: "May 5, 2025",
   },

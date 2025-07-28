@@ -1,7 +1,12 @@
 <template>
-  <div class="bg-[var(--color-primary)]">
+  <div class="bg-[var(--color-primary)] relative">
+    <img
+      src="/images/testimonial-bg.png"
+      alt=""
+      class="absolute top-0 left-0 w-full h-full z-0 group"
+    />
     <div
-      class="container mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5"
+      class="container relative mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5 z-10"
     >
       <div class="flex justify-between lg:flex-row flex-col py-2.5">
         <div class="lg:w-1/2">
@@ -13,14 +18,14 @@
             }"
           />
         </div>
-        <div class="flex items-center mt-4 lg:mt-0">
+        <div class="relative flex items-center mt-4 lg:mt-0">
           <img
             src="/icons/google.svg"
             alt=""
-            class="pr-10 border-r border-[var(--color-darkdivider)] border-solid"
+            class="pr-10 border-r border-darkdivider border-solid"
           />
           <div class="pl-10 flex flex-col justify-between">
-            <div class="flex text-yellow-500 flex-col md:flex-row">
+            <div class="flex text-yellow-500 flex-col sm:flex-row">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -33,20 +38,27 @@
       </div>
 
       <div class="flex flex-col lg:flex-row lg:gap-12.5">
-        <img
-          src="/images/testimonial-image.jpg"
-          alt=""
-          class="lg:w-3/10 w-full rounded-[20px]"
-        />
+        <div class="w-full relative group overflow-hidden rounded-[20px]">
+          <img
+            src="/images/testimonial-image.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-1500 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
+          ></div>
+        </div>
 
         <div class="flex flex-col items-center justify-between mt-10 lg:mt-0">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full justify-center"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full relative overflow-hidden"
           >
             <div
-              v-for="(testimonial, index) in showTes"
+              v-for="(testimonial, index) in testis"
               :key="index"
-              class="w-full"
+              class="w-full transition duration-500"
+              :class="{ 'hidden m-0': !currentShow.includes(index) }"
             >
               <div
                 class="border-b border-solid border-[var(--color-darkdivider)] mb-7.5 pb-7.5"
@@ -80,14 +92,14 @@
           <div class="flex gap-5 mt-8 lg:mt-0 justify-evenly">
             <div
               class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
-              @click="prevTestimonial"
+              @click="prevTestimonial(index)"
             >
               <i class="fa-solid fa-arrow-left"></i>
             </div>
 
             <div
               class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
-              @click="nextTestimonial"
+              @click="nextTestimonial(index)"
             >
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -152,39 +164,26 @@ const testis = ref([
   },
 ]);
 
-const currentIndex = ref(1);
+const currentIndex = ref(0);
 
-const showTes = ref([
-  testis.value[currentIndex.value - 1],
-  testis.value[currentIndex.value],
-]);
+const total = testis.value.length;
 
-// const computedShowTes = computed(() => {
-//   return testis.value[currentIndex.value - 1], testis.value[currentIndex.value];
-// });
+const currentShow = computed(() => {
+  let first = currentIndex.value;
 
-console.log("Chung", currentIndex.value);
+  let second = currentIndex.value + 1;
+
+  return [first, second];
+});
 
 const nextTestimonial = () => {
-  currentIndex.value++;
+  currentIndex.value = (currentIndex.value + 1) % total;
   console.log("Next", currentIndex.value);
-  if (currentIndex.value >= testis.value.length) {
-    currentIndex.value = 0;
-  }
-  // console.log(1);
-  showTes.value.splice(0, 1);
-  showTes.value.push(testis.value[currentIndex.value]);
 };
 
 const prevTestimonial = () => {
-  currentIndex.value--;
+  currentIndex.value = (currentIndex.value - 1 + total) % total;
   console.log("Prev", currentIndex.value);
-  if (currentIndex.value < 0) {
-    currentIndex.value = testis.value.length - 1;
-  }
-  // console.log(currentIndex.value);
-  showTes.value.splice(1, 1);
-  showTes.value.unshift(testis.value[currentIndex.value]);
 };
 </script>
 

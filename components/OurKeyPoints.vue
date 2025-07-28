@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[var(--color-secondary)]">
     <div
-      class="mx-auto lg:py-25 container flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
+      class="container mx-auto lg:py-25 flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
     >
       <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2">
