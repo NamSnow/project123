@@ -25,9 +25,11 @@
         </div>
 
         <div class="absolute -bottom-35 right-0">
-          <div class="relative object-contain z-10 group">
+          <div
+            class="relative object-contain z-10 group overflow-hidden rounded-[30px]"
+          >
             <img
-              class="rounded-[30px]"
+              class=""
               src="/images/what-we-image-2.jpg"
               alt="Chai dầu CBD trong môi trường nhiều cây cối"
               style="clip-path: inset(0px 0% 0px 0px)"
@@ -35,16 +37,17 @@
             <div
               class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-2000 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
             ></div>
-            <div
-              class="absolute top-2 -left-35 z-50 border-[var(--color-primary)] border-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center p-3"
-            >
-              <icons-test
-                bigIcon="var(--color-black)"
-                smallIcon="var(--color-white)"
-                width="150"
-                height="150"
-              />
-            </div>
+          </div>
+
+          <div
+            class="absolute top-2 -left-35 z-50 border-[var(--color-primary)] border-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center p-3"
+          >
+            <icons-test
+              bigIcon="var(--color-black)"
+              smallIcon="var(--color-white)"
+              width="150"
+              height="150"
+            />
           </div>
         </div>
       </div>

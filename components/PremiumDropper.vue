@@ -121,7 +121,7 @@
         <img
           src="/images/products-intro-image.jpg"
           alt=""
-          class="relative z-0 rounded-[20px] lg:min-h-175 sm:min-h-129 w-screen lg:w-full object-cover aspect-3/2 md:aspect-square"
+          class="relative z-0 rounded-[20px] sm:min-h-129 lg:min-h-175 w-screen lg:w-full object-cover aspect-3/2 md:aspect-square"
         />
         <a
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"

@@ -18,14 +18,16 @@
             }"
           />
         </div>
-        <div class="relative flex items-center mt-4 lg:mt-0">
+        <div
+          class="relative flex items-start sm:items-center mt-4 lg:mt-0 flex-col sm:flex-row gap-4 sm:gap-0"
+        >
           <img
             src="/icons/google.svg"
             alt=""
-            class="pr-10 border-r border-darkdivider border-solid"
+            class="pr-2 sm:pr-10 border-r border-darkdivider border-solid"
           />
-          <div class="pl-10 flex flex-col justify-between">
-            <div class="flex text-yellow-500 flex-col sm:flex-row">
+          <div class="pl-2 sm:pl-10 flex flex-col justify-between">
+            <div class="flex text-yellow-500 flex-col 3xs:flex-row">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
