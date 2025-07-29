@@ -44,7 +44,7 @@
           <img
             src="/images/testimonial-image.jpg"
             alt=""
-            class="object-cover w-full h-full"
+            class="object-cover w-full h-full aspect-[1/1.05]"
           />
 
           <div
@@ -166,17 +166,19 @@ const testis = ref([
   },
 ]);
 
-const currentIndex = ref(0);
+const currentIndex = ref(1);
 
 const total = testis.value.length;
 
 const currentShow = computed(() => {
   let first = currentIndex.value;
 
-  let second = currentIndex.value + 1;
+  let second = (currentIndex.value + 1) % total;
 
   return [first, second];
 });
+
+console.log(currentShow);
 
 const nextTestimonial = () => {
   currentIndex.value = (currentIndex.value + 1) % total;

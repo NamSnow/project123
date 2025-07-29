@@ -85,10 +85,13 @@
               placeholder="Enter Your Email"
               class="bg-[var(--color-darkdivider)] py-4.5 px-4 rounded-full text-white placeholder:text-white w-full"
             />
-            <button type="submit">
+            <button
+              type="submit"
+              class="overflow-hidden bg-[var(--color-accent)] rounded-full hover:bg-[var(--color-darkdivider)] object-contain"
+            >
               <img
                 src="/icons/submit.svg"
-                class="p-2.5 sm:p-5 rounded-full bg-[var(--color-accent)] hover:bg-[var(--color-darkdivider)] cursor-pointer"
+                class="p-2.5 sm:p-5 cursor-pointer object-cover"
                 alt=""
               />
             </button>
