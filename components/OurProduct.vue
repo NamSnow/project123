@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[var(--color-secondary)]">
+  <div class="bg-secondary">
     <div
       class="container mx-auto px-5 lg:py-25 py-12.5 flex flex-col lg:gap-10 gap-5"
     >
@@ -27,19 +27,19 @@
 
       <div class="p-2.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7.5">
         <ProductItem
-          v-for="product in productItems"
-          :key="product.index"
+          v-for="(product, index) in productItems"
+          :key="index"
           :product="product"
         />
       </div>
 
       <div class="p-2.5 text-[#606060] text-center">
         <span
-          class="bg-[var(--color-accent)] text-white px-2.5 py-1 mr- rounded-full font-bold mr-3"
+          class="bg-accent text-white px-2.5 py-1 mr- rounded-full font-bold mr-3"
           >Free</span
         >Let’s make something great work together.
         <span
-          class="cursor-pointer text-[var(--color-accent)] font-lora hover:text-black transition-all duration-500 ease-out font-semibold"
+          class="cursor-pointer text-accent text-lora hover:text-black transition-all duration-500 ease-out font-semibold"
           >Get Free Quote</span
         >
       </div>

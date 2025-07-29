@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[var(--color-secondary)]">
+  <div class="bg-secondary">
     <div
-      class="container flex lg:flex-row flex-col mx-auto lg:py-25 py-12.5 px-2.5 w-full"
+      class="container mx-auto flex lg:flex-row flex-col lg:py-25 py-12.5 px-2.5 w-full"
     >
       <div class="lg:w-1/2 w-full relative">
         <img
@@ -10,12 +10,9 @@
           class="max-w-full py-2.5 pl-2.5 lg:pr-20 pr-2.5 mx-auto object-cover"
         />
         <div
-          class="w-30 h-30 flex items-center justify-center absolute top-0 right-0 bg-[var(--color-accent)] rounded-full mr-20 p-2.5"
+          class="w-22.5 h-22.5 lg:w-30 lg:h-30 flex items-center justify-center absolute top-0 right-0 bg-accent rounded-full lg:mr-20 p-2.5"
         >
-          <icons-test
-            bigIcon="var(--color-black)"
-            smallIcon="var(--color-white)"
-          />
+          <icons-test bigIcon="black" smallIcon="white" class="w-90 h-90" />
         </div>
       </div>
 
@@ -33,7 +30,7 @@
         </p>
         <div class="flex">
           <div
-            class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
+            class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-check"></i>
           </div>
@@ -43,7 +40,7 @@
         </div>
         <div class="flex">
           <div
-            class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
+            class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-check"></i>
           </div>
@@ -55,7 +52,7 @@
           <div class="flex flex-col justify-between lg:w-1/2 gap-7.5">
             <div class="flex">
               <div
-                class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black mr-4 p-2.5 w-12.5 h-12.5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black mr-4 p-2.5 w-12.5 h-12.5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

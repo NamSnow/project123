@@ -1,12 +1,13 @@
 <template>
-  <div class="bg-[var(--color-primary)] relative">
+  <div class="bg-primary relative">
     <img
       src="/images/testimonial-bg.png"
       alt=""
       class="absolute top-0 left-0 w-full h-full z-0 group"
     />
+
     <div
-      class="container relative mx-auto px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5 z-10"
+      class="container mx-auto relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5 z-10"
     >
       <div class="flex justify-between lg:flex-row flex-col py-2.5">
         <div class="lg:w-1/2">
@@ -27,7 +28,7 @@
             class="pr-2 sm:pr-10 border-r border-darkdivider border-solid"
           />
           <div class="pl-2 sm:pl-10 flex flex-col justify-between">
-            <div class="flex text-yellow-500 flex-col 3xs:flex-row">
+            <div class="flex text-yellow-500">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -46,10 +47,6 @@
             alt=""
             class="object-cover w-full h-full aspect-[1/1.05]"
           />
-
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-1500 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
-          ></div>
         </div>
 
         <div class="flex flex-col items-center justify-between mt-10 lg:mt-0">
@@ -63,7 +60,7 @@
               :class="{ 'hidden m-0': !currentShow.includes(index) }"
             >
               <div
-                class="border-b border-solid border-[var(--color-darkdivider)] mb-7.5 pb-7.5"
+                class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
               >
                 <div class="flex text-yellow-500">
                   <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
@@ -93,14 +90,14 @@
 
           <div class="flex gap-5 mt-8 lg:mt-0 justify-evenly">
             <div
-              class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
+              class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
               @click="prevTestimonial(index)"
             >
               <i class="fa-solid fa-arrow-left"></i>
             </div>
 
             <div
-              class="text-white w-10 h-10 bg-[var(--color-darkdivider)] rounded-full flex justify-center items-center hover:bg-[var(--color-accent)] cursor-pointer transition duration-500 ease-in-out"
+              class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
               @click="nextTestimonial(index)"
             >
               <i class="fa-solid fa-arrow-right"></i>

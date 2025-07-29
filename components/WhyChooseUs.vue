@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex lg:flex-row flex-col relative mx-auto">
+  <div class="container mx-auto flex lg:flex-row flex-col relative">
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
@@ -23,7 +23,7 @@
       <div class="flex justify-between lg:flex-row flex-col my-6">
         <div class="md:w-1/2">
           <div
-            class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
+            class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@
 
         <div class="md:w-1/2">
           <div
-            class="bg-[var(--color-accent)] flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
+            class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +90,10 @@
         </div>
       </div>
       <div
-        class="bg-[var(--color-secondary)] flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10 items-center"
+        class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10 items-center"
       >
         <div
-          class="md:w-30 md:h-30 object-contain flex md:items-center justify-center"
+          class="w-22.5 h-22.5 md:w-30 md:h-30 object-contain flex md:items-center justify-center"
         >
           <icons-test bigIcon="var(--color-black)" text="var(--color-black)" />
         </div>

@@ -6,7 +6,7 @@
       alt=""
     />
     <div
-      class="container flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-25 py-12.5 mx-auto px-5 items-center z-10"
+      class="container mx-auto flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-25 py-12.5 px-5 items-center z-10"
     >
       <div class="flex flex-col gap-4 lg:w-[68%]">
         <Title
@@ -38,7 +38,7 @@
           <div class="flex flex-col gap-4">
             <div class="flex">
               <div
-                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -49,7 +49,7 @@
 
             <div class="flex">
               <div
-                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -60,7 +60,7 @@
 
             <div class="flex">
               <div
-                class="bg-[var(--color-accent)] w-5 h-5 text-white rounded-full flex justify-center items-center"
+                class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
               >
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -73,15 +73,15 @@
 
         <div class="flex justify-between flex-col sm:flex-row gap-7.5">
           <div
-            class="relative lg:w-52.5 lg:h-52.5 w-full h-auto overflow-hidden rounded-[20px]"
+            class="relative lg:w-52.5 lg:h-52.5 w-full overflow-hidden rounded-[20px]"
           >
             <img
               src="/images/premium-products-image-1.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
               alt=""
             />
             <div
-              class="absolute bottom-1/15 text-white font-bold text-xl text-center flex justify-center w-full"
+              class="absolute bottom-10 text-white font-bold text-xl text-center flex justify-center w-full"
             >
               Leak-Proof Seal
             </div>
@@ -91,7 +91,7 @@
           >
             <img
               src="/images/premium-products-image-2.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
               alt=""
             />
             <div
@@ -105,7 +105,7 @@
           >
             <img
               src="/images/premium-products-image-3.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full"
+              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
               alt=""
             />
             <div
@@ -128,7 +128,7 @@
           href="https://www.youtube.com/embed/Y-x0efG1seA?feature=oembed?playlist=Y-x0efG1seA&mute=0&autoplay=0&loop=1&controls=0&start=0&end="
         >
           <div
-            class="rounded-full bg-[#284731] w-17.5 h-17.5 hover:bg-[var(--color-accent)] flex items-center justify-center"
+            class="rounded-full bg-[#284731] w-17.5 h-17.5 hover:bg-accent flex items-center justify-center"
           >
             <i class="fa-solid fa-play text-white text-xl"></i>
           </div>

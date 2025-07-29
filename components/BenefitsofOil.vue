@@ -1,22 +1,21 @@
 <template>
-  <div class="bg-[var(--color-secondary)]">
+  <div class="bg-secondary">
     <div class="container mx-auto lg:py-25 py-12.5 px-5">
       <div
         class="flex gap-11.5 flex-col lg:flex-row justify-center lg:mb-17.5 sm:mb-7.5 mb-5"
       >
-        <div class="relative lg:w-2/5 w-full flex justify-center">
+        <div
+          class="relative lg:w-2/5 w-full flex justify-center overflow-hidden"
+        >
           <img
             src="/images/benefit-img.png"
             alt=""
-            class="lg:h-full lg:w-full sm:w-[61%] w-69 object-cover"
+            class="lg:h-full lg:w-full object-contain"
           />
           <div
-            class="rounded-full w-30 h-30 bg-[var(--color-accent)] absolute top-0 right-0 flex items-center justify-center p-2"
+            class="rounded-full w-30 h-30 bg-accent absolute top-0 right-0 flex items-center justify-center p-2"
           >
-            <icons-test
-              bigIcon="var(--color-black)"
-              smallIcon="var(--color-white)"
-            />
+            <icons-test bigIcon="black" smallIcon="white" />
           </div>
         </div>
 
@@ -29,9 +28,11 @@
             }"
           />
           <div class="grid sm:grid-cols-2 grid-cols-1 gap-7.5 lg:mt-7.5">
-            <div class="lg:p-7.5 p-5 rounded-[20px] bg-white">
+            <div
+              class="lg:p-7.5 p-5 rounded-[20px] bg-white border border-solid border-divider"
+            >
               <div
-                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -43,7 +44,7 @@
 
             <div class="lg:p-7.5 p-5">
               <div
-                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -55,7 +56,7 @@
 
             <div class="lg:p-7.5 p-5 order-4 sm:order-none">
               <div
-                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -66,10 +67,10 @@
             </div>
 
             <div
-              class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none"
+              class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none border border-solid border-divider"
             >
               <div
-                class="w-15 h-15 bg-[var(--color-accent)] rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>

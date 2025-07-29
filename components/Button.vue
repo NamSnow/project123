@@ -1,12 +1,10 @@
 <template>
   <NuxtLink :to="link" class="text-white h-12.5 items-center group flex lg:m-0">
     <button
-      class="px-7.5 cursor-pointer bg-[var(--color-accent)] rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
+      class="px-7.5 cursor-pointer bg-accent rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
       :style="{ '--hover-text-color': hoverTextColor }"
     >
-      <span class="relative z-10 group-hover:text-[var(--hover-text-color)]">{{
-        text
-      }}</span>
+      <span class="relative z-10 transition duration-500">{{ text }}</span>
       <span
         class="absolute left-1/2 top-0 bottom-0 w-0 transform -translate-x-1/2 group-hover:w-full transition-all duration-500 ease-out rounded-full"
         :style="{ 'background-color': hoverBackgroundColor }"

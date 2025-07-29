@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-[var(--color-primary)] text-white px-2.5">
+  <div class="relative bg-primary text-white px-2.5">
     <img
       src="/images/section-bg-shape-3.png"
       alt=""
@@ -10,8 +10,9 @@
       alt=""
       class="absolute bottom-0 left-0 scale-y-[-1]"
     />
+
     <div
-      class="container lg:pt-25 pt-12.5 lg:pb-12.5 pb-6.25 mx-auto flex lg:flex-row flex-col lg:gap-0 gap-2.5 px-4"
+      class="container mx-auto lg:pt-25 pt-12.5 lg:pb-12.5 pb-6.25 flex lg:flex-row flex-col lg:gap-0 gap-2.5 px-4"
     >
       <div
         class="lg:w-1/3 text-left py-2.5 pl-2.5 lg:pr-12.5 pr-2.5 flex justify-between"
@@ -19,16 +20,16 @@
         <div class="w-1/2 flex flex-col lg:gap-7.5 gap-3.75">
           <div class="text-xl font-bold">Quick Link</div>
           <ul class="flex flex-col gap-4">
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Home</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>About Us</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Features</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Latest Blog</a>
             </li>
           </ul>
@@ -37,16 +38,16 @@
         <div class="w-1/2 flex flex-col lg:gap-7.5 gap-3.75">
           <div class="text-xl font-bold">Help</div>
           <ul class="flex flex-col gap-4">
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Help</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Privacy Policy</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Terms & Condition</a>
             </li>
-            <li class="hover:text-[var(--color-accent)] cursor-pointer">
+            <li class="hover:text-accent cursor-pointer">
               <a>Contact Us</a>
             </li>
           </ul>
@@ -63,12 +64,12 @@
             class="flex flex-col min-[366px]:flex-row lg:max-[1250px]:flex-col xl:flex-row gap-7.5 lg:mx-auto sm:flex-row"
           >
             <button
-              class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-accent hover:text-accent font-bold"
             >
               +91 - 123 468 963
             </button>
             <button
-              class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-accent hover:text-accent font-bold"
             >
               info@domain.com
             </button>
@@ -83,11 +84,11 @@
             <input
               type="text"
               placeholder="Enter Your Email"
-              class="bg-[var(--color-darkdivider)] py-4.5 px-4 rounded-full text-white placeholder:text-white w-full"
+              class="bg-darkdivider py-4.5 px-4 rounded-full text-white placeholder:text-white w-full"
             />
             <button
               type="submit"
-              class="overflow-hidden bg-[var(--color-accent)] rounded-full hover:bg-[var(--color-darkdivider)] object-contain"
+              class="overflow-hidden bg-accent rounded-full hover:bg-darkdivider object-contain"
             >
               <img
                 src="/icons/submit.svg"
@@ -98,22 +99,22 @@
           </form>
           <ul class="text-white gap-3.75 items-center flex">
             <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
             >
               <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
             </li>
             <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
             >
               <a href=""><i class="fa-brands fa-x-twitter"></i></a>
             </li>
             <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
             >
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
             >
               <a href=""><i class="fa-brands fa-instagram"></i></a>
             </li>
@@ -123,7 +124,7 @@
     </div>
 
     <div
-      class="text-center border-t border-[var(--color-darkdivider)] border-solid lg:py-12.5 py-6.25"
+      class="text-center border-t border-darkdivider border-solid py-5 lg:py-10"
     >
       Copyright © 2025 All Rights Reserved.
     </div>

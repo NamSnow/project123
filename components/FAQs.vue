@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[var(--color-secondary)]">
+  <div class="bg-secondary">
     <div
-      class="container flex mx-auto gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
+      class="container mx-auto flex gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
     >
       <div class="lg:w-1/2 w-full relative overflow-hidden">
         <div class="relative group">
@@ -10,17 +10,13 @@
             alt=""
             class="rounded-[20px] w-full max-w-full h-auto"
           />
-
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-2000 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
-          ></div>
         </div>
 
         <div
           class="absolute px-5 py-4 flex w-50 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
         >
           <div
-            class="absolute inset-0 bg-[var(--color-accent)] transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"
+            class="absolute inset-0 bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"
           ></div>
 
           <svg
@@ -57,7 +53,7 @@
           <div
             class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-1000"
             :class="{
-              'bg-[var(--color-accent)]': activeBtn === index,
+              'bg-accent': activeBtn === index,
               'bg-white': activeBtn !== index,
             }"
             v-for="(faq, index) in faqs"
@@ -67,7 +63,7 @@
             <div
               class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
               :class="{
-                'border-b border-solid border-[var(--color-darkdivider)] text-white':
+                'border-b border-solid border-darkdivider text-white':
                   activeBtn === index,
               }"
             >

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[var(--color-secondary)]">
+  <div class="bg-secondary">
     <div
       class="container mx-auto px-5 py-25 flex flex-col gap-5 sm:gap-10 lg:gap-20"
     >
@@ -35,9 +35,6 @@
               alt=""
               class="relative transform transition duration-300 ease-in-out object-cover w-full h-full aspect-3/4 group-hover:scale-110"
             />
-            <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 h-1 opacity-50 bg-white transition-all duration-1600 ease-in-out group-hover:w-3/2 group-hover:h-3/2 group-hover:opacity-0"
-            ></div>
           </div>
           <div class="relative bg-white p-6.5 rounded-b-[20px] z-10">
             <div
@@ -47,18 +44,16 @@
             </div>
             <div class="flex justify-between flex-col sm:flex-row">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-calendar text-[var(--color-accent)]"></i>
+                <i class="fa-solid fa-calendar text-accent"></i>
                 <div class="text-[#606060]">{{ product.time }}</div>
               </div>
 
               <div class="flex items-center gap-2 group cursor-pointer">
-                <div
-                  class="text-[var(--color-accent)] font-bold group-hover:text-black"
-                >
+                <div class="text-accent font-bold group-hover:text-black">
                   Read More
                 </div>
                 <div
-                  class="text-xl bg-[var(--color-accent)] text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 group-hover:rotate-0 group-hover:bg-black"
+                  class="text-xl bg-accent text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 group-hover:rotate-0 group-hover:bg-black"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>

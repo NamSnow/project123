@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[var(--color-primary)] relative">
+  <div class="bg-primary relative">
     <img
       src="/images/section-bg-shape-1.png"
       class="absolute bottom-0 right-0 z-0 transform scale-x-[-1]"
@@ -10,15 +10,16 @@
       alt=""
       class="absolute top-0 left-0"
     />
+
     <div
-      class="container mx-auto px-5 flex flex-col lg:flex-row text-white lg:pt-25 pt-12.5 lg:gap-7.5 gap-5"
+      class="container mx-auto px-5 lg:px-0 flex flex-col lg:flex-row text-white lg:pt-25 pt-12.5 lg:gap-7.5 gap-5"
     >
       <div
         class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"
       >
         <div class="lg:text-6xl sm:text-4xl text-[26px]">
           Get 50% off
-          <span class="font-lora lg:text-[100px] sm:text-7xl text-[50px] italic"
+          <span class="text-lora lg:text-[100px] sm:text-7xl text-[50px] italic"
             >Premium oil</span
           >
         </div>

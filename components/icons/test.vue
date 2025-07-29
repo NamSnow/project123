@@ -57,15 +57,15 @@
 const props = defineProps({
   bigIcon: {
     type: String,
-    default: "var(--color-white)",
+    default: "white",
   },
   smallIcon: {
     type: String,
-    default: "var(--color-accent)",
+    default: "#d1a132",
   },
   text: {
     type: String,
-    default: "var(--color-white)",
+    default: "white",
   },
   width: {
     type: String,
