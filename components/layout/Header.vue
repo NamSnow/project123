@@ -11,256 +11,268 @@
     </div>
 
     <div class="relative z-20 border-b border-solid w-full border-darkdivider">
-      <div class="container mx-auto flex justify-between items-center py-5 p-5">
-        <div class="flex">
-          <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
+      <div class="container">
+        <div class="flex justify-between items-center py-5 px-5">
+          <div class="flex">
+            <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
-          <div
-            class="text-white hidden lg:grid lg:grid-cols-[repeat(4,max-content)] xl:grid-cols-[repeat(5,max-content)] 2xl:grid-cols-[repeat(6,max-content)] items-center pl-9 z-10"
-          >
-            <div class="relative group">
-              <a
-                href="#"
-                class="inline-flex items-center text-lg hover:text-accent p-3.75"
-              >
-                Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
-              </a>
-              <ul
-                class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-              >
-                <li class="my-2 mx-4">
-                  <a
-                    href="#"
-                    class="block text-base rounded-t-md hover:text-black"
-                    >Home - Main</a
-                  >
-                </li>
-                <li class="my-2 mx-4">
-                  <a href="#" class="block text-base hover:text-black"
-                    >Home - Video</a
-                  >
-                </li>
-                <li class="my-2 mx-4">
-                  <a
-                    href="#"
-                    class="block text-base rounded-b-md hover:text-black"
-                    >Home - Slider</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <div
+              class="text-white hidden lg:grid lg:grid-cols-[repeat(4,max-content)] xl:grid-cols-[repeat(5,max-content)] 2xl:grid-cols-[repeat(6,max-content)] items-center pl-9 z-10"
+            >
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                >
+                  Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
+                </a>
+                <ul
+                  class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                >
+                  <li class="my-2 mx-4">
+                    <a
+                      href="#"
+                      class="block text-base rounded-t-md hover:text-black"
+                      >Home - Main</a
+                    >
+                  </li>
+                  <li class="my-2 mx-4">
+                    <a href="#" class="block text-base hover:text-black"
+                      >Home - Video</a
+                    >
+                  </li>
+                  <li class="my-2 mx-4">
+                    <a
+                      href="#"
+                      class="block text-base rounded-b-md hover:text-black"
+                      >Home - Slider</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-            <div class="">
-              <a href="#" class="text-lg hover:text-accent inline p-3.75"
-                >About Us</a
-              >
-            </div>
+              <div class="">
+                <a href="#" class="text-lg hover:text-accent inline p-3.75"
+                  >About Us</a
+                >
+              </div>
 
-            <div class="">
-              <a href="#" class="text-lg hover:text-accent p-3.75">Blog</a>
-            </div>
+              <div class="">
+                <a href="#" class="text-lg hover:text-accent p-3.75">Blog</a>
+              </div>
 
-            <div class="relative group">
-              <a
-                href="#"
-                class="inline-flex items-center text-lg hover:text-accent p-3.75"
-              >
-                Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
-              </a>
-              <ul
-                class="absolute hidden group-hover:block text-white bg-accent min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-              >
-                <li class="my-2 mx-4">
-                  <a href="#" class="block text-base hover:text-black"
-                    >Products</a
-                  >
-                </li>
-                <li class="my-2 mx-4">
-                  <a href="#" class="block text-base hover:text-black"
-                    >Product Single</a
-                  >
-                </li>
-                <li class="my-2 mx-4">
-                  <a href="#" class="block text-base hover:text-black">Cart</a>
-                </li>
-                <li class="my-2 mx-4">
-                  <a
-                    href="#"
-                    class="block text-base rounded-b-md hover:text-black"
-                    >My account</a
-                  >
-                </li>
-              </ul>
-            </div>
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                >
+                  Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
+                </a>
+                <ul
+                  class="absolute hidden group-hover:block text-white bg-accent min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                >
+                  <li class="my-2 mx-4">
+                    <a href="#" class="block text-base hover:text-black"
+                      >Products</a
+                    >
+                  </li>
+                  <li class="my-2 mx-4">
+                    <a href="#" class="block text-base hover:text-black"
+                      >Product Single</a
+                    >
+                  </li>
+                  <li class="my-2 mx-4">
+                    <a href="#" class="block text-base hover:text-black"
+                      >Cart</a
+                    >
+                  </li>
+                  <li class="my-2 mx-4">
+                    <a
+                      href="#"
+                      class="block text-base rounded-b-md hover:text-black"
+                      >My account</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-            <div class="relative group">
-              <a
-                href="#"
-                class="inline-flex items-center text-lg hover:text-accent p-3.75"
-              >
-                Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
-              </a>
-              <ul
-                class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block text-base rounded-t-md hover:text-black px-5 py-2"
-                    >Blog Details</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block text-base hover:text-black px-5 py-2"
-                    >Features</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block text-base hover:text-black px-5 py-2"
-                    >Testimonials</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block text-base hover:text-black px-5 py-2"
-                    >FAQs</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="block text-base hover:text-black px-5 py-2"
-                    >404</a
-                  >
-                </li>
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                >
+                  Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
+                </a>
+                <ul
+                  class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-base rounded-t-md hover:text-black px-5 py-2"
+                      >Blog Details</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-base hover:text-black px-5 py-2"
+                      >Features</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-base hover:text-black px-5 py-2"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-base hover:text-black px-5 py-2"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-base hover:text-black px-5 py-2"
+                      >404</a
+                    >
+                  </li>
 
-                <li class="relative group/nested">
-                  <a
-                    href="#"
-                    class="flex items-center justify-between text-base hover:text-black px-5 py-2"
-                  >
-                    Header Layouts
-                    <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
-                  </a>
-                  <ul
-                    class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
-                  >
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base rounded-t-md hover:text-black px-5 py-2"
-                        >Header Layout 1</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base hover:text-black px-5 py-2"
-                        >Header Layout 2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base hover:text-black px-5 py-2"
-                        >Header Layout 3</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base rounded-b-md hover:text-black px-5 py-2"
-                        >Header Layout 4</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                  <li class="relative group/nested">
+                    <a
+                      href="#"
+                      class="flex items-center justify-between text-base hover:text-black px-5 py-2"
+                    >
+                      Header Layouts
+                      <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
+                    </a>
+                    <ul
+                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base rounded-t-md hover:text-black px-5 py-2"
+                          >Header Layout 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base hover:text-black px-5 py-2"
+                          >Header Layout 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base hover:text-black px-5 py-2"
+                          >Header Layout 3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base rounded-b-md hover:text-black px-5 py-2"
+                          >Header Layout 4</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li class="relative group/nested">
-                  <a
-                    href="#"
-                    class="flex items-center justify-between text-base rounded-b-md hover:text-black px-5 py-2"
-                  >
-                    Footer Layouts
-                    <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
-                  </a>
-                  <ul
-                    class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
-                  >
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base rounded-t-md hover:text-black px-5 py-2"
-                        >Footer Layout 1</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base hover:text-black px-5 py-2"
-                        >Footer Layout 2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base hover:text-black px-5 py-2"
-                        >Footer Layout 3</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block text-base rounded-b-md hover:text-black px-5 py-2"
-                        >Footer Layout 4</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+                  <li class="relative group/nested">
+                    <a
+                      href="#"
+                      class="flex items-center justify-between text-base rounded-b-md hover:text-black px-5 py-2"
+                    >
+                      Footer Layouts
+                      <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
+                    </a>
+                    <ul
+                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base rounded-t-md hover:text-black px-5 py-2"
+                          >Footer Layout 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base hover:text-black px-5 py-2"
+                          >Footer Layout 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base hover:text-black px-5 py-2"
+                          >Footer Layout 3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block text-base rounded-b-md hover:text-black px-5 py-2"
+                          >Footer Layout 4</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="">
-              <a href="#" class="text-lg hover:text-accent p-3.75"
-                >Contact Us</a
-              >
+              <div class="">
+                <a href="#" class="text-lg hover:text-accent p-3.75"
+                  >Contact Us</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="flex items-center">
-          <ul
-            class="text-white gap-3.75 items-center hidden lg:grid grid-cols-2 xl:grid-cols-3 border-r border-solid border-darkdivider pr-7.5"
-          >
-            <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+          <div class="flex items-center">
+            <ul
+              class="text-white gap-3.75 items-center hidden lg:grid grid-cols-2 xl:grid-cols-3 border-r border-solid border-darkdivider pr-7.5"
             >
-              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            </li>
-            <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
-            >
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li
-              class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
-            >
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-            </li>
-          </ul>
+              <li
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+              >
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+              >
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+              >
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
 
-          <div class="pl-7.5 hidden lg:block">
-            <Button
-              text="Shop Now"
-              link="/"
-              hoverBackgroundColor="white"
-              bgArrow="#ffffff1a"
-            />
+            <div class="pl-7.5 hidden lg:block">
+              <Button
+                text="Shop Now"
+                link="/"
+                hoverBackgroundColor="white"
+                bgArrow="#ffffff1a"
+              />
+            </div>
+
+            <button
+              class="bg-accent w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-white lg:hidden text-white focus:text-black"
+              @click="toggleMenu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
-
-          <button
-            class="bg-accent w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-white lg:hidden text-white focus:text-black"
-            @click="toggleMenu"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
         </div>
       </div>
     </div>

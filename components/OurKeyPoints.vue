@@ -1,142 +1,144 @@
 <template>
   <div class="bg-secondary">
-    <div
-      class="container mx-auto lg:py-25 flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
-    >
-      <div class="flex flex-col lg:flex-row items-center">
-        <div class="lg:w-1/2">
-          <Title
-            :title="{
-              content: 'Our Key Points',
-              mainTitle: 'Superior design, precision',
-              subTitle: 'drop lasting quality',
-            }"
-          />
-        </div>
-
-        <p class="text-[#606060] lg:w-1/2 w-full lg:pl-5">
-          Crafted with superior design, engineered with precision, and built to
-          commitment to excellence ensures every detail is meticulously
-          perfected, delivering unparalleled quality and durability.
-        </p>
-      </div>
-
+    <div class="container">
       <div
-        class="flex justify-between items-center lg:gap-15 gap-7.5 flex-col sm:flex-row"
+        class="lg:py-25 flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
       >
-        <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
-          <div
-            class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
-          >
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" class="w-15" alt="" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2">
+            <Title
+              :title="{
+                content: 'Our Key Points',
+                mainTitle: 'Superior design, precision',
+                subTitle: 'drop lasting quality',
+              }"
+            />
           </div>
 
-          <div
-            class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
-          >
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" alt="" class="w-15" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
-          >
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" alt="" class="w-15" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
-          </div>
+          <p class="text-text lg:w-1/2 w-full lg:pl-5">
+            Crafted with superior design, engineered with precision, and built
+            to commitment to excellence ensures every detail is meticulously
+            perfected, delivering unparalleled quality and durability.
+          </p>
         </div>
 
-        <img
-          src="/images/key-points-image.png"
-          alt=""
-          class="lg:max-w-85 sm:max-w-60 object-cover"
-        />
-
-        <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
-          <div class="flex items-center gap-4">
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" alt="" class="w-15" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" alt="" class="w-15" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
-            >
-              <img src="/icons/icon4.svg" alt="" class="w-15" />
-            </div>
-
-            <div class="flex flex-col">
-              <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
-              <div class="text-[#606060] text-base">
-                Helping to restore balance and promote overall wellness.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center">
-        Let’s make something great work together.
-        <span
-          class="underline cursor-pointer text-accent hover:text-black text-lora italic"
-          >Get Free Quote</span
+        <div
+          class="flex justify-between items-center lg:gap-15 gap-7.5 flex-col sm:flex-row"
         >
+          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
+            <div
+              class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
+            >
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" class="w-15" alt="" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
+            >
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" alt="" class="w-15" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
+            >
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" alt="" class="w-15" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="/images/key-points-image.png"
+            alt=""
+            class="lg:max-w-85 sm:max-w-60 object-cover"
+          />
+
+          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" alt="" class="w-15" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" alt="" class="w-15" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+              >
+                <img src="/icons/icon4.svg" alt="" class="w-15" />
+              </div>
+
+              <div class="flex flex-col">
+                <div class="mb-2.5 font-bold text-xl">100% Organic & Pure</div>
+                <div class="text-text text-base">
+                  Helping to restore balance and promote overall wellness.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          Let’s make something great work together.
+          <span
+            class="underline cursor-pointer text-accent hover:text-black text-lora italic"
+            >Get Free Quote</span
+          >
+        </div>
       </div>
     </div>
   </div>
