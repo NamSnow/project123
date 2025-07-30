@@ -1,7 +1,7 @@
 <template>
   <div class="bg-secondary">
     <div
-      class="container mx-auto flex gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
+      class="container mx-auto flex gap-7.5 md:gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
     >
       <div class="lg:w-1/2 w-full relative overflow-hidden">
         <div class="relative group">
@@ -13,7 +13,7 @@
         </div>
 
         <div
-          class="absolute px-5 py-4 flex w-50 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
+          class="absolute px-2.5 py-3.75 md:px-5 md:py-4 flex w-50 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
         >
           <div
             class="absolute inset-0 bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"

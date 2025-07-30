@@ -61,7 +61,7 @@
             123 High Street, London, W1A 1AA, United Kingdom
           </div>
           <div
-            class="flex flex-col min-[366px]:flex-row lg:max-[1250px]:flex-col xl:flex-row gap-7.5 lg:mx-auto sm:flex-row"
+            class="flex flex-col lg:max-[1250px]:flex-col xl:flex-row gap-7.5 lg:mx-auto sm:flex-row"
           >
             <button
               class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-accent hover:text-accent font-bold"

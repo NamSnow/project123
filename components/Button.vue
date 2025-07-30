@@ -4,7 +4,10 @@
       class="px-7.5 cursor-pointer bg-accent rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500"
       :style="{ '--hover-text-color': hoverTextColor }"
     >
-      <span class="relative z-10 transition duration-500">{{ text }}</span>
+      <span
+        class="relative z-10 transition duration-500 group-hover:text-(--hover-text-color)"
+        >{{ text }}</span
+      >
       <span
         class="absolute left-1/2 top-0 bottom-0 w-0 transform -translate-x-1/2 group-hover:w-full transition-all duration-500 ease-out rounded-full"
         :style="{ 'background-color': hoverBackgroundColor }"

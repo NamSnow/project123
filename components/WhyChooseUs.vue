@@ -90,7 +90,7 @@
         </div>
       </div>
       <div
-        class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10 items-center"
+        class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10 items-start md:items-center"
       >
         <div
           class="w-22.5 h-22.5 md:w-30 md:h-30 object-contain flex md:items-center justify-center"

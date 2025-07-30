@@ -7,7 +7,7 @@
     />
 
     <div
-      class="container mx-auto relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-17.5 z-10"
+      class="container mx-auto relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-7.5 md:gap-17.5 z-10"
     >
       <div class="flex justify-between lg:flex-row flex-col py-2.5">
         <div class="lg:w-1/2">
@@ -45,19 +45,18 @@
           <img
             src="/images/testimonial-image.jpg"
             alt=""
-            class="object-cover w-full h-full aspect-[1/1.05]"
+            class="object-cover w-full h-full md:h-1/2 lg:h-full aspect-[1/0.6] lg:aspect-auto"
           />
         </div>
 
         <div class="flex flex-col items-center justify-between mt-10 lg:mt-0">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full relative overflow-hidden"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative overflow-hidden"
           >
             <div
-              v-for="(testimonial, index) in testis"
+              v-for="(testimonial, index) in showTes"
               :key="index"
               class="w-full transition duration-500"
-              :class="{ 'hidden m-0': !currentShow.includes(index) }"
             >
               <div
                 class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
@@ -91,14 +90,14 @@
           <div class="flex gap-5 mt-8 lg:mt-0 justify-evenly">
             <div
               class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-              @click="prevTestimonial(index)"
+              @click="prevTestimonial"
             >
               <i class="fa-solid fa-arrow-left"></i>
             </div>
 
             <div
               class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-              @click="nextTestimonial(index)"
+              @click="nextTestimonial"
             >
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -115,49 +114,49 @@ import Title from "./Title.vue";
 const testis = ref([
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "Michael Carter 1",
+    author: "Michael Carter 1111",
     role: "Aromatherapist",
     image: "/images/author-1.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "Sarah Johnson 2",
+    author: "Sarah Johnson 2222",
     role: "DIY Enthusiast",
     image: "/images/author-2.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 3",
+    author: "David Lee 3333",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 4",
+    author: "David Lee 4444",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 5",
+    author: "David Lee 5555",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 6",
+    author: "David Lee 6666",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 7",
+    author: "David Lee 7777",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
   {
     text: "These oil droppers are perfect for my essential oil blends! The precision and outstanding quality are truly remarkable. I've tried many dropper bottles, but these are by far the best. No leaks, no waste—just pure convenience!",
-    author: "David Lee 8",
+    author: "David Lee 8888",
     role: "Small Business Owner",
     image: "/images/author-3.jpg",
   },
@@ -165,26 +164,43 @@ const testis = ref([
 
 const currentIndex = ref(1);
 
-const total = testis.value.length;
+// const showTes = computed(() => {
+//   // let first = testis.value[currentIndex.value + 1];
+//   // let second = testis.value[currentIndex.value];
+//   // return [first, second];
+// });
 
-const currentShow = computed(() => {
-  let first = currentIndex.value;
+const showTes = ref([
+  testis.value[currentIndex.value],
+  testis.value[currentIndex.value + 1],
+]);
 
-  let second = (currentIndex.value + 1) % total;
+// const computedShowTes = computed(() => {
+//   return testis.value[currentIndex.value - 1], testis.value[currentIndex.value];
+// });
 
-  return [first, second];
-});
-
-console.log(currentShow);
+console.log("Chung", currentIndex.value);
 
 const nextTestimonial = () => {
-  currentIndex.value = (currentIndex.value + 1) % total;
+  currentIndex.value++;
   console.log("Next", currentIndex.value);
+  if (currentIndex.value >= testis.value.length) {
+    currentIndex.value = 0;
+  }
+  // console.log(1);
+  showTes.value.splice(0, 1);
+  showTes.value.push(testis.value[currentIndex.value]);
 };
 
 const prevTestimonial = () => {
-  currentIndex.value = (currentIndex.value - 1 + total) % total;
+  currentIndex.value--;
   console.log("Prev", currentIndex.value);
+  if (currentIndex.value < 0) {
+    currentIndex.value = testis.value.length - 1;
+  }
+  // console.log(currentIndex.value);
+  showTes.value.splice(1, 1);
+  showTes.value.unshift(testis.value[currentIndex.value]);
 };
 </script>
 

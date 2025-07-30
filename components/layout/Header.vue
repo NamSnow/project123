@@ -225,9 +225,9 @@
           </div>
         </div>
 
-        <div class="flex">
+        <div class="flex items-center">
           <ul
-            class="text-white gap-3.75 items-center hidden lg:flex border-r border-solid border-darkdivider pr-7.5"
+            class="text-white gap-3.75 items-center hidden lg:grid grid-cols-2 xl:grid-cols-3 border-r border-solid border-darkdivider pr-7.5"
           >
             <li
               class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"

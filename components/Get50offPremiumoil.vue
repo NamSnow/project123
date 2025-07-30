@@ -19,7 +19,8 @@
       >
         <div class="lg:text-6xl sm:text-4xl text-[26px]">
           Get 50% off
-          <span class="text-lora lg:text-[100px] sm:text-7xl text-[50px] italic"
+          <span
+            class="text-lora lg:text-[100px] sm:text-7xl text-[50px] italic font-bold"
             >Premium oil</span
           >
         </div>

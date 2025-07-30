@@ -6,9 +6,9 @@
       alt=""
     />
     <div
-      class="container mx-auto flex flex-col lg:flex-row sm:gap-15 gap-7.5 lg:py-25 py-12.5 px-5 items-center z-10"
+      class="container mx-auto flex flex-col lg:flex-row gap-7.5 lg:gap-15 lg:py-25 py-12.5 px-5 items-center z-10"
     >
-      <div class="flex flex-col gap-4 lg:w-[68%]">
+      <div class="flex flex-col gap-4 lg:w-7/10">
         <Title
           :title="{
             content: 'Premium Dropper',
@@ -18,7 +18,7 @@
         />
 
         <div
-          class="flex flex-col sm:flex-row border-b border-[#F9FAF9] border-solid w-full mt-6.5 mb-9 pb-12.5"
+          class="flex flex-col sm:flex-row border-b border-gray-primary border-solid w-full mt-6.5 mb-4.5 lg:mb-9 pb-6.25 lg:pb-12.5 gap-7.5 md:gap-0"
         >
           <div class="mr-7.5 sm:w-1/2 flex flex-col gap-7.5">
             <p class="text-left">
@@ -75,13 +75,17 @@
           <div
             class="relative lg:w-52.5 lg:h-52.5 w-full overflow-hidden rounded-[20px]"
           >
-            <img
-              src="/images/premium-products-image-1.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
-              alt=""
-            />
             <div
-              class="absolute bottom-10 text-white font-bold text-xl text-center flex justify-center w-full"
+              class="w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-110"
+            >
+              <img
+                src="/images/premium-products-image-1.jpg"
+                class="object-cover w-full h-full aspect-[1/0.9]"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute bottom-5 text-white font-bold text-xl text-center flex justify-center w-full"
             >
               Leak-Proof Seal
             </div>
@@ -89,13 +93,17 @@
           <div
             class="relative lg:w-52.5 lg:h-52.5 w-full overflow-hidden rounded-[20px]"
           >
-            <img
-              src="/images/premium-products-image-2.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
-              alt=""
-            />
             <div
-              class="absolute bottom-1/15 text-white font-bold text-xl text-center flex justify-center w-full"
+              class="w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-110"
+            >
+              <img
+                src="/images/premium-products-image-2.jpg"
+                class="object-cover w-full h-full aspect-[1/0.9]"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute bottom-5 text-white font-bold text-xl text-center flex justify-center w-full"
             >
               Leak-Proof Seal
             </div>
@@ -103,15 +111,19 @@
           <div
             class="relative lg:w-52.5 lg:h-52.5 w-full overflow-hidden rounded-[20px]"
           >
-            <img
-              src="/images/premium-products-image-3.jpg"
-              class="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 w-full aspect-[1/0.8] sm:aspect-auto"
-              alt=""
-            />
             <div
-              class="absolute bottom-1/15 text-white font-bold text-xl text-center flex justify-center w-full"
+              class="w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-110"
             >
-              Durable Glass
+              <img
+                src="/images/premium-products-image-3.jpg"
+                class="object-cover w-full h-full aspect-[1/0.9]"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute bottom-5 text-white font-bold text-xl text-center flex justify-center w-full"
+            >
+              Leak-Proof Seal
             </div>
           </div>
         </div>

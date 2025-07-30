@@ -41,7 +41,7 @@
       </div>
 
       <div
-        class="lg:pl-10 h-auto lg:w-1/2 flex flex-col gap-5 lg:gap-10 mt-37.5 md:mt-0"
+        class="lg:pl-10 h-auto lg:w-1/2 flex flex-col gap-5 lg:gap-10 mt-37.5 md:mt-0 pt-20 sm:pt-10 md:pt-5 lg:pt-0"
       >
         <Title
           :title="{
