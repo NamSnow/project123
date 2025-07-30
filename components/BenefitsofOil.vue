@@ -29,10 +29,10 @@
           />
           <div class="grid sm:grid-cols-2 grid-cols-1 gap-7.5 lg:mt-7.5">
             <div
-              class="lg:p-7.5 p-5 rounded-[20px] bg-white border border-solid border-divider"
+              class="lg:p-7.5 p-5 rounded-[20px] bg-white border border-solid border-divider group"
             >
               <div
-                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -42,9 +42,9 @@
               <p>Supports overall health, immunity, and promotes well-being.</p>
             </div>
 
-            <div class="lg:p-7.5 p-5">
+            <div class="lg:p-7.5 p-5 group">
               <div
-                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -54,9 +54,9 @@
               <p>Supports overall health, immunity, and promotes well-being.</p>
             </div>
 
-            <div class="lg:p-7.5 p-5 order-4 sm:order-none">
+            <div class="lg:p-7.5 p-5 order-4 sm:order-none group">
               <div
-                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
@@ -67,10 +67,10 @@
             </div>
 
             <div
-              class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none border border-solid border-divider"
+              class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none border border-solid border-divider group"
             >
               <div
-                class="w-15 h-15 bg-accent rounded-full flex justify-center items-center mb-7.5"
+                class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
               >
                 <img src="/icons/icon4.svg" alt="" />
               </div>
