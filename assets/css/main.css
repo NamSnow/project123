@@ -9,13 +9,16 @@
   --font-lora: "Lora", sans-serif;
 }
 
-/* * {
+* {
   font-family: var(--font-plus);
-} */
+}
+
+.container {
+  width: 100%;
+}
 
 @media (min-width: 1024px) {
   .container {
-    width: 100%;
     max-width: 85vw;
   }
 }

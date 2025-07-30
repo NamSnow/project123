@@ -29,9 +29,9 @@
             class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
           >
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" class="w-15" alt="" />
             </div>
 
             <div class="flex flex-col">
@@ -46,9 +46,9 @@
             class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
           >
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" alt="" class="w-15" />
             </div>
 
             <div class="flex flex-col">
@@ -63,9 +63,9 @@
             class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
           >
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" alt="" class="w-15" />
             </div>
 
             <div class="flex flex-col">
@@ -86,9 +86,9 @@
         <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
           <div class="flex items-center gap-4">
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" alt="" class="w-15" />
             </div>
 
             <div class="flex flex-col">
@@ -101,9 +101,9 @@
 
           <div class="flex items-center gap-4">
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" alt="" class="w-15" />
             </div>
 
             <div class="flex flex-col">
@@ -116,9 +116,9 @@
 
           <div class="flex items-center gap-4">
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-4.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
             >
-              <img src="/icons/icon4.svg" alt="" />
+              <img src="/icons/icon4.svg" alt="" class="w-15" />
             </div>
 
             <div class="flex flex-col">
