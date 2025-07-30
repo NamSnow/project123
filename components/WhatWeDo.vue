@@ -7,7 +7,7 @@
     />
 
     <div
-      class="container mx-auto text-white flex flex-col md:flex-row lg:pt-25 pt-12.5 lg:pb-50 pb-25 gap-4 px-5"
+      class="container mx-auto text-white flex flex-col md:flex-row lg:pt-25 pt-12.5 pb-12.5 lg:pb-25 gap-4 px-5"
     >
       <div class="relative lg:w-1/2">
         <div
