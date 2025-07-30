@@ -184,7 +184,7 @@ console.log("Chung", currentIndex.value);
 const nextTestimonial = () => {
   currentIndex.value++;
   console.log("Next", currentIndex.value);
-  if (currentIndex.value >= testis.value.length) {
+  if (currentIndex.value + 1 > testis.value.length) {
     currentIndex.value = 0;
   }
   // console.log(1);

@@ -55,7 +55,7 @@
           <div
             class="border-b border-solid border-darkdivider pb-10 flex flex-col gap-3.75"
           >
-            <div class="flex">
+            <div class="flex items-center">
               <div
                 class="bg-accent w-5 h-5 text-black rounded-full flex justify-center items-center mr-3 border-b border-solid border-[]"
               >
@@ -74,7 +74,7 @@
           </div>
 
           <div class="flex flex-col gap-3.75">
-            <div class="flex">
+            <div class="flex items-center">
               <div
                 class="bg-accent w-5 h-5 text-black rounded-full flex justify-center items-center mr-3"
               >
