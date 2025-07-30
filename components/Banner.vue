@@ -44,10 +44,14 @@
       </div>
     </div>
 
-    <div class="relative lg:mr-14 lg:ml-19">
-      <img src="/images/hero-image.png" alt="" />
-      <div class="absolute top-0 left-0">
-        <icons-test />
+    <div
+      class="lg:mr-14 lg:ml-19 flex justify-center items-center lg:w-1/2 mx-auto"
+    >
+      <div class="relative">
+        <img src="/images/hero-image.png" alt="" />
+        <div class="absolute top-0 left-0">
+          <icons-test />
+        </div>
       </div>
     </div>
   </div>

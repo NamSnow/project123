@@ -1,5 +1,7 @@
 <template>
-  <div class="container mx-auto flex lg:flex-row flex-col relative">
+  <div
+    class="mx-auto flex lg:flex-row flex-col relative lg:pl-[calc(7.5vw+20px)]"
+  >
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
