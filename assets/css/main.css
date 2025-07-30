@@ -9,9 +9,9 @@
   --font-lora: "Lora", sans-serif;
 }
 
-* {
+/* * {
   font-family: var(--font-plus);
-}
+} */
 
 @media (min-width: 1024px) {
   .container {

@@ -162,7 +162,7 @@ const testis = ref([
   },
 ]);
 
-const currentIndex = ref(1);
+const currentIndex = ref(0);
 
 // const showTes = computed(() => {
 //   // let first = testis.value[currentIndex.value + 1];

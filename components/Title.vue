@@ -6,7 +6,7 @@
     </div>
     <div class="lg:text-5xl md:text-4xl text-2xl font-semibold">
       {{ title.mainTitle }}
-      <span class="text-lora font-normal italic">{{ title.subTitle }}</span>
+      <span class="font-normal italic">{{ title.subTitle }}</span>
     </div>
   </div>
 </template>
