@@ -5,12 +5,12 @@
         <div
           class="flex gap-11.5 flex-col lg:flex-row justify-center items-center lg:mb-17.5 sm:mb-7.5 mb-5"
         >
-          <div class="lg:w-2/5 w-full">
-            <div class="relative overflow-hidden">
+          <div class="w-full lg:w-2/5">
+            <div class="relative overflow-hidden flex justify-center">
               <img
                 src="/images/benefit-img.png"
                 alt=""
-                class="lg:h-full lg:w-full object-contain"
+                class="w-69 lg:h-full sm:w-4/5 lg:w-full object-contain"
               />
               <div
                 class="rounded-full w-30 h-30 bg-accent absolute top-0 right-0 flex items-center justify-center p-2"

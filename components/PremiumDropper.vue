@@ -9,7 +9,7 @@
       <div
         class="flex flex-col lg:flex-row gap-7.5 lg:gap-15 lg:py-25 py-12.5 px-5 items-center z-10"
       >
-        <div class="flex flex-col gap-4 lg:w-7/10">
+        <div class="flex flex-col gap-4 lg:w-6/10 xl:7/10">
           <Title
             :title="{
               content: 'Premium Dropper',
@@ -79,7 +79,7 @@
               >
                 <img
                   src="/images/premium-products-image-1.jpg"
-                  class="object-cover w-full h-full aspect-[1/0.9]"
+                  class="object-cover w-full h-full aspect-10/9"
                   alt=""
                 />
               </div>
@@ -97,7 +97,7 @@
               >
                 <img
                   src="/images/premium-products-image-2.jpg"
-                  class="object-cover w-full h-full aspect-[1/0.9]"
+                  class="object-cover w-full h-full aspect-10/9"
                   alt=""
                 />
               </div>
@@ -115,7 +115,7 @@
               >
                 <img
                   src="/images/premium-products-image-3.jpg"
-                  class="object-cover w-full h-full aspect-[1/0.9]"
+                  class="object-cover w-full h-full aspect-10/9"
                   alt=""
                 />
               </div>
@@ -139,7 +139,7 @@
             href="https://www.youtube.com/embed/Y-x0efG1seA?feature=oembed?playlist=Y-x0efG1seA&mute=0&autoplay=0&loop=1&controls=0&start=0&end="
           >
             <div
-              class="rounded-full bg-[#284731] w-17.5 h-17.5 hover:bg-accent flex items-center justify-center"
+              class="rounded-full bg-green w-17.5 h-17.5 hover:bg-accent flex items-center justify-center"
             >
               <i class="fa-solid fa-play text-white text-xl"></i>
             </div>

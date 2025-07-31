@@ -17,12 +17,12 @@
             <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
             <div
-              class="text-white hidden lg:grid lg:grid-cols-[repeat(4,max-content)] xl:grid-cols-[repeat(5,max-content)] 2xl:grid-cols-[repeat(6,max-content)] items-center pl-9 z-10"
+              class="text-white hidden lg:flex gap-7.5 items-center pl-3 xl:pl-9 z-10"
             >
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
                 >
                   Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -52,19 +52,21 @@
               </div>
 
               <div class="">
-                <a href="#" class="text-lg hover:text-accent inline p-3.75"
+                <a href="#" class="text-xs xl:text-lg hover:text-accent inline"
                   >About Us</a
                 >
               </div>
 
               <div class="">
-                <a href="#" class="text-lg hover:text-accent p-3.75">Blog</a>
+                <a href="#" class="text-xs xl:text-lg hover:text-accent"
+                  >Blog</a
+                >
               </div>
 
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
                 >
                   Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -99,7 +101,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-lg hover:text-accent p-3.75"
+                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
                 >
                   Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -229,7 +231,7 @@
               </div>
 
               <div class="">
-                <a href="#" class="text-lg hover:text-accent p-3.75"
+                <a href="#" class="text-xs xl:text-lg hover:text-accent"
                   >Contact Us</a
                 >
               </div>
@@ -238,7 +240,7 @@
 
           <div class="flex items-center">
             <ul
-              class="text-white gap-3.75 items-center hidden lg:grid grid-cols-2 xl:grid-cols-3 border-r border-solid border-darkdivider pr-7.5"
+              class="text-white gap-2 xl:gap-3.75 items-center hidden lg:flex border-r border-solid border-darkdivider pr-3 xl:pr-7.5"
             >
               <li
                 class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
@@ -257,7 +259,7 @@
               </li>
             </ul>
 
-            <div class="pl-7.5 hidden lg:block">
+            <div class="pl-3 xl:pl-7.5 hidden lg:block">
               <Button
                 text="Shop Now"
                 link="/"

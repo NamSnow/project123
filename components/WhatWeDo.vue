@@ -8,14 +8,14 @@
 
     <div class="container">
       <div
-        class="text-white flex flex-col md:flex-row lg:pt-25 pt-12.5 pb-12.5 lg:pb-25 gap-4 px-5"
+        class="text-white flex flex-col md:flex-row items-center lg:pt-25 pt-12.5 pb-12.5 lg:pb-25 gap-4 px-5"
       >
         <div class="relative lg:w-1/2">
           <div
-            class="w-full z-0 relative group overflow-hidden rounded-[30px] h-120 sm:h-140 pr-10"
+            class="w-full z-0 relative group overflow-hidden h-100 sm:h-120 lg:h-140 pr-10"
           >
             <img
-              class="w-full object-contain aspect-[1/0.7]"
+              class="w-full object-cover aspect-10/7 rounded-[30px]"
               src="/images/what-we-image-1.jpg"
               alt="Chai dầu CBD và lá cần sa"
             />

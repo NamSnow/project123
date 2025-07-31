@@ -4,7 +4,7 @@
       <div
         class="lg:py-25 flex lg:gap-14 sm:gap-5 gap-2.5 px-5 py-12.5 flex-col"
       >
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center">
           <div class="lg:w-1/2">
             <Title
               :title="{
@@ -23,16 +23,17 @@
         </div>
 
         <div
-          class="flex justify-between items-center lg:gap-15 gap-7.5 flex-col sm:flex-row"
+          class="flex justify-center lg:justify-between items-center flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-7.5 lg:gap-0"
         >
-          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
+          <!-- div1 -->
+          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-3/7 lg:w-1/3">
             <div
               class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
             >
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" class="w-15" alt="" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
@@ -47,9 +48,9 @@
               class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
             >
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" alt="" class="w-15" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
@@ -64,9 +65,9 @@
               class="flex items-center gap-4 sm:flex-row-reverse sm:text-right"
             >
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" alt="" class="w-15" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
@@ -81,15 +82,16 @@
           <img
             src="/images/key-points-image.png"
             alt=""
-            class="lg:max-w-85 sm:max-w-60 object-cover"
+            class="max-w-60 sm:max-w-85 object-cover sm:order-last lg:order-none"
           />
 
-          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-1/2 lg:w-1/3">
+          <!-- div2 -->
+          <div class="flex flex-col lg:gap-15 gap-7.5 w-full sm:w-3/7 lg:w-1/3">
             <div class="flex items-center gap-4">
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" alt="" class="w-15" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
@@ -102,9 +104,9 @@
 
             <div class="flex items-center gap-4">
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" alt="" class="w-15" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
@@ -117,9 +119,9 @@
 
             <div class="flex items-center gap-4">
               <div
-                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-5"
+                class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-3 lg:p-4.25"
               >
-                <img src="/icons/icon4.svg" alt="" class="w-15" />
+                <icons-pre />
               </div>
 
               <div class="flex flex-col">
