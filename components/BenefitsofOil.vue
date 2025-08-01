@@ -3,7 +3,7 @@
     <div class="container">
       <div class="lg:py-25 py-12.5 px-5">
         <div
-          class="flex gap-11.5 flex-col lg:flex-row justify-center items-center lg:mb-17.5 sm:mb-7.5 mb-5"
+          class="flex gap-11.5 flex-col lg:flex-row justify-center items-center lg:mb-17.5 sm:mb-2.5 sm:mb-5 lg:mb-7.5 mb-5"
         >
           <div class="w-full lg:w-2/5">
             <div class="relative overflow-hidden flex justify-center">
@@ -33,7 +33,7 @@
                 class="lg:p-7.5 p-5 rounded-[20px] bg-white border border-solid border-divider group"
               >
                 <div
-                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
+                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-2.5 sm:mb-5 lg:mb-7.5 transition duration-500"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
@@ -47,7 +47,7 @@
 
               <div class="lg:p-7.5 p-5 group">
                 <div
-                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
+                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-2.5 sm:mb-5 lg:mb-7.5 transition duration-500"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
@@ -61,7 +61,7 @@
 
               <div class="lg:p-7.5 p-5 order-4 sm:order-none group">
                 <div
-                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
+                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-2.5 sm:mb-5 lg:mb-7.5 transition duration-500"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>
@@ -77,7 +77,7 @@
                 class="lg:p-7.5 p-5 rounded-[20px] bg-white order-3 sm:order-none border border-solid border-divider group"
               >
                 <div
-                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-7.5 transition duration-500"
+                  class="w-15 h-15 bg-accent group-hover:bg-black rounded-full flex justify-center items-center mb-2.5 sm:mb-5 lg:mb-7.5 transition duration-500"
                 >
                   <img src="/icons/icon4.svg" alt="" />
                 </div>

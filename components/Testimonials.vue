@@ -58,6 +58,7 @@
                 v-for="(testimonial, index) in showTes"
                 :key="index"
                 class="w-full transition duration-500"
+                :class="{ 'hidden sm:block': index === 1 }"
               >
                 <div
                   class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
@@ -165,6 +166,7 @@ const testis = ref([
 ]);
 
 const currentIndex = ref(0);
+const total = testis.value.length;
 
 const showTes = ref([
   testis.value[currentIndex.value],
@@ -174,26 +176,35 @@ const showTes = ref([
 console.log("Chung", currentIndex.value);
 
 const nextTestimonial = () => {
-  currentIndex.value++;
+  // cập nhật cái hiện tại để chuyển nó sang cái tiếp theo
+  currentIndex.value = (currentIndex.value + 1) % total;
+
+  // nếu currentIndex là total - 1, nextIndex bị reset về 0
+  // cập nhật tiếp cái testi tiếp theo dựa trên currentIndex.value
+  const nextIndex = (currentIndex.value + 1) % total;
+
   console.log("Next", currentIndex.value);
-  if (currentIndex.value + 1 > testis.value.length) {
-    currentIndex.value = 0;
-  }
 
   // console.log(1);
-  showTes.value.splice(0, 1);
-  showTes.value.push(testis.value[currentIndex.value]);
+  // showTes.value.splice(0, 1);
+  // showTes.value.push(testis.value[currentIndex.value]);
+
+  showTes.value = [testis.value[currentIndex.value], testis.value[nextIndex]];
 };
 
 const prevTestimonial = () => {
-  currentIndex.value--;
+  currentIndex.value = (currentIndex.value - 1 + total) % total;
+
   console.log("Prev", currentIndex.value);
-  if (currentIndex.value < 0) {
-    currentIndex.value = testis.value.length - 1;
-  }
+
+  // tính toán lại nextIndex nếu curentIndex < 0
+  const nextIndex = (currentIndex.value + 1) % total;
+
   // console.log(currentIndex.value);
-  showTes.value.splice(1, 1);
-  showTes.value.unshift(testis.value[currentIndex.value]);
+  // showTes.value.splice(1, 1);
+  // showTes.value.unshift(testis.value[currentIndex.value]);
+
+  showTes.value = [testis.value[currentIndex.value], testis.value[nextIndex]];
 };
 </script>
 

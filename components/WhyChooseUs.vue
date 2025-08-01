@@ -8,7 +8,7 @@
 
     <div class="container">
       <div
-        class="w-1/2 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 lg:py-12.5 lg:pr-20 px-5 py-25"
+        class="w-full lg:w-1/2 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 py-12.5 lg:pr-20 px-5 lg:py-25"
       >
         <Title
           :title="{
@@ -114,7 +114,9 @@
       </div>
     </div>
 
-    <div class="absolute right-0 top-0 w-1/2 h-full object-contain">
+    <div
+      class="relative lg:absolute right-0 top-0 w-full lg:w-1/2 h-full object-contain"
+    >
       <img
         src="/images/why-choose-image.png"
         alt=""
@@ -123,7 +125,7 @@
       <img
         src="/images/why-choose-product-image.png"
         alt=""
-        class="absolute bottom-0 lg:left-0 left-4 transform lg:-translate-x-1/2 max-w-1/2 h-171.75 xl:h-auto"
+        class="absolute bottom-0 lg:left-0 left-4 transform lg:-translate-x-1/2 max-w-1/2 h-62.5 sm:h-78 lg:h-171.75"
       />
     </div>
   </div>

@@ -285,8 +285,7 @@
   <!--  -->
   <div
     :class="{
-      'm-0 hidden': !isMenuOpen,
-      'translate-x-full': !isMenuOpen,
+      'm-0 hidden translate-x-full': !isMenuOpen,
     }"
     class="bg-accent fixed top-0 left-0 w-screen h-screen z-[100] transform transition-transform duration-300 ease-in-out lg:hidden"
   >
@@ -301,190 +300,40 @@
       </button>
     </div>
 
-    <div class="my-2 gap-4 px-5 text-white">
-      <div class="relative group">
-        <a
-          href="#"
-          class="inline-flex items-center text-lg hover:text-accent mx-4"
-        >
-          Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
+    <div class="text-white py-2.5">
+      <div v-for="(item, index) in items" :key="index" class="px-5">
+        <a href="#" @click="toggleItem(index)" class="py-2 focus:text-black">
+          {{ item.label }}
+          <i
+            class="fa-solid fa-angle-down ml-2 text-xs"
+            v-if="item.subItems && item.subItems.length > 0"
+          ></i>
         </a>
-        <ul
-          class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-        >
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base rounded-t-md hover:text-black"
-              >Home - Main</a
-            >
-          </li>
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base hover:text-black"
-              >Home - Video</a
-            >
-          </li>
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base rounded-b-md hover:text-black"
-              >Home - Slider</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="">
-        <a href="#" class="text-lg hover:text-accent mx-4">About Us</a>
-      </div>
-
-      <div class="">
-        <a href="#" class="text-lg hover:text-accent mx-4">Blog</a>
-      </div>
-
-      <div class="relative group">
-        <a
-          href="#"
-          class="inline-flex items-center text-lg hover:text-accent mx-4"
-        >
-          Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
-        </a>
-        <ul
-          class="absolute hidden group-hover:block text-white bg-accent min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-        >
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base hover:text-black">Products</a>
-          </li>
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base hover:text-black"
-              >Product Single</a
-            >
-          </li>
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base hover:text-black">Cart</a>
-          </li>
-          <li class="my-2 mx-4">
-            <a href="#" class="block text-base rounded-b-md hover:text-black"
-              >My account</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="relative group">
-        <a
-          href="#"
-          class="inline-flex items-center text-lg hover:text-accent mx-4"
-        >
-          Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
-        </a>
-        <ul
-          class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
-        >
-          <li>
+        <ul v-show="isOpenItem === index" class="pl-2.5">
+          <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
             <a
-              href="#"
-              class="block text-base rounded-t-md hover:text-black px-5 py-2"
-              >Blog Details</a
+              :href="subItem.href"
+              @click.prevent="toggleSubItem(subIndex)"
+              class="py-2 focus:text-black"
             >
-          </li>
-          <li>
-            <a href="#" class="block text-base hover:text-black px-5 py-2"
-              >Features</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-base hover:text-black px-5 py-2"
-              >Testimonials</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-base hover:text-black px-5 py-2"
-              >FAQs</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-base hover:text-black px-5 py-2"
-              >404</a
-            >
-          </li>
-
-          <li class="relative group/nested">
-            <a
-              href="#"
-              class="flex items-center justify-between text-base hover:text-black px-5 py-2"
-            >
-              Header Layouts
-              <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
+              {{ subItem.label }}
+              <i
+                class="fa-solid fa-angle-down ml-2 text-xs"
+                v-if="subItem.subItems && subItem.subItems.length > 0"
+              ></i>
             </a>
-            <ul
-              class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block text-base rounded-t-md hover:text-black px-5 py-2"
-                  >Header Layout 1</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-base hover:text-black px-5 py-2"
-                  >Header Layout 2</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-base hover:text-black px-5 py-2"
-                  >Header Layout 3</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-base rounded-b-md hover:text-black px-5 py-2"
-                  >Header Layout 4</a
-                >
-              </li>
-            </ul>
-          </li>
-
-          <li class="relative group/nested">
-            <a
-              href="#"
-              class="flex items-center justify-between text-base rounded-b-md hover:text-black px-5 py-2"
-            >
-              Footer Layouts
-              <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
-            </a>
-            <ul
-              class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block text-base rounded-t-md hover:text-black px-5 py-2"
-                  >Footer Layout 1</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-base hover:text-black px-5 py-2"
-                  >Footer Layout 2</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-base hover:text-black px-5 py-2"
-                  >Footer Layout 3</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-base rounded-b-md hover:text-black px-5 py-2"
-                  >Footer Layout 4</a
-                >
+            <ul v-show="isOpenSubItem === subIndex" class="pl-6">
+              <li
+                v-for="nestedItem in subItem.subItems"
+                :key="nestedItem.label"
+              >
+                <a :href="nestedItem.href" class="focus:text-black py-2">{{
+                  nestedItem.label
+                }}</a>
               </li>
             </ul>
           </li>
         </ul>
-      </div>
-
-      <div class="">
-        <a href="#" class="text-lg hover:text-accent mx-4">Contact Us</a>
       </div>
     </div>
   </div>
@@ -498,5 +347,70 @@ const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
+};
+
+const items = ref([
+  {
+    label: "Home",
+    subItems: [
+      { label: "Home - Main", href: "#" },
+      { label: "Home - Video", href: "#" },
+      { label: "Home - Slider", href: "#" },
+    ],
+  },
+  { label: "About Us" },
+  { label: "Blog" },
+  {
+    label: "Store",
+    subItems: [
+      { label: "Product", href: "#" },
+      { label: "Product Single", href: "#" },
+      { label: "Cart", href: "#" },
+      { label: "My Account", href: "#" },
+    ],
+  },
+  {
+    label: "Pages",
+    subItems: [
+      { label: "Blog Details", href: "#" },
+      { label: "Features", href: "#" },
+      { label: "Testimonials", href: "#" },
+      { label: "FAQs", href: "#" },
+      { label: "404", href: "#" },
+      {
+        label: "Header Layouts",
+        href: "#",
+        subItems: [
+          { label: "Header Layouts 1", href: "#" },
+          { label: "Header Layouts 2", href: "#" },
+          { label: "Header Layouts 3", href: "#" },
+          { label: "Header Layouts 4", href: "#" },
+        ],
+      },
+      {
+        label: "Footer Layouts",
+        href: "#",
+        subItems: [
+          { label: "Footer Layouts 1", href: "#" },
+          { label: "Footer Layouts 2", href: "#" },
+          { label: "Footer Layouts 3", href: "#" },
+          { label: "Footer Layouts 4", href: "#" },
+        ],
+      },
+    ],
+  },
+  { label: "Contact Us" },
+]);
+
+const isOpenItem = ref(null);
+
+const toggleItem = (index) => {
+  isOpenItem.value = isOpenItem.value === index ? null : index;
+};
+
+const isOpenSubItem = ref(null);
+
+const toggleSubItem = (index) => {
+  isOpenSubItem.value = isOpenSubItem.value === index ? null : index;
 };
 </script>
