@@ -13,7 +13,7 @@
 
     <div class="container">
       <div
-        class="px-5 lg:px-0 flex flex-col lg:flex-row text-white lg:pt-25 pt-12.5 lg:gap-7.5 gap-5"
+        class="px-5 lg:px-0 flex flex-col lg:flex-row text-white lg:gap-7.5 gap-5 pt-12.5 lg:pt-0"
       >
         <div
           class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"
@@ -39,7 +39,11 @@
           />
         </div>
 
-        <img src="/images/cta-image.png" alt="" class="lg:w-1/2 z-10" />
+        <img
+          src="/images/cta-image.png"
+          alt=""
+          class="lg:w-1/2 z-10 pt-0 lg:pt-25"
+        />
       </div>
     </div>
   </div>

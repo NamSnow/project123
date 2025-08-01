@@ -1,14 +1,14 @@
 <template>
-  <div class="relative lg:h-250">
+  <div class="relative">
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
       class="absolute bottom-0 left-0"
     />
 
-    <div class="container flex lg:flex-row flex-col justify-center">
+    <div class="container">
       <div
-        class="w-full flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-0 lg:py-12.5 lg:pr-20 px-5 py-25"
+        class="w-1/2 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 lg:py-12.5 lg:pr-20 px-5 py-25"
       >
         <Title
           :title="{
@@ -112,21 +112,19 @@
           </p>
         </div>
       </div>
+    </div>
 
-      <div class="relative w-full h-full object-contain">
-        <div class="absolute left-0 top-0 aspect-25/28">
-          <img
-            src="/images/why-choose-image.png"
-            alt=""
-            class="w-full h-full"
-          />
-          <img
-            src="/images/why-choose-product-image.png"
-            alt=""
-            class="absolute bottom-0 lg:left-0 left-4 transform lg:-translate-x-1/2 max-w-1/2 xl:h-auto h-[40%]"
-          />
-        </div>
-      </div>
+    <div class="absolute right-0 top-0 w-1/2 h-full object-contain">
+      <img
+        src="/images/why-choose-image.png"
+        alt=""
+        class="w-full h-full object-cover aspect-25/28 sm:aspect-auto"
+      />
+      <img
+        src="/images/why-choose-product-image.png"
+        alt=""
+        class="absolute bottom-0 lg:left-0 left-4 transform lg:-translate-x-1/2 max-w-1/2 h-171.75 xl:h-auto"
+      />
     </div>
   </div>
 </template>

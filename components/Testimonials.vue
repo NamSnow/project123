@@ -166,31 +166,10 @@ const testis = ref([
 
 const currentIndex = ref(0);
 
-// const showTes = computed(() => {
-//   // let first = testis.value[currentIndex.value + 1];
-//   // let second = testis.value[currentIndex.value];
-//   // return [first, second];
-// });
-
-// const showTes = ref([
-//   testis.value[currentIndex.value],
-//   testis.value[currentIndex.value + 1],
-// ]);
-
-const showTes = computed(() => {
-  const first = currentIndex.value;
-  let second = currentIndex.value + 1;
-
-  if (second >= testis.value.length) {
-    second = 0;
-  }
-
-  return [testis.value[first], testis.value[second]];
-});
-
-// const computedShowTes = computed(() => {
-//   return testis.value[currentIndex.value - 1], testis.value[currentIndex.value];
-// });
+const showTes = ref([
+  testis.value[currentIndex.value],
+  testis.value[currentIndex.value + 1],
+]);
 
 console.log("Chung", currentIndex.value);
 
@@ -200,6 +179,7 @@ const nextTestimonial = () => {
   if (currentIndex.value + 1 > testis.value.length) {
     currentIndex.value = 0;
   }
+
   // console.log(1);
   showTes.value.splice(0, 1);
   showTes.value.push(testis.value[currentIndex.value]);
