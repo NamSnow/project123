@@ -120,12 +120,12 @@
       <img
         src="/images/why-choose-image.png"
         alt=""
-        class="w-full h-full object-cover aspect-25/28 sm:aspect-auto"
+        class="w-full h-full object-cover aspect-5/3 lg:aspect-auto"
       />
       <img
         src="/images/why-choose-product-image.png"
         alt=""
-        class="absolute bottom-0 lg:left-0 left-4 transform lg:-translate-x-1/2 max-w-1/2 h-62.5 sm:h-78 lg:h-171.75"
+        class="absolute bottom-0 lg:left-0 left-5 transform lg:-translate-x-1/2 max-w-1/2 h-62.5 sm:h-78 lg:h-171.75"
       />
     </div>
   </div>
