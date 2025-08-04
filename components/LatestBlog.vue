@@ -43,7 +43,7 @@
               >
                 {{ product.title }}
               </div>
-              <div class="flex justify-between flex-col @xs:flex-row">
+              <div class="flex justify-between flex-row">
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-calendar text-accent"></i>
                   <div class="text-text">{{ product.time }}</div>

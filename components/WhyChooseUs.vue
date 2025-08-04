@@ -94,18 +94,19 @@
           </div>
         </div>
         <div
-          class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 items-start md:items-center"
+          class="bg-secondary flex flex-col md:flex-row rounded-[20px] gap-3.75 lg:gap-0 p-5 lg:p-7.5 items-start md:items-center"
         >
           <div
-            class="w-22.5 h-22.5 md:w-30 md:h-30 object-contain flex md:items-center justify-center"
+            class="max-w-22.5 max-h-22.5 md:max-w-30 md:max-h-30 object-contain flex items-center justify-center"
           >
             <icons-test
               bigIcon="var(--color-black)"
               text="var(--color-black)"
+              class="h-25"
             />
           </div>
 
-          <p class="text-text pl-10">
+          <p class="text-text md:pl-10">
             With a commitment to sustainability and customer satisfaction, we
             provide reliable, stylish, and -friendly solutions you can trust.
             Experience the balance of function and care—one drop at a time.

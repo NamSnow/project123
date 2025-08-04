@@ -96,7 +96,7 @@
           class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:pt-20 sm:pt-8 pt-6 pb-2.5 w-full border-t border-[#0A2C0F1A] sm:gap-7.5 lg:gap-0"
         >
           <div
-            class="flex items-center gap-4 lg:pr-12.5 pb-4 sm:pb-0 border-b border-solid border-[#0A2C0F1A] sm:border-b-0 flex-nowrap"
+            class="flex items-center gap-3.75 lg:pr-12.5 max-sm:pb-3.75 max-sm:pt-3.75 sm:pb-0 border-b border-solid border-[#0A2C0F1A] sm:border-b-0 flex-nowrap"
           >
             <img src="/icons/member.svg" class="w-12.5 h-12.5" alt="" />
             <div>
@@ -106,7 +106,7 @@
           </div>
 
           <div
-            class="flex items-center gap-4 lg:pr-12.5 sm:pl-12.5 pb-4 sm:pb-0 border-b border-solid border-[#0A2C0F1A] sm:border-b-0 sm:border-l lg:border-r flex-nowrap"
+            class="flex items-center gap-4 lg:pr-12.5 sm:pl-12.5 max-sm:pb-3.75 max-sm:pt-3.75 sm:pb-0 border-b border-solid border-[#0A2C0F1A] sm:border-b-0 sm:border-l lg:border-r flex-nowrap"
           >
             <img src="/icons/member.svg" class="w-12.5 h-12.5" alt="" />
             <div>
@@ -115,7 +115,9 @@
             </div>
           </div>
 
-          <div class="flex gap-4 items-center lg:pl-12.5 flex-nowrap">
+          <div
+            class="flex gap-4 items-center lg:pl-12.5 flex-nowrap max-sm:pt-3.75"
+          >
             <img src="/icons/member.svg" class="w-12.5 h-12.5" alt="" />
             <div>
               <div class="font-bold text-xl mb-1.5">Product Reward</div>

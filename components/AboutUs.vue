@@ -49,8 +49,8 @@
               Leak-Proof & durable protecting your precious Oils with care
             </div>
           </div>
-          <div class="flex justify-between md:flex-row flex-col gap-7.5">
-            <div class="flex flex-col justify-between lg:w-1/2 gap-7.5">
+          <div class="flex justify-between flex-col sm:flex-row gap-7.5">
+            <div class="flex flex-col justify-between lg:w-2/3 gap-7.5">
               <div class="flex">
                 <div
                   class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black mr-4 p-2.5 w-12.5 h-12.5"
@@ -96,7 +96,7 @@
             </div>
 
             <div
-              class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/2 shadow-[0_0_30px_0_rgba(0,0,0,0.05)]"
+              class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/3 shadow-[0_0_30px_0_rgba(0,0,0,0.05)]"
             >
               <img src="/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
               <div class="font-bold text-xl">Nature's Best in Every Drop</div>

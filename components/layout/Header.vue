@@ -17,12 +17,12 @@
             <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
             <div
-              class="text-white hidden lg:flex gap-7.5 items-center pl-3 xl:pl-9 z-10"
+              class="text-white hidden lg:flex gap-5 min-[1200px]:gap-7.5 items-center pl-3 xl:pl-9 z-10"
             >
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
                 >
                   Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -54,13 +54,15 @@
               <div class="">
                 <a
                   href="#"
-                  class="text-xs xl:text-base hover:text-accent inline"
+                  class="text-xs min-[1200px]:text-base hover:text-accent inline"
                   >About Us</a
                 >
               </div>
 
               <div class="">
-                <a href="#" class="text-xs xl:text-base hover:text-accent"
+                <a
+                  href="#"
+                  class="text-xs min-[1200px]:text-base hover:text-accent"
                   >Blog</a
                 >
               </div>
@@ -68,7 +70,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
                 >
                   Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -103,7 +105,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
                 >
                   Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -233,7 +235,9 @@
               </div>
 
               <div class="">
-                <a href="#" class="text-xs xl:text-base hover:text-accent"
+                <a
+                  href="#"
+                  class="text-xs min-[1200px]:text-base hover:text-accent"
                   >Contact Us</a
                 >
               </div>
@@ -287,7 +291,7 @@
   <!--  -->
   <div
     :class="{
-      'm-0 hidden translate-x-full': !isMenuOpen,
+      'm-0 hidden translate-x-full ': !isMenuOpen,
     }"
     class="bg-accent fixed top-0 left-0 w-screen h-screen z-[100] transform transition-transform duration-300 ease-in-out lg:hidden"
   >
@@ -302,7 +306,7 @@
       </button>
     </div>
 
-    <div class="text-white py-2.5">
+    <div class="text-white py-2.5 container overflow-auto">
       <div v-for="(item, index) in items" :key="index" class="px-5">
         <a href="#" @click="toggleItem(index)" class="py-2 focus:text-black">
           {{ item.label }}
@@ -311,7 +315,7 @@
             v-if="item.subItems && item.subItems.length > 0"
           ></i>
         </a>
-        <ul v-show="isOpenItem === index" class="pl-2.5">
+        <ul class="pl-2.5">
           <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
             <a
               :href="subItem.href"
@@ -324,7 +328,7 @@
                 v-if="subItem.subItems && subItem.subItems.length > 0"
               ></i>
             </a>
-            <ul v-show="isOpenSubItem === subIndex" class="pl-6">
+            <ul class="pl-6">
               <li
                 v-for="nestedItem in subItem.subItems"
                 :key="nestedItem.label"
@@ -403,16 +407,4 @@ const items = ref([
   },
   { label: "Contact Us" },
 ]);
-
-const isOpenItem = ref(null);
-
-const toggleItem = (index) => {
-  isOpenItem.value = isOpenItem.value === index ? null : index;
-};
-
-const isOpenSubItem = ref(null);
-
-const toggleSubItem = (index) => {
-  isOpenSubItem.value = isOpenSubItem.value === index ? null : index;
-};
 </script>
