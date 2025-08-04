@@ -14,7 +14,7 @@
           </div>
 
           <div
-            class="absolute px-2.5 py-3.75 md:px-5 md:py-4 text-sm sm:text-base flex w-50 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
+            class="absolute px-3.75 py-2.5 md:px-5 md:py-4 text-sm sm:text-base flex w-43.75 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"
@@ -23,7 +23,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
-              height="41"
+              height="40"
               viewBox="0 0 40 41"
               class="relative z-10 group-hover:fill-white transition-colors duration-300"
             >

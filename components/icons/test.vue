@@ -5,7 +5,7 @@
     :height="props.height"
     viewBox="0 0 200 200"
     fill="none"
-    class="[animation:spin-svg_10s_linear_infinite]"
+    class="[animation:spin-svg_15s_linear_infinite] w-25 h-25 sm:w-30 sm:h-30"
   >
     <defs>
       <path

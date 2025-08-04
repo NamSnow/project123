@@ -3,12 +3,12 @@
     <img
       src="/images/section-bg-shape-1.png"
       alt=""
-      class="absolute bottom-0 left-0"
+      class="absolute bottom-0 left-0 z-0"
     />
 
     <div class="container">
       <div
-        class="w-full lg:w-1/2 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 py-12.5 lg:pr-20 px-5 lg:py-25"
+        class="w-full lg:w-4/7 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 py-12.5 lg:pr-20 px-5 lg:py-25 relative z-50"
       >
         <Title
           :title="{
@@ -22,7 +22,7 @@
           controlled application with minimal waste. Made from high-quality,
           durable materials.
         </p>
-        <div class="flex justify-between lg:flex-row flex-col my-6">
+        <div class="flex justify-between lg:flex-row flex-col gap-7.5 my-5">
           <div class="md:w-1/2">
             <div
               class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div
-          class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 gap-10 items-start md:items-center"
+          class="bg-secondary flex flex-col md:flex-row rounded-[20px] p-7.5 items-start md:items-center"
         >
           <div
             class="w-22.5 h-22.5 md:w-30 md:h-30 object-contain flex md:items-center justify-center"
@@ -105,7 +105,7 @@
             />
           </div>
 
-          <p class="text-text">
+          <p class="text-text pl-10">
             With a commitment to sustainability and customer satisfaction, we
             provide reliable, stylish, and -friendly solutions you can trust.
             Experience the balance of function and care—one drop at a time.
@@ -115,17 +115,17 @@
     </div>
 
     <div
-      class="relative lg:absolute right-0 top-0 w-full lg:w-1/2 h-full object-contain"
+      class="relative lg:absolute right-0 top-0 w-full lg:w-3/7 h-full object-contain"
     >
       <img
         src="/images/why-choose-image.png"
         alt=""
-        class="w-full h-full object-cover aspect-5/3 lg:aspect-auto"
+        class="w-full h-full object-cover sm:max-lg:aspect-5/3"
       />
       <img
         src="/images/why-choose-product-image.png"
         alt=""
-        class="absolute bottom-0 lg:left-0 left-5 transform lg:-translate-x-1/2 max-w-1/2 h-62.5 sm:h-78 lg:h-171.75"
+        class="absolute bottom-0 lg:left-0 left-5 transform lg:-translate-x-1/2 max-w-1/2 h-62.5 sm:h-78 xl:h-171.75"
       />
     </div>
   </div>

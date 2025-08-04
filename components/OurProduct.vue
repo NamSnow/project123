@@ -59,25 +59,29 @@ const productItems = ref([
     id: 1,
     image: "/images/product-img-1.jpg",
     content: "Eco Glow Dropper",
-    account: "16.00",
+    accountNew: "16.00",
+    accountOld: "20.00",
   },
   {
     id: 2,
     image: "/images/product-img-2.jpg",
     content: "Vital Oil Dropper",
-    account: "35.00",
+    accountNew: "35.00",
+    accountOld: "45.00",
   },
   {
     id: 3,
     image: "/images/product-img-3.jpg",
     content: "Golden Drip Bottle",
-    account: "45.00",
+    accountNew: "45.00",
+    accountOld: "50.00",
   },
   {
     id: 4,
     image: "/images/product-img-4.jpg",
     content: "Zen Flow Dropper",
-    account: "62.00",
+    accountNew: "62.00",
+    accountOld: "70.00",
   },
 ]);
 </script>

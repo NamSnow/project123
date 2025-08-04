@@ -20,30 +20,30 @@
         <div class="flex flex-col gap-4 p-2.5 justify-center lg:w-1/2 w-full">
           <Title
             :title="{
-              content: 'Discover The Power Of Premium',
-              mainTitle: 'Pure drops perfect precision',
-              subTitle: 'care you can trust.',
+              content: 'About Us',
+              mainTitle: 'Pure essence precise drops',
+              subTitle: 'ultimate care always',
             }"
           />
           <p class="text---color-red">
             We believe that every drop matters. Our premium oil dropper bottles
             are designed to deliver purity, precision, and care with every use.
           </p>
-          <div class="flex">
+          <div class="flex items-center">
             <div
-              class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
+              class="bg-accent flex-none w-4.5 h-4.5 text-white rounded-full flex justify-center items-center"
             >
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check text-xs"></i>
             </div>
             <div class="ml-2.5 text-text">
               Precision in every drop designed for perfect application
             </div>
           </div>
-          <div class="flex">
+          <div class="flex items-center">
             <div
-              class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
+              class="bg-accent flex-none w-4.5 h-4.5 text-white rounded-full flex justify-center items-center"
             >
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check text-xs"></i>
             </div>
             <div class="ml-2.5 text-text">
               Leak-Proof & durable protecting your precious Oils with care
@@ -95,7 +95,9 @@
               />
             </div>
 
-            <div class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/2">
+            <div
+              class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/2 shadow-[0_0_30px_0_rgba(0,0,0,0.05)]"
+            >
               <img src="/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
               <div class="font-bold text-xl">Nature's Best in Every Drop</div>
             </div>

@@ -50,7 +50,7 @@
             />
           </div>
 
-          <div class="flex flex-col items-center justify-between mt-10 lg:mt-0">
+          <div class="flex flex-col items-center justify-center mt-10 lg:mt-0">
             <div
               class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative overflow-hidden"
             >
@@ -89,7 +89,9 @@
               </div>
             </div>
 
-            <div class="flex gap-5 mt-8 lg:mt-0 justify-evenly">
+            <div
+              class="flex gap-5 mt-8 lg:mt-10 justify-evenly sm:justify-center"
+            >
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
                 @click="prevTestimonial"

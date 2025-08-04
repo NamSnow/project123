@@ -3,14 +3,16 @@
     <div
       class="relative z-20 flex lg:flex-row flex-col text-white p-5 mt-20 pb-20 items-center flex-1"
     >
-      <div class="lg:w-1/2 flex flex-col gap-8.5 w-full mb-5">
+      <div class="lg:w-1/2 flex flex-col gap-3.75 w-full mb-5">
         <div class="flex items-center">
           <div class="w-2 h-2 mr-4 bg-accent rounded-full"></div>
           <div class="text-lg font-normal italic">
             Discover The Power Of Premium
           </div>
         </div>
-        <div class="lg:text-6xl md:text-5xl text-4xl font-semibold">
+        <div
+          class="lg:text-6xl md:text-5xl text-4xl font-semibold leading-[1.2em]"
+        >
           Pure drops perfect precision
           <span class="font-normal italic text-lora">care you can trust</span>.
         </div>
@@ -20,7 +22,7 @@
           high-quality droppers ensure accurate dispensing, minimal waste, and
           maximum potency.
         </p>
-        <div class="flex gap-10 flex-col sm:flex-row">
+        <div class="flex gap-10 flex-col sm:flex-row mt-5">
           <Button
             text="Purchase Now"
             link="/"
@@ -51,7 +53,7 @@
       >
         <div class="relative">
           <img src="/images/hero-image.png" alt="" />
-          <div class="absolute top-0 left-0">
+          <div class="absolute top-0 left-0 w-1/4 h-1/4">
             <icons-test />
           </div>
         </div>

@@ -18,10 +18,10 @@
         <div
           class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"
         >
-          <div class="lg:text-6xl sm:text-4xl text-[26px]">
+          <div class="lg:text-6xl sm:text-4xl text-[26px] italic">
             Get 50% off
             <span
-              class="text-lora lg:text-[100px] sm:text-7xl text-[50px] italic font-bold"
+              class="text-lora lg:text-[100px] sm:text-7xl text-[50px] font-bold not-italic leading-25"
               >Premium oil</span
             >
           </div>

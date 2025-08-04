@@ -19,7 +19,7 @@
           />
 
           <div
-            class="flex flex-col sm:flex-row border-b border-gray-primary border-solid w-full mt-6.5 mb-4.5 lg:mb-9 pb-6.25 lg:pb-12.5 gap-7.5 md:gap-0"
+            class="flex flex-col sm:flex-row border-b border-gray-primary border-solid w-full my-5 lg:mt-6.25 lg:mb-8.75 pb-7.5 lg:pb-12.5 gap-7.5 md:gap-0"
           >
             <div class="mr-7.5 sm:w-1/2 flex flex-col gap-7.5">
               <p class="text-left">
@@ -37,31 +37,31 @@
             </div>
 
             <div class="flex flex-col gap-4">
-              <div class="flex">
+              <div class="flex items-center">
                 <div
-                  class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
+                  class="bg-accent flex-none w-4.5 h-4.5 text-white rounded-full flex justify-center items-center"
                 >
-                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-check text-xs"></i>
                 </div>
                 <div class="ml-2.5 text-text">
                   Easy And Mess-Free Oil Dispensing
                 </div>
               </div>
 
-              <div class="flex">
+              <div class="flex items-center">
                 <div
-                  class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
+                  class="bg-accent flex-none w-4.5 h-4.5 text-white rounded-full flex justify-center items-center"
                 >
-                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-check text-xs"></i>
                 </div>
                 <div class="ml-2.5 text-text">Prevents Spills And Waste.</div>
               </div>
 
-              <div class="flex">
+              <div class="flex items-center">
                 <div
-                  class="bg-accent w-5 h-5 text-white rounded-full flex justify-center items-center"
+                  class="bg-accent flex-none w-4.5 h-4.5 text-white rounded-full flex justify-center items-center"
                 >
-                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-check text-xs"></i>
                 </div>
                 <div class="ml-2.5 text-text">
                   Durable And Safe For Essential Oils.
@@ -79,7 +79,7 @@
               >
                 <img
                   src="/images/premium-products-image-1.jpg"
-                  class="object-cover w-full h-full aspect-10/9"
+                  class="object-cover w-full h-full aspect-5/4 sm:aspect-10/9 lg:aspect-auto"
                   alt=""
                 />
               </div>
@@ -97,7 +97,7 @@
               >
                 <img
                   src="/images/premium-products-image-2.jpg"
-                  class="object-cover w-full h-full aspect-10/9"
+                  class="object-cover w-full h-full aspect-5/4 sm:aspect-10/9 lg:aspect-auto"
                   alt=""
                 />
               </div>
@@ -115,7 +115,7 @@
               >
                 <img
                   src="/images/premium-products-image-3.jpg"
-                  class="object-cover w-full h-full aspect-10/9"
+                  class="object-cover w-full h-full aspect-5/4 sm:aspect-10/9 lg:aspect-auto"
                   alt=""
                 />
               </div>

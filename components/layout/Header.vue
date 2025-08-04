@@ -10,7 +10,7 @@
       ></div>
     </div>
 
-    <div class="relative z-20 border-b border-solid w-full border-darkdivider">
+    <div class="relative z-50 border-b border-solid w-full border-darkdivider">
       <div class="container">
         <div class="flex justify-between items-center py-5 px-5">
           <div class="flex">
@@ -22,7 +22,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
+                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
                 >
                   Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -52,13 +52,15 @@
               </div>
 
               <div class="">
-                <a href="#" class="text-xs xl:text-lg hover:text-accent inline"
+                <a
+                  href="#"
+                  class="text-xs xl:text-base hover:text-accent inline"
                   >About Us</a
                 >
               </div>
 
               <div class="">
-                <a href="#" class="text-xs xl:text-lg hover:text-accent"
+                <a href="#" class="text-xs xl:text-base hover:text-accent"
                   >Blog</a
                 >
               </div>
@@ -66,7 +68,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
+                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
                 >
                   Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -101,7 +103,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs xl:text-lg hover:text-accent"
+                  class="inline-flex items-center text-xs xl:text-base hover:text-accent"
                 >
                   Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -231,7 +233,7 @@
               </div>
 
               <div class="">
-                <a href="#" class="text-xs xl:text-lg hover:text-accent"
+                <a href="#" class="text-xs xl:text-base hover:text-accent"
                   >Contact Us</a
                 >
               </div>
