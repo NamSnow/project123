@@ -293,10 +293,10 @@
     :class="{
       'm-0 hidden translate-x-full ': !isMenuOpen,
     }"
-    class="bg-accent fixed top-0 left-0 w-screen h-screen z-[100] transform transition-transform duration-300 ease-in-out lg:hidden"
+    class="bg-accent fixed top-0 left-0 w-screen h-full z-[100] transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col"
   >
     <div
-      class="h-19.5 flex justify-end items-center border-b border-solid border-white p-5"
+      class="h-19.5 flex justify-end items-center border-b border-solid border-white p-5 flex-shrink-0"
     >
       <button
         class="bg-white w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-black"
@@ -306,7 +306,7 @@
       </button>
     </div>
 
-    <div class="text-white py-2.5 container overflow-auto">
+    <div class="text-white py-2.5 container overflow-y-auto flex-grow">
       <div v-for="(item, index) in items" :key="index" class="px-5">
         <a href="#" @click="toggleItem(index)" class="py-2 focus:text-black">
           {{ item.label }}
@@ -315,13 +315,9 @@
             v-if="item.subItems && item.subItems.length > 0"
           ></i>
         </a>
-        <ul class="pl-2.5">
+        <ul class="pl-2.5" v-if="openItem[index]">
           <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
-            <a
-              :href="subItem.href"
-              @click.prevent="toggleSubItem(subIndex)"
-              class="py-2 focus:text-black"
-            >
+            <a :href="subItem.href" class="py-2 focus:text-black">
               {{ subItem.label }}
               <i
                 class="fa-solid fa-angle-down ml-2 text-xs"
@@ -407,4 +403,11 @@ const items = ref([
   },
   { label: "Contact Us" },
 ]);
+
+const openItem = ref(items.value.map(() => false));
+// const openSubItem = ref(items.subItems.value.map(() => false));
+
+const toggleItem = (index) => {
+  openItem.value[index] = !openItem.value[index];
+};
 </script>

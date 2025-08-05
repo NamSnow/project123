@@ -1,5 +1,8 @@
 <template>
-  <NuxtLink :to="link" class="text-white h-12.5 items-center group flex lg:m-0">
+  <NuxtLink
+    :to="link"
+    class="text-white h-11.5 sm:h-12.5 items-center group flex lg:m-0"
+  >
     <button
       class="px-7.5 cursor-pointer bg-accent rounded-full h-full font-bold relative overflow-hidden transition-colors duration-500 flex-none"
       :style="{ '--hover-text-color': hoverTextColor }"
@@ -14,7 +17,7 @@
       ></span>
     </button>
     <button
-      class="w-12.5 h-full rounded-full cursor-pointer transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 flex-none"
+      class="w-11.5 sm:w-12.5 h-full rounded-full cursor-pointer transform -rotate-45 group-hover:rotate-0 transition-transform duration-500 flex-none"
       :style="{ 'background-color': bgArrow }"
     >
       <i class="fa-solid fa-arrow-right" :style="{ color: textIcon }"></i>

@@ -30,20 +30,22 @@
             v-for="(product, index) in productItems"
             :key="index"
           >
-            <div class="relative h-60 w-full object-cover">
+            <div class="relative w-full object-cover">
               <img
                 :src="product.image"
                 alt=""
-                class="relative transform transition duration-300 ease-in-out object-cover w-full h-full aspect-3/4 group-hover:scale-110"
+                class="relative transform transition duration-300 ease-in-out object-cover w-full h-full aspect-5/3 group-hover:scale-110"
               />
             </div>
-            <div class="relative bg-white p-6.5 rounded-b-[20px] z-10">
+            <div
+              class="relative bg-white p-6.5 rounded-b-[20px] z-10 @container"
+            >
               <div
                 class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
               >
                 {{ product.title }}
               </div>
-              <div class="flex justify-between flex-row">
+              <div class="flex justify-between flex-col @xs:flex-row">
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-calendar text-accent"></i>
                   <div class="text-text">{{ product.time }}</div>
@@ -54,7 +56,7 @@
                     Read More
                   </div>
                   <div
-                    class="text-xl bg-accent text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 group-hover:rotate-0 group-hover:bg-black"
+                    class="text-xl bg-accent text-white rounded-full w-6.5 h-6.5 flex items-center justify-center transition -rotate-45 group-hover:rotate-0 group-hover:bg-black flex-none"
                   >
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
