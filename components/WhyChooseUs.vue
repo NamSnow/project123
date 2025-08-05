@@ -25,7 +25,7 @@
         <div class="flex justify-between lg:flex-row flex-col gap-7.5 my-5">
           <div class="md:w-1/2">
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-5 lg:mb-7.5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
 
           <div class="md:w-1/2">
             <div
-              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-7.5"
+              class="bg-accent flex items-center justify-center rounded-full text-white hover:bg-black p-2.5 w-12.5 h-12.5 mb-5 lg:mb-7.5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

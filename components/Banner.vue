@@ -3,10 +3,10 @@
     <div
       class="relative z-20 flex lg:flex-row flex-col text-white mt-15 pb-15 lg:mt-25 lg:pb-25 items-center flex-1"
     >
-      <div class="lg:w-1/2 flex flex-col gap-3.75 w-full max-lg:mb-7.5 p-2.5">
+      <div class="lg:w-1/2 flex flex-col gap-2.5 w-full max-lg:mb-5 p-2.5">
         <div class="flex items-center">
-          <div class="w-2 h-2 mr-4 bg-accent rounded-full"></div>
-          <div class="text-lg font-normal italic">
+          <div class="w-2 h-2 mr-4 bg-accent rounded-full flex-none"></div>
+          <div class="text-base lg:text-lg font-normal italic">
             Discover The Power Of Premium
           </div>
         </div>

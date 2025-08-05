@@ -291,12 +291,12 @@
   <!--  -->
   <div
     :class="{
-      'm-0 hidden translate-x-full ': !isMenuOpen,
+      'm-0 hidden': !isMenuOpen,
     }"
     class="bg-accent fixed top-0 left-0 w-screen h-full z-[100] transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col"
   >
     <div
-      class="h-19.5 flex justify-end items-center border-b border-solid border-white p-5 flex-shrink-0"
+      class="h-19.5 flex justify-end items-center border-b border-solid border-darkdivider p-5 flex-shrink-0"
     >
       <button
         class="bg-white w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-black"
@@ -306,32 +306,45 @@
       </button>
     </div>
 
-    <div class="text-white py-2.5 container overflow-y-auto flex-grow">
-      <div v-for="(item, index) in items" :key="index" class="px-5">
-        <a href="#" @click="toggleItem(index)" class="py-2 focus:text-black">
+    <div class="text-white px-5 container overflow-y-auto flex-grow">
+      <div v-for="(item, index) in items" :key="index" class="py-2 px-5">
+        <NuxtLink
+          :to="item.to"
+          class="focus:text-black"
+          @click.prevent="
+            item.subItems && item.subItems.length > 0
+              ? clickOpenItem(index)
+              : ''
+          "
+        >
           {{ item.label }}
           <i
             class="fa-solid fa-angle-down ml-2 text-xs"
             v-if="item.subItems && item.subItems.length > 0"
           ></i>
-        </a>
-        <ul class="pl-2.5" v-if="openItem[index]">
-          <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
-            <a :href="subItem.href" class="py-2 focus:text-black">
+        </NuxtLink>
+        <ul class="pl-2.5" :class="{ 'm-0 hidden': !isMenuItem }">
+          <li
+            v-for="(subItem, subIndex) in item.subItems"
+            :key="subItem.label"
+            class="py-2"
+          >
+            <NuxtLink :to="subItem.to" class="focus:text-black">
               {{ subItem.label }}
               <i
                 class="fa-solid fa-angle-down ml-2 text-xs"
                 v-if="subItem.subItems && subItem.subItems.length > 0"
               ></i>
-            </a>
+            </NuxtLink>
             <ul class="pl-6">
               <li
                 v-for="nestedItem in subItem.subItems"
                 :key="nestedItem.label"
+                class="py-2"
               >
-                <a :href="nestedItem.href" class="focus:text-black py-2">{{
+                <NuxtLink :to="nestedItem.to" class="focus:text-black">{{
                   nestedItem.label
-                }}</a>
+                }}</NuxtLink>
               </li>
             </ul>
           </li>
@@ -354,60 +367,62 @@ const toggleMenu = () => {
 const items = ref([
   {
     label: "Home",
+    to: "#",
     subItems: [
-      { label: "Home - Main", href: "#" },
-      { label: "Home - Video", href: "#" },
-      { label: "Home - Slider", href: "#" },
+      { label: "Home - Main", to: "#" },
+      { label: "Home - Video", to: "#" },
+      { label: "Home - Slider", to: "#" },
     ],
   },
-  { label: "About Us" },
-  { label: "Blog" },
+  { label: "About Us", to: "#" },
+  { label: "Blog", to: "#" },
   {
     label: "Store",
+    to: "#",
     subItems: [
-      { label: "Product", href: "#" },
-      { label: "Product Single", href: "#" },
-      { label: "Cart", href: "#" },
-      { label: "My Account", href: "#" },
+      { label: "Product", to: "#" },
+      { label: "Product Single", to: "#" },
+      { label: "Cart", to: "#" },
+      { label: "My Account", to: "#" },
     ],
   },
   {
     label: "Pages",
+    to: "#",
     subItems: [
-      { label: "Blog Details", href: "#" },
-      { label: "Features", href: "#" },
-      { label: "Testimonials", href: "#" },
-      { label: "FAQs", href: "#" },
-      { label: "404", href: "#" },
+      { label: "Blog Details", to: "#" },
+      { label: "Features", to: "#" },
+      { label: "Testimonials", to: "#" },
+      { label: "FAQs", to: "#" },
+      { label: "404", to: "#" },
       {
         label: "Header Layouts",
-        href: "#",
+        to: "#",
         subItems: [
-          { label: "Header Layouts 1", href: "#" },
-          { label: "Header Layouts 2", href: "#" },
-          { label: "Header Layouts 3", href: "#" },
-          { label: "Header Layouts 4", href: "#" },
+          { label: "Header Layouts 1", to: "#" },
+          { label: "Header Layouts 2", to: "#" },
+          { label: "Header Layouts 3", to: "#" },
+          { label: "Header Layouts 4", to: "#" },
         ],
       },
       {
         label: "Footer Layouts",
-        href: "#",
+        to: "#",
         subItems: [
-          { label: "Footer Layouts 1", href: "#" },
-          { label: "Footer Layouts 2", href: "#" },
-          { label: "Footer Layouts 3", href: "#" },
-          { label: "Footer Layouts 4", href: "#" },
+          { label: "Footer Layouts 1", to: "#" },
+          { label: "Footer Layouts 2", to: "#" },
+          { label: "Footer Layouts 3", to: "#" },
+          { label: "Footer Layouts 4", to: "#" },
         ],
       },
     ],
   },
-  { label: "Contact Us" },
+  { label: "Contact Us", to: "#" },
 ]);
 
-const openItem = ref(items.value.map(() => false));
-// const openSubItem = ref(items.subItems.value.map(() => false));
+const isMenuItem = ref(false);
 
-const toggleItem = (index) => {
-  openItem.value[index] = !openItem.value[index];
+const clickOpenItem = (index) => {
+  isMenuItem.value[index] = !isMenuItem.value[index];
 };
 </script>

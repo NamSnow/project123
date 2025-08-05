@@ -12,7 +12,7 @@
       >
         <div class="relative lg:w-1/2">
           <div
-            class="w-full z-0 relative group overflow-hidden h-90 @xs:h-95 @md:h-110 sm:h-120 lg:h-140 p-2.5 pr-10"
+            class="w-full z-0 relative group overflow-hidden h-90 sm:h-120 lg:h-140 p-2.5 pr-10"
           >
             <img
               class="w-full object-cover aspect-10/7 rounded-[30px]"
