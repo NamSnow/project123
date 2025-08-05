@@ -8,9 +8,9 @@
 
     <div class="container">
       <div
-        class="relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-7.5 md:gap-17.5 z-10"
+        class="relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-3.75 lg:gap-7.5 md:gap-17.5 z-10"
       >
-        <div class="flex justify-between lg:flex-row flex-col py-2.5">
+        <div class="flex justify-between lg:flex-row flex-col gap-3.75 py-2.5">
           <div class="lg:w-1/2">
             <Title
               :title="{
@@ -20,15 +20,13 @@
               }"
             />
           </div>
-          <div
-            class="relative flex items-start sm:items-center mt-4 lg:mt-0 flex-col sm:flex-row gap-4 sm:gap-0"
-          >
-            <img
-              src="/icons/google.svg"
-              alt=""
-              class="pr-2 sm:pr-10 border-r border-darkdivider border-solid"
-            />
-            <div class="pl-2 sm:pl-10 flex flex-col justify-between">
+          <div class="relative flex items-center lg:mt-0 gap-5 lg:gap-10">
+            <div
+              class="pr-7.5 sm:pr-10 border-r border-darkdivider border-solid"
+            >
+              <icons-google class="max-lg:w-10 max-lg:h-10" />
+            </div>
+            <div class="flex flex-col gap-2.5 justify-between">
               <div class="flex text-yellow-500">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -41,7 +39,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:gap-12.5">
+        <div class="flex flex-col lg:flex-row gap-7.5 lg:gap-12.5">
           <div class="w-full relative group overflow-hidden rounded-[20px]">
             <img
               src="/images/testimonial-image.jpg"
@@ -50,7 +48,7 @@
             />
           </div>
 
-          <div class="flex flex-col items-center justify-center mt-10 lg:mt-0">
+          <div class="flex flex-col items-center justify-center">
             <div
               class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative overflow-hidden"
             >

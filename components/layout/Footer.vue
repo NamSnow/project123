@@ -83,17 +83,13 @@
               <input
                 type="text"
                 placeholder="Enter Your Email"
-                class="bg-darkdivider py-4.5 px-4 rounded-full text-white placeholder:text-white w-full"
+                class="bg-darkdivider h-12.5 sm:h-15 px-4 rounded-full text-white placeholder:text-white w-full"
               />
               <button
                 type="submit"
-                class="overflow-hidden bg-accent rounded-full hover:bg-darkdivider object-contain"
+                class="overflow-hidden bg-accent rounded-full hover:bg-darkdivider object-contain w-12.5 h-12.5 sm:w-15 sm:h-15 flex items-center justify-center flex-shrink-0"
               >
-                <img
-                  src="/icons/submit.svg"
-                  class="p-2.5 sm:p-5 cursor-pointer object-cover"
-                  alt=""
-                />
+                <img src="/icons/submit.svg" class="object-contain" alt="" />
               </button>
             </form>
             <ul class="text-white gap-3.75 items-center flex">

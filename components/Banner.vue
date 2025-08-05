@@ -31,9 +31,9 @@
             bgArrow="#ffffff1a"
           />
 
-          <div class="flex gap-4 group">
+          <div class="flex gap-4 group items-center">
             <div
-              class="bg-accent w-12.5 flex items-center justify-center rounded-full"
+              class="bg-accent w-12.5 h-12.5 flex items-center justify-center rounded-full flex-shrink-0"
             >
               <i class="fa-solid fa-phone"></i>
             </div>

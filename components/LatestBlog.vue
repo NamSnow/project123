@@ -41,7 +41,7 @@
               class="relative bg-white p-6.5 rounded-b-[20px] z-10 @container"
             >
               <div
-                class="border-b border-solid border-[#0A2C0F1A] pb-7.5 mb-7.5 font-bold text-xl"
+                class="border-b border-solid border-divider pb-7.5 mb-7.5 font-bold text-xl"
               >
                 {{ product.title }}
               </div>

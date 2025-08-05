@@ -1,6 +1,7 @@
 <template>
   <div class="flex flex-col gap-3.75">
     <div class="flex items-center gap-2.5">
+      <div class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
       <div class="italic text-lora text-lg">{{ title.content }}</div>
     </div>
     <div
