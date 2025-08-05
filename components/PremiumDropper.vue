@@ -7,9 +7,9 @@
     />
     <div class="container">
       <div
-        class="flex flex-col lg:flex-row gap-7.5 lg:gap-15 lg:py-25 py-12.5 items-center z-10"
+        class="flex flex-col lg:flex-row gap-2.5 lg:gap-10 lg:py-25 py-12.5 items-center z-10"
       >
-        <div class="flex flex-col gap-4 lg:w-6/10 xl:7/10">
+        <div class="flex flex-col gap-4 lg:w-6/10 xl:7/10 p-2.5">
           <Title
             :title="{
               content: 'Premium Dropper',
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="relative">
+        <div class="relative p-2.5">
           <img
             src="/images/products-intro-image.jpg"
             alt=""

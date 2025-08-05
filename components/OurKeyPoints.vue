@@ -2,7 +2,9 @@
   <div class="bg-secondary">
     <div class="container">
       <div class="lg:py-25 flex lg:gap-14 sm:gap-5 gap-2.5 py-12.5 flex-col">
-        <div class="flex flex-col lg:flex-row items-start lg:items-center">
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-center p-2.5"
+        >
           <div class="lg:w-1/2">
             <Title
               :title="{
@@ -21,7 +23,7 @@
         </div>
 
         <div
-          class="flex justify-center items-center flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-7.5"
+          class="flex justify-center items-center flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-7.5 p-2.5"
         >
           <!-- div1 -->
           <div

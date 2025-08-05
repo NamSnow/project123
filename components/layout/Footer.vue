@@ -13,7 +13,7 @@
 
     <div class="container">
       <div
-        class="lg:pt-25 pt-12.5 lg:pb-12.5 pb-6.25 flex lg:flex-row flex-col lg:gap-0 gap-2.5 px-4"
+        class="pt-12.5 lg:pt-25 pb-6.25 lg:pb-12.5 flex lg:flex-row flex-col lg:gap-0 gap-2.5"
       >
         <div
           class="lg:w-1/3 text-left py-2.5 pl-2.5 lg:pr-12.5 pr-2.5 flex justify-between"

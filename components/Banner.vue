@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div
-      class="relative z-20 flex lg:flex-row flex-col text-white p-5 mt-20 pb-20 items-center flex-1"
+      class="relative z-20 flex lg:flex-row flex-col text-white mt-15 pb-15 lg:mt-25 lg:pb-25 items-center flex-1"
     >
-      <div class="lg:w-1/2 flex flex-col gap-3.75 w-full max-lg:mb-7.5">
+      <div class="lg:w-1/2 flex flex-col gap-3.75 w-full max-lg:mb-7.5 p-2.5">
         <div class="flex items-center">
           <div class="w-2 h-2 mr-4 bg-accent rounded-full"></div>
           <div class="text-lg font-normal italic">
@@ -22,7 +22,7 @@
           high-quality droppers ensure accurate dispensing, minimal waste, and
           maximum potency.
         </p>
-        <div class="flex gap-10 flex-col sm:flex-row mt-5">
+        <div class="flex gap-4 sm:gap-10 flex-col sm:flex-row mt-5">
           <Button
             text="Purchase Now"
             link="/"
@@ -49,7 +49,7 @@
       </div>
 
       <div
-        class="lg:mr-14 lg:ml-19 flex justify-center items-center lg:w-1/2 mx-auto"
+        class="lg:mr-14 lg:ml-19 flex justify-center items-center lg:w-1/2 mx-auto p-2.5"
       >
         <div class="relative">
           <img src="/images/hero-image.png" alt="" />

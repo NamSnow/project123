@@ -12,11 +12,9 @@
     />
 
     <div class="container">
-      <div
-        class="lg:px-0 flex flex-col lg:flex-row text-white lg:gap-7.5 gap-5 pt-12.5 lg:pt-0"
-      >
+      <div class="lg:px-0 flex flex-col lg:flex-row text-white pt-12.5 lg:pt-0">
         <div
-          class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5"
+          class="lg:w-1/2 flex flex-col justify-center items-center text-center lg:gap-7.5 gap-2.5 py-2.5 pl-2.5 pr-2.5 lg:pr-5"
         >
           <div class="lg:text-6xl sm:text-4xl text-[26px] italic">
             Get 50% off
@@ -42,7 +40,7 @@
         <img
           src="/images/cta-image.png"
           alt=""
-          class="lg:w-1/2 z-10 pt-0 lg:pt-25"
+          class="lg:w-1/2 z-10 pt-0 lg:pt-25 px-2.5"
         />
       </div>
     </div>

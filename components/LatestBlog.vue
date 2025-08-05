@@ -2,7 +2,9 @@
   <div class="bg-secondary">
     <div class="container">
       <div class="py-12.5 lg:py-25 flex flex-col gap-5 sm:gap-10 lg:gap-20">
-        <div class="flex justify-between flex-col lg:flex-row lg:items-center">
+        <div
+          class="flex justify-between flex-col lg:flex-row lg:items-center p-2.5"
+        >
           <div class="lg:w-1/2 lg:pr-7.5 pb-4 lg:pb-0">
             <Title
               :title="{
@@ -22,7 +24,9 @@
           />
         </div>
 
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
+        <div
+          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5 p-2.5"
+        >
           <div
             class="rounded-t-[20px] overflow-hidden group"
             v-for="(product, index) in productItems"

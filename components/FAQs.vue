@@ -1,10 +1,10 @@
 <template>
   <div class="bg-secondary">
     <div class="container">
-      <div
-        class="flex gap-7.5 md:gap-15 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
-      >
-        <div class="lg:w-1/2 w-full relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row py-12.5 lg:py-25 items-center">
+        <div
+          class="lg:w-1/2 w-full relative overflow-hidden py-2.5 pl-2.5 pr-2.5 lg:pr-12.5"
+        >
           <div class="relative group">
             <img
               src="/images/faq-image.jpg"
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="lg:w-1/2 w-full flex flex-col gap-10">
+        <div class="lg:w-1/2 w-full flex flex-col gap-10 p-2.5">
           <Title
             :title="{
               content: `FAQ's`,

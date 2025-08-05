@@ -3,7 +3,7 @@
     <div class="container">
       <div class="lg:py-25 py-12.5">
         <div
-          class="flex gap-7.5 flex-col lg:flex-row justify-center items-center mb-5 lg:mb-7.5"
+          class="flex flex-col lg:flex-row justify-center items-center mb-5 lg:mb-7.5 p-2.5 gap-7.5 lg:gap-0"
         >
           <div class="w-full lg:w-2/5">
             <div class="relative flex justify-center">
@@ -20,7 +20,7 @@
             </div>
           </div>
 
-          <div class="lg:w-3/5 flex flex-col gap-4">
+          <div class="lg:w-3/5 flex flex-col gap-4 pl-0 lg:pl-11.25">
             <Title
               :title="{
                 content: 'Benefits of Oil',
@@ -93,10 +93,10 @@
         </div>
 
         <div
-          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:pt-20 sm:pt-8 pt-6 pb-2.5 w-full border-t border-divider sm:gap-7.5 lg:gap-0"
+          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:pt-20 sm:pt-8 pt-6 pb-2.5 w-full border-t border-divider sm:gap-7.5 lg:gap-0 px-2.5"
         >
           <div
-            class="flex items-center gap-3.75 lg:pr-12.5 max-sm:pb-3.75 max-sm:pt-3.75 sm:pb-0 border-b border-solid border-divider sm:border-b-0 flex-nowrap"
+            class="flex items-center gap-3.75 lg:pr-12.5 max-sm:pb-3.75 sm:pb-0 border-b border-solid border-divider sm:border-b-0 flex-nowrap"
           >
             <img
               src="/icons/member.svg"

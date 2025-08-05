@@ -25,7 +25,7 @@
               subTitle: 'ultimate care always',
             }"
           />
-          <p class="text---color-red">
+          <p class="text-text">
             We believe that every drop matters. Our premium oil dropper bottles
             are designed to deliver purity, precision, and care with every use.
           </p>

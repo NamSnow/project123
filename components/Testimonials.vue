@@ -8,9 +8,9 @@
 
     <div class="container">
       <div
-        class="relative lg:py-25 py-12.5 text-white flex flex-col gap-3.75 lg:gap-7.5 md:gap-17.5 z-10"
+        class="relative lg:py-25 py-12.5 text-white flex flex-col gap-2.5 sm:gap-5 lg:gap-12.5 z-10"
       >
-        <div class="flex justify-between lg:flex-row flex-col gap-3.75 py-2.5">
+        <div class="flex justify-between lg:flex-row flex-col gap-3.75 p-2.5">
           <div class="lg:w-1/2">
             <Title
               :title="{
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-7.5 lg:gap-12.5">
+        <div class="flex flex-col lg:flex-row gap-7.5 lg:gap-12.5 p-2.5">
           <div class="w-full relative group overflow-hidden rounded-[20px]">
             <img
               src="/images/testimonial-image.jpg"
