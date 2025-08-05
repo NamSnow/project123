@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-primary text-white px-2.5">
+  <div class="relative bg-primary text-white">
     <img
       src="/images/section-bg-shape-3.png"
       alt=""

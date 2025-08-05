@@ -12,7 +12,7 @@
 
     <div class="relative z-50 border-b border-solid w-full border-darkdivider">
       <div class="container">
-        <div class="flex justify-between items-center py-5 px-5">
+        <div class="flex justify-between items-center py-5">
           <div class="flex">
             <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 

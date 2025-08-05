@@ -8,7 +8,7 @@
 
     <div class="container">
       <div
-        class="w-full lg:w-4/7 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 py-12.5 lg:pr-20 px-5 lg:py-25 relative z-50"
+        class="w-full lg:w-4/7 flex flex-col gap-4 justify-center xl:py-25 xl:pr-50 xl:pl-5 py-12.5 lg:pr-20 lg:py-25 relative z-50"
       >
         <Title
           :title="{

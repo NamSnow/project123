@@ -8,7 +8,7 @@
 
     <div class="container">
       <div
-        class="relative px-5 lg:py-25 py-12.5 text-white flex flex-col gap-3.75 lg:gap-7.5 md:gap-17.5 z-10"
+        class="relative lg:py-25 py-12.5 text-white flex flex-col gap-3.75 lg:gap-7.5 md:gap-17.5 z-10"
       >
         <div class="flex justify-between lg:flex-row flex-col gap-3.75 py-2.5">
           <div class="lg:w-1/2">

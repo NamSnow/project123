@@ -1,9 +1,7 @@
 <template>
   <div class="bg-secondary">
     <div class="container">
-      <div
-        class="px-5 py-12.5 lg:py-25 flex flex-col gap-5 sm:gap-10 lg:gap-20"
-      >
+      <div class="py-12.5 lg:py-25 flex flex-col gap-5 sm:gap-10 lg:gap-20">
         <div class="flex justify-between flex-col lg:flex-row lg:items-center">
           <div class="lg:w-1/2 lg:pr-7.5 pb-4 lg:pb-0">
             <Title

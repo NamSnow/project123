@@ -2,7 +2,7 @@
   <div class="bg-secondary">
     <div class="container">
       <div
-        class="flex gap-7.5 md:gap-15 px-5 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
+        class="flex gap-7.5 md:gap-15 flex-col lg:flex-row py-12.5 lg:py-25 items-center"
       >
         <div class="lg:w-1/2 w-full relative overflow-hidden">
           <div class="relative group">

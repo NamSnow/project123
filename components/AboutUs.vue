@@ -2,7 +2,7 @@
   <div class="bg-secondary">
     <div class="container">
       <div
-        class="flex lg:flex-row flex-col lg:py-25 py-12.5 px-2.5 w-full items-center"
+        class="flex lg:flex-row flex-col lg:py-25 py-12.5 w-full items-center"
       >
         <div class="lg:w-1/2 w-full relative">
           <img

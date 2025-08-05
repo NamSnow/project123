@@ -1,7 +1,7 @@
 <template>
   <div class="bg-secondary">
     <div class="container">
-      <div class="lg:py-25 py-12.5 px-5">
+      <div class="lg:py-25 py-12.5">
         <div
           class="flex gap-7.5 flex-col lg:flex-row justify-center items-center mb-5 lg:mb-7.5"
         >
