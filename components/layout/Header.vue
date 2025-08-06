@@ -307,18 +307,20 @@
     </div>
 
     <div class="text-white px-5 container overflow-y-auto flex-grow font-bold">
-      <div v-for="(item, index) in items" :key="index" class="py-2 px-5">
-        <NuxtLink
-          :to="item.to"
-          class="focus:text-black"
-          @click="clickOpenItem(item)"
-        >
-          {{ item.label }}
-          <i
-            class="fa-solid fa-angle-down ml-2 text-xs"
-            v-if="item.subItems && item.subItems.length > 0"
-          ></i>
-        </NuxtLink>
+      <div v-for="(item, index) in items" :key="index" class="px-5">
+        <div class="py-2">
+          <NuxtLink
+            :to="item.to"
+            class="focus:text-black"
+            @click="clickOpenItem(item)"
+          >
+            {{ item.label }}
+            <i
+              class="fa-solid fa-angle-down ml-2 text-xs"
+              v-if="item.subItems && item.subItems.length > 0"
+            ></i>
+          </NuxtLink>
+        </div>
         <ul class="pl-2.5" v-if="item.isMenuItem">
           <li
             v-for="(subItem, subIndex) in item.subItems"
