@@ -11,7 +11,7 @@
           </div>
         </div>
         <div
-          class="lg:text-6xl md:text-5xl text-4xl font-semibold leading-[1.2em]"
+          class="text-[30px] sm:text-[45px] lg:text-6xl font-semibold leading-[1.2em]"
         >
           Pure drops perfect precision
           <span class="font-normal italic text-lora">care you can trust</span>.

@@ -306,16 +306,12 @@
       </button>
     </div>
 
-    <div class="text-white px-5 container overflow-y-auto flex-grow">
+    <div class="text-white px-5 container overflow-y-auto flex-grow font-bold">
       <div v-for="(item, index) in items" :key="index" class="py-2 px-5">
         <NuxtLink
           :to="item.to"
           class="focus:text-black"
-          @click.prevent="
-            item.subItems && item.subItems.length > 0
-              ? clickOpenItem(index)
-              : ''
-          "
+          @click="clickOpenItem(item)"
         >
           {{ item.label }}
           <i
@@ -323,20 +319,24 @@
             v-if="item.subItems && item.subItems.length > 0"
           ></i>
         </NuxtLink>
-        <ul class="pl-2.5" :class="{ 'm-0 hidden': !isMenuItem }">
+        <ul class="pl-2.5" v-if="item.isMenuItem">
           <li
             v-for="(subItem, subIndex) in item.subItems"
             :key="subItem.label"
             class="py-2"
           >
-            <NuxtLink :to="subItem.to" class="focus:text-black">
+            <NuxtLink
+              :to="subItem.to"
+              class="focus:text-black"
+              @click="clickOpenSubItem(subItem)"
+            >
               {{ subItem.label }}
               <i
                 class="fa-solid fa-angle-down ml-2 text-xs"
                 v-if="subItem.subItems && subItem.subItems.length > 0"
               ></i>
             </NuxtLink>
-            <ul class="pl-6">
+            <ul class="pl-6" v-if="subItem.isMenuSubItem">
               <li
                 v-for="nestedItem in subItem.subItems"
                 :key="nestedItem.label"
@@ -368,6 +368,7 @@ const items = ref([
   {
     label: "Home",
     to: "#",
+    isMenuItem: false,
     subItems: [
       { label: "Home - Main", to: "#" },
       { label: "Home - Video", to: "#" },
@@ -379,6 +380,7 @@ const items = ref([
   {
     label: "Store",
     to: "#",
+    isMenuItem: false,
     subItems: [
       { label: "Product", to: "#" },
       { label: "Product Single", to: "#" },
@@ -388,6 +390,7 @@ const items = ref([
   },
   {
     label: "Pages",
+    isMenuItem: false,
     to: "#",
     subItems: [
       { label: "Blog Details", to: "#" },
@@ -397,6 +400,7 @@ const items = ref([
       { label: "404", to: "#" },
       {
         label: "Header Layouts",
+        isMenuSubItem: false,
         to: "#",
         subItems: [
           { label: "Header Layouts 1", to: "#" },
@@ -407,6 +411,7 @@ const items = ref([
       },
       {
         label: "Footer Layouts",
+        isMenuSubItem: false,
         to: "#",
         subItems: [
           { label: "Footer Layouts 1", to: "#" },
@@ -420,9 +425,11 @@ const items = ref([
   { label: "Contact Us", to: "#" },
 ]);
 
-const isMenuItem = ref(false);
+const clickOpenItem = (item) => {
+  item.isMenuItem = !item.isMenuItem;
+};
 
-const clickOpenItem = (index) => {
-  isMenuItem.value[index] = !isMenuItem.value[index];
+const clickOpenSubItem = (subItem) => {
+  subItem.isMenuSubItem = !subItem.isMenuSubItem;
 };
 </script>
