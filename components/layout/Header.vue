@@ -259,9 +259,19 @@ const items = ref([
 
 const clickOpenItem = (item) => {
   item.isMenuItem = !item.isMenuItem;
+
+  item.subItems.forEach((subItem) => {
+    console.log(subItem.isMenuSubItem);
+
+    if (item.isMenuItem === false) {
+      subItem.isMenuSubItem = false;
+    }
+  });
 };
 
 const clickOpenSubItem = (subItem) => {
   subItem.isMenuSubItem = !subItem.isMenuSubItem;
 };
+
+console.log(items.value);
 </script>

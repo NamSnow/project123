@@ -173,7 +173,7 @@ const showTes = ref([
   testis.value[currentIndex.value + 1],
 ]);
 
-console.log("Chung", currentIndex.value);
+// console.log("Chung", currentIndex.value);
 
 const nextTestimonial = () => {
   // cập nhật cái hiện tại để chuyển nó sang cái tiếp theo

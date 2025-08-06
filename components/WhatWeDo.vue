@@ -58,7 +58,7 @@
             >
               <div class="flex items-center">
                 <div
-                  class="bg-accent w-4.5 h-4.5 text-black rounded-full flex-none flex justify-center items-center mr-3 border-b border-solid border-darkdivider"
+                  class="bg-accent w-4.5 h-4.5 text-black rounded-full flex-none flex justify-center items-center mr-3"
                 >
                   <i class="fa-solid fa-check text-xs"></i>
                 </div>

@@ -5,7 +5,7 @@
         <div
           class="flex justify-between flex-col lg:flex-row lg:items-center p-2.5"
         >
-          <div class="lg:w-1/2 lg:pr-7.5 pb-4 lg:pb-0">
+          <div class="lg:w-3/5 lg:pr-7.5 pb-4 lg:pb-0">
             <Title
               :title="{
                 content: 'Latest Blog',

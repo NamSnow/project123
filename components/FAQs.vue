@@ -14,7 +14,7 @@
           </div>
 
           <div
-            class="absolute px-3.75 py-2.5 md:px-5 md:py-4 text-sm sm:text-base flex w-43.75 lg:bottom-12.5 bottom-6.5 lg:right-12.5 right-6.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
+            class="absolute px-3.75 py-2.5 md:px-5 md:py-4 text-sm sm:text-base flex w-43.75 lg:bottom-12.5 bottom-6.5 right-6.5 lg:right-22 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"
