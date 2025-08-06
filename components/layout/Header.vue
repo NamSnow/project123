@@ -322,22 +322,20 @@
           </NuxtLink>
         </div>
         <ul class="pl-2.5" v-if="item.isMenuItem">
-          <li
-            v-for="(subItem, subIndex) in item.subItems"
-            :key="subItem.label"
-            class="py-2"
-          >
-            <NuxtLink
-              :to="subItem.to"
-              class="focus:text-black"
-              @click="clickOpenSubItem(subItem)"
-            >
-              {{ subItem.label }}
-              <i
-                class="fa-solid fa-angle-down ml-2 text-xs"
-                v-if="subItem.subItems && subItem.subItems.length > 0"
-              ></i>
-            </NuxtLink>
+          <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
+            <div class="py-2">
+              <NuxtLink
+                :to="subItem.to"
+                class="focus:text-black"
+                @click="clickOpenSubItem(subItem)"
+              >
+                {{ subItem.label }}
+                <i
+                  class="fa-solid fa-angle-down ml-2 text-xs"
+                  v-if="subItem.subItems && subItem.subItems.length > 0"
+                ></i>
+              </NuxtLink>
+            </div>
             <ul class="pl-6" v-if="subItem.isMenuSubItem">
               <li
                 v-for="nestedItem in subItem.subItems"
