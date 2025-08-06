@@ -17,12 +17,12 @@
             <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
             <div
-              class="text-white hidden lg:flex gap-5 min-[1200px]:gap-7.5 items-center pl-3 xl:pl-9 z-10"
+              class="text-white hidden lg:flex items-center pl-3 xl:pl-9 z-10 font-medium leading-[1.1em]"
             >
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                 >
                   Home <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -54,7 +54,7 @@
               <div class="">
                 <a
                   href="#"
-                  class="text-xs min-[1200px]:text-base hover:text-accent inline"
+                  class="text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                   >About Us</a
                 >
               </div>
@@ -62,7 +62,7 @@
               <div class="">
                 <a
                   href="#"
-                  class="text-xs min-[1200px]:text-base hover:text-accent"
+                  class="text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                   >Blog</a
                 >
               </div>
@@ -70,7 +70,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                 >
                   Store <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -105,7 +105,7 @@
               <div class="relative group">
                 <a
                   href="#"
-                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                 >
                   Page <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
                 </a>
@@ -157,7 +157,7 @@
                       <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
                     </a>
                     <ul
-                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-59 left-full top-0 rounded-[20px] shadow-lg z-20 origin-left animate-fade-in-right"
                     >
                       <li>
                         <a
@@ -199,7 +199,7 @@
                       <i class="fa-solid fa-angle-right ml-auto text-xs"></i>
                     </a>
                     <ul
-                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-40 left-full top-0 rounded-md shadow-lg z-20 origin-left animate-fade-in-right"
+                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-59 left-full top-0 rounded-[20px] shadow-lg z-20 origin-left animate-fade-in-right"
                     >
                       <li>
                         <a
@@ -237,7 +237,7 @@
               <div class="">
                 <a
                   href="#"
-                  class="text-xs min-[1200px]:text-base hover:text-accent"
+                  class="text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
                   >Contact Us</a
                 >
               </div>
@@ -306,7 +306,9 @@
       </button>
     </div>
 
-    <div class="text-white px-5 container overflow-y-auto flex-grow font-bold">
+    <div
+      class="text-white px-5 container overflow-y-auto flex-grow font-medium leading-[1.3em]"
+    >
       <div v-for="(item, index) in items" :key="index" class="px-5">
         <div class="py-2">
           <NuxtLink
