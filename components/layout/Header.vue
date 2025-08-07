@@ -16,27 +16,31 @@
           <div class="flex">
             <img src="/icons/logo.svg" alt="" class="cursor-pointer" />
 
-            <div
-              class="text-white hidden lg:flex items-center pl-3 xl:pl-9 z-10 font-medium leading-[1.1em]"
+            <ul
+              class="text-white hidden lg:flex items-center pl-3 xl:pl-5 z-10 font-medium leading-[11/10]"
             >
               <!-- Chọn -->
-              <div
+              <li
                 v-for="(item, index) in items"
                 :key="index"
                 class="relative group"
               >
-                <NuxtLink
-                  :to="item.to"
-                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75"
+                <div
+                  v-if="item.subItems && item.subItems.length > 0"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75 cursor-pointer transition duration-500"
                 >
                   {{ item.label }}
-                  <i
-                    class="fa-solid fa-angle-down ml-2 text-xs"
-                    v-if="item.subItems && item.subItems.length > 0"
-                  ></i>
+                  <i class="fa-solid fa-angle-down ml-2 text-xs"></i>
+                </div>
+                <NuxtLink
+                  v-else
+                  :to="item.to"
+                  class="inline-flex items-center text-xs min-[1200px]:text-base hover:text-accent p-2 min-[1150px]:p-3.75 duration-500"
+                >
+                  {{ item.label }}
                 </NuxtLink>
                 <ul
-                  class="absolute hidden group-hover:block bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top animate-fade-in-down"
+                  class="absolute opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 ease-in-out bg-accent text-white min-w-59 rounded-[20px] shadow-lg z-10 top-full left-0 origin-top"
                 >
                   <li
                     class="relative group/nested"
@@ -55,7 +59,7 @@
                     </NuxtLink>
 
                     <ul
-                      class="absolute hidden group-hover/nested:block bg-accent text-white min-w-59 left-full top-0 rounded-[20px] shadow-lg z-20 origin-left animate-fade-in-right"
+                      class="absolute opacity-0 group-hover/nested:opacity-100 invisible group-hover/nested:visible transition-all duration-300 ease-in-out bg-accent text-white min-w-59 left-full top-0 rounded-[20px] shadow-lg z-20 origin-left animate-fade-in-right"
                     >
                       <li
                         v-for="nestedItem in subItem.subItems"
@@ -70,8 +74,8 @@
                     </ul>
                   </li>
                 </ul>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
 
           <div class="flex items-center">
@@ -79,17 +83,17 @@
               class="text-white gap-2 xl:gap-3.75 items-center hidden lg:flex border-r border-solid border-darkdivider pr-3 xl:pr-7.5"
             >
               <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
                 <a href=""><i class="fa-brands fa-x-twitter"></i></a>
               </li>
               <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent"
+                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
               </li>
@@ -137,7 +141,7 @@
     </div>
 
     <div
-      class="text-white px-5 container overflow-y-auto flex-grow font-medium leading-[1.3em]"
+      class="text-white px-5 container overflow-y-auto flex-grow font-medium leading-[13/10]"
     >
       <div v-for="(item, index) in items" :key="index" class="px-5">
         <div class="py-2">
@@ -259,14 +263,6 @@ const items = ref([
 
 const clickOpenItem = (item) => {
   item.isMenuItem = !item.isMenuItem;
-
-  item.subItems.forEach((subItem) => {
-    console.log(subItem.isMenuSubItem);
-
-    if (item.isMenuItem === false) {
-      subItem.isMenuSubItem = false;
-    }
-  });
 };
 
 const clickOpenSubItem = (subItem) => {

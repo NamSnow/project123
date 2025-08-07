@@ -57,7 +57,7 @@ import { ref } from "vue";
 const productItems = ref([
   {
     id: 1,
-    image: "/images/product-img-1.jpg",
+    image: "/images/post-3.jpg",
     content: "Eco Glow Dropper",
     accountNew: "16.00",
     accountOld: "20.00",

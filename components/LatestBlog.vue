@@ -43,11 +43,13 @@
               class="relative bg-white p-6.5 rounded-b-[20px] z-10 @container"
             >
               <div
-                class="border-b border-solid border-divider pb-7.5 mb-7.5 font-bold text-xl"
+                class="border-b border-solid border-divider pb-7.5 mb-7.5 font-bold text-xl h-full"
               >
-                {{ product.title }}
+                <div class="line-clamp-2">
+                  {{ product.title }}
+                </div>
               </div>
-              <div class="flex justify-between flex-col sm:flex-row">
+              <div class="flex justify-between flex-col @3xs:flex-row">
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-calendar text-accent"></i>
                   <div class="text-text">{{ product.time }}</div>

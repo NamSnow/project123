@@ -8,10 +8,10 @@
           <img
             src="/images/about-image.png"
             alt=""
-            class="max-w-full py-2.5 pl-2.5 lg:pr-20 pr-2.5 mx-auto object-cover"
+            class="max-w-full py-2.5 pl-2.5 lg:pr-20 pr-2.5 mx-auto object-contain"
           />
           <div
-            class="w-22.5 h-22.5 lg:w-30 lg:h-30 flex items-center justify-center absolute top-0 right-0 bg-accent rounded-full lg:mr-20 p-2.5"
+            class="w-22.5 h-22.5 lg:w-30 lg:h-30 flex items-center justify-center absolute top-2.5 right-0 bg-accent rounded-full lg:mr-20 p-2.5"
           >
             <icons-test bigIcon="black" smallIcon="white" class="w-90 h-90" />
           </div>
@@ -96,7 +96,7 @@
             </div>
 
             <div
-              class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/3 shadow-[0_0_30px_0_rgba(0,0,0,0.05)]"
+              class="bg-white max-w-full p-5 rounded-[20px] lg:w-1/3 shadow-box-nature"
             >
               <img src="/icons/icon3.svg" alt="" class="w-15 h-15 mb-5" />
               <div class="font-bold text-xl">Nature's Best in Every Drop</div>
