@@ -77,7 +77,7 @@
                 </span>
               </div>
               <p
-                class="transition-all duration-500 ease-in-out text-white"
+                class="transition-all ease-in-out text-white"
                 :class="{
                   'm-0 max-h-0 overflow-hidden': activeBtn !== index,
                   'pt-4 pr-12.5 pb-4 pl-4': activeBtn === index,
