@@ -273,6 +273,27 @@ const items = ref([
 
 const clickOpenItem = (item) => {
   item.isMenuItem = !item.isMenuItem;
+
+  // array.forEach(callback(currentValue, index, arr), thisArg)
+  /*
+  callback: Một hàm được thực thi cho mỗi phần tử trong mảng. Nó có thể nhận tối đa ba tham số:
+
+  currentValue (bắt buộc): Giá trị của phần tử hiện tại.
+
+  index (tùy chọn): Chỉ số của phần tử hiện tại.
+
+  arr (tùy chọn): Mảng mà phương thức forEach() đang được gọi.
+
+  thisArg (tùy chọn): Một giá trị được sử dụng làm this khi thực thi hàm callback. Nếu không được cung cấp, this sẽ là undefined trong chế độ nghiêm ngặt và đối tượng toàn cầu (ví dụ: window trong trình duyệt) trong chế độ không nghiêm ngặt.
+  */
+
+  item.subItems.forEach((listItem) => {
+    console.log(listItem.isMenuSubItem);
+
+    if (item.isMenuItem === false && listItem.isMenuSubItem === true) {
+      listItem.isMenuSubItem = false;
+    }
+  });
 };
 
 const clickOpenSubItem = (subItem) => {
