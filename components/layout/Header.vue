@@ -82,20 +82,29 @@
             <ul
               class="text-white gap-2 xl:gap-3.75 items-center hidden lg:flex border-r border-solid border-darkdivider pr-3 xl:pr-7.5"
             >
-              <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
-              >
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <li>
+                <NuxtLink
+                  to=""
+                  class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </NuxtLink>
               </li>
-              <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
-              >
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <li>
+                <NuxtLink
+                  to=""
+                  class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </NuxtLink>
               </li>
-              <li
-                class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
-              >
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <li>
+                <NuxtLink
+                  to=""
+                  class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </NuxtLink>
               </li>
             </ul>
 
@@ -124,10 +133,11 @@
 
   <!--  -->
   <div
+    class="bg-accent fixed top-0 left-0 w-screen h-full z-[100] transform-all transition-transform duration-1000 ease-in-out lg:hidden flex flex-col"
     :class="{
-      'm-0 hidden': !isMenuOpen,
+      'overflow-hidden -translate-x-full': !isMenuOpen,
+      'translate-x-0': isMenuOpen,
     }"
-    class="bg-accent fixed top-0 left-0 w-screen h-full z-[100] transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col"
   >
     <div
       class="h-19.5 flex justify-end items-center border-b border-solid border-darkdivider p-5 flex-shrink-0"

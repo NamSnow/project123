@@ -99,7 +99,7 @@
               <input
                 type="text"
                 placeholder="Enter Your Email"
-                class="bg-darkdivider h-12.5 sm:h-15 px-4 rounded-full text-white placeholder:text-white w-full"
+                class="bg-darkdivider h-12.5 sm:h-15 px-4 rounded-full text-white placeholder:text-white w-full focus:outline-none"
               />
               <button
                 type="submit"

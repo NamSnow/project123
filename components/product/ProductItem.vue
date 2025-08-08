@@ -1,10 +1,13 @@
 <template>
   <div class="flex flex-col gap-2.5 items-center w-full">
-    <a :href="productLink">
+    <a
+      :href="productLink"
+      class="h-full sm:h-88 max-lg:max-w-88 flex items-center"
+    >
       <img
         :src="product.image"
         :alt="product.content"
-        class="rounded-3xl object-contain h-88 max-lg:max-w-88"
+        class="rounded-3xl object-contain"
       />
     </a>
 

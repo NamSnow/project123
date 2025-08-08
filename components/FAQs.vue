@@ -9,12 +9,12 @@
             <img
               src="/images/faq-image.jpg"
               alt=""
-              class="rounded-[20px] w-full max-w-full h-auto"
+              class="rounded-[20px] w-full max-w-full object-cover h-full aspect-5/3 lg:aspect-auto lg:h-153.5"
             />
           </div>
 
           <div
-            class="absolute px-3.75 py-2.5 md:px-5 md:py-4 text-sm sm:text-base flex w-43.75 lg:bottom-12.5 bottom-6.5 right-6.5 lg:right-22.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
+            class="absolute px-3.75 py-2.5 md:px-5 md:py-3.75 text-sm sm:text-base flex lg:bottom-12.5 bottom-6.5 right-6.5 lg:right-22.5 bg-white rounded-[10px] gap-2.5 justify-center items-center group overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out"
@@ -34,7 +34,7 @@
               ></path>
             </svg>
             <div
-              class="font-bold relative z-10 group-hover:text-white transition-colors duration-300"
+              class="font-bold relative z-10 group-hover:text-white transition-colors duration-300 w-27.5"
             >
               Answers You Need !
             </div>
@@ -72,12 +72,16 @@
                 <span>
                   <i
                     class="fas fa-chevron-down transform transition-transform duration-300"
+                    :class="{ '-rotate-180': activeBtn === index }"
                   ></i>
                 </span>
               </div>
               <p
-                class="pt-4 pr-12.5 pb-4 pl-4 transition-all duration-300 ease-in-out text-white"
-                :class="{ 'hidden m-0': activeBtn !== index }"
+                class="transition-all duration-500 ease-in-out text-white"
+                :class="{
+                  'm-0 max-h-0 overflow-hidden': activeBtn !== index,
+                  'pt-4 pr-12.5 pb-4 pl-4': activeBtn === index,
+                }"
               >
                 {{ faq.content }}
               </p>
