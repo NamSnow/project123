@@ -315,8 +315,8 @@ const bannerComponent = computed(() => {
   return bannerComponents[componentName] || null;
 });
 
-watch(isMenuOpen, (newVal) => {
-  if (newVal) {
+watch(isMenuOpen, (isMenu) => {
+  if (isMenu) {
     document.body.classList.add("overflow-hidden");
   } else {
     document.body.classList.remove("overflow-hidden");
