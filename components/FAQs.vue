@@ -52,7 +52,7 @@
 
           <div class="flex flex-col gap-7.5">
             <div
-              class="block rounded-2xl overflow-hidden cursor-pointer transition-colors duration-1000"
+              class="block rounded-2xl overflow-hidden cursor-pointer"
               :class="{
                 'bg-accent': activeBtn === index,
                 'bg-white': activeBtn !== index,
@@ -62,7 +62,7 @@
               @click="activeFaq(index)"
             >
               <div
-                class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition-colors duration-300"
+                class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition duration-300"
                 :class="{
                   'border-b border-solid border-darkdivider text-white':
                     activeBtn === index,
@@ -71,16 +71,16 @@
                 {{ faq.title }}
                 <span>
                   <i
-                    class="fas fa-chevron-down transform transition-transform duration-300"
+                    class="fas fa-chevron-down transform transition-transform duration-500"
                     :class="{ '-rotate-180': activeBtn === index }"
                   ></i>
                 </span>
               </div>
               <p
-                class="transition-all ease-in-out text-white"
+                class="text-white transition-all duration-500 ease-in-out overflow-hidden"
                 :class="{
-                  'm-0 max-h-0 overflow-hidden': activeBtn !== index,
-                  'pt-4 pr-12.5 pb-4 pl-4': activeBtn === index,
+                  'h-0 opacity-0 invisible py-0 px-4': activeBtn !== index,
+                  'opacity-100 py-4 pr-12.5 pl-4': activeBtn === index,
                 }"
               >
                 {{ faq.content }}

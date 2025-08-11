@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-2.5 items-center w-full">
-    <a
-      :href="productLink"
+    <NuxtLink
+      :to="productLink"
       class="h-full sm:h-88 max-lg:max-w-88 flex items-center"
     >
       <img
@@ -9,7 +9,7 @@
         :alt="product.content"
         class="rounded-3xl object-contain"
       />
-    </a>
+    </NuxtLink>
 
     <div class="font-bold text-xl pt-3">{{ product.content }}</div>
 

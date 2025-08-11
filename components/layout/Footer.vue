@@ -24,22 +24,22 @@
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Home</a>
+                <NuxtLink to="">Home</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>About Us</a>
+                <NuxtLink to="">About Us</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Features</a>
+                <NuxtLink to="">Features</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Latest Blog</a>
+                <NuxtLink to="">Latest Blog</NuxtLink>
               </li>
             </ul>
           </div>
@@ -50,22 +50,22 @@
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Help</a>
+                <NuxtLink to="">Help</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Privacy Policy</a>
+                <NuxtLink to="">Privacy Policy</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Terms & Condition</a>
+                <NuxtLink to="">Terms & Condition</NuxtLink>
               </li>
               <li
                 class="hover:text-accent cursor-pointer transition duration-300"
               >
-                <a>Contact Us</a>
+                <NuxtLink to="">Contact Us</NuxtLink>
               </li>
             </ul>
           </div>
@@ -78,16 +78,18 @@
               123 High Street, London, W1A 1AA, United Kingdom
             </div>
             <div class="flex flex-col xl:flex-row gap-7.5 lg:mx-auto">
-              <a
+              <NuxtLink
+                to=""
                 class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-accent hover:text-accent font-bold transition duration-300"
               >
                 +91 - 123 468 963
-              </a>
-              <a
+              </NuxtLink>
+              <NuxtLink
+                to=""
                 class="cursor-pointer py-2 px-5 border border-solid border-white rounded-full hover:border-accent hover:text-accent font-bold transition duration-300"
               >
                 info@domain.com
-              </a>
+              </NuxtLink>
             </div>
           </div>
 
@@ -112,22 +114,30 @@
               <li
                 class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
-                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                <NuxtLink to=""
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></NuxtLink>
               </li>
               <li
                 class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <NuxtLink to=""
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></NuxtLink>
               </li>
               <li
                 class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <NuxtLink to=""
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></NuxtLink>
               </li>
               <li
                 class="w-9 h-9 border border-white border-solid rounded-full flex justify-center items-center hover:border-accent hover:text-accent cursor-pointer transition duration-300"
               >
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <NuxtLink to=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></NuxtLink>
               </li>
             </ul>
           </div>

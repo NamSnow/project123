@@ -134,16 +134,16 @@
             alt=""
             class="relative z-0 rounded-[20px] min-h-81.75 sm:min-h-129 lg:min-h-175 w-screen lg:w-full object-cover aspect-3/2 md:aspect-square"
           />
-          <a
+          <NuxtLink
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
-            href="https://www.youtube.com/embed/Y-x0efG1seA?feature=oembed?playlist=Y-x0efG1seA&mute=0&autoplay=0&loop=1&controls=0&start=0&end="
+            to="https://www.youtube.com/embed/Y-x0efG1seA?feature=oembed?playlist=Y-x0efG1seA&mute=0&autoplay=0&loop=1&controls=0&start=0&end="
           >
             <div
               class="rounded-full bg-green w-17.5 h-17.5 hover:bg-accent flex items-center justify-center"
             >
               <i class="fa-solid fa-play text-white text-xl"></i>
             </div>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div
-      class="relative z-20 flex lg:flex-row flex-col text-white mt-15 pb-15 lg:mt-25 lg:pb-25 items-center flex-1"
+      class="relative flex lg:flex-row flex-col text-white mt-15 pb-15 lg:mt-25 lg:pb-25 items-center flex-1"
     >
       <div class="w-full lg:w-1/2 flex flex-col gap-2.5 max-lg:mb-5 p-2.5">
         <div class="flex items-center">

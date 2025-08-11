@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mx-auto h-auto w-full max-w-full">
+  <div class="relative mx-auto">
     <div class="absolute inset-0 z-0">
       <div
         class="absolute inset-0 w-full h-full bg-cover bg-center object-cover"
@@ -128,14 +128,15 @@
       </div>
     </div>
 
-    <Banner />
+    <component :is="bannerComponent" />
+    <slot />
   </div>
 
   <!--  -->
   <div
     class="bg-accent fixed top-0 left-0 w-screen h-full z-[100] transform-all transition-transform duration-1000 ease-in-out lg:hidden flex flex-col"
     :class="{
-      'overflow-hidden -translate-x-full': !isMenuOpen,
+      '-translate-x-full overflow-hidden': !isMenuOpen,
       'translate-x-0': isMenuOpen,
     }"
   >
@@ -143,15 +144,15 @@
       class="h-19.5 flex justify-end items-center border-b border-solid border-darkdivider p-5 flex-shrink-0"
     >
       <button
-        class="bg-white w-9.5 h-9.5 rounded-lg cursor-pointer focus:bg-black"
+        class="bg-white w-9.5 h-9.5 rounded-lg cursor-pointer"
         @click="toggleMenu"
       >
-        <i class="fa-solid fa-x text-black focus:text-white"></i>
+        <i class="fa-solid fa-x text-black"></i>
       </button>
     </div>
 
     <div
-      class="text-white px-5 container overflow-y-auto flex-grow font-medium leading-[13/10]"
+      class="text-white py-2.5 overflow-y-auto flex-grow font-medium leading-[13/10]"
     >
       <div v-for="(item, index) in items" :key="index" class="px-5">
         <div class="py-2">
@@ -167,7 +168,13 @@
             ></i>
           </NuxtLink>
         </div>
-        <ul class="pl-2.5" v-if="item.isMenuItem">
+        <ul
+          class="pl-2.5 transition-all ease-in-out duration-1000 overflow-hidden"
+          :class="{
+            'max-h-screen': item.isMenuItem,
+            'max-h-0': !item.isMenuItem,
+          }"
+        >
           <li v-for="(subItem, subIndex) in item.subItems" :key="subItem.label">
             <div class="py-2">
               <NuxtLink
@@ -182,7 +189,13 @@
                 ></i>
               </NuxtLink>
             </div>
-            <ul class="pl-6" v-if="subItem.isMenuSubItem">
+            <ul
+              class="pl-6 transition-all ease-in-out duration-1000 overflow-hidden"
+              :class="{
+                'max-h-screen': subItem.isMenuSubItem,
+                'max-h-0': !subItem.isMenuSubItem,
+              }"
+            >
               <li
                 v-for="nestedItem in subItem.subItems"
                 :key="nestedItem.label"
@@ -202,8 +215,6 @@
 
 <script setup>
 import Button from "~/components/Button.vue";
-import Banner from "../Banner.vue";
-
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -216,13 +227,13 @@ const items = ref([
     to: "#",
     isMenuItem: false,
     subItems: [
-      { label: "Home - Main", to: "#" },
+      { label: "Home - Main", to: "/" },
       { label: "Home - Video", to: "#" },
       { label: "Home - Slider", to: "#" },
     ],
   },
-  { label: "About Us", to: "#" },
-  { label: "Blog", to: "#" },
+  { label: "About Us", to: "/about_us" },
+  { label: "Blog", to: "/blog" },
   {
     label: "Store",
     to: "#",
@@ -268,24 +279,11 @@ const items = ref([
       },
     ],
   },
-  { label: "Contact Us", to: "#" },
+  { label: "Contact Us", to: "/contact_us" },
 ]);
 
 const clickOpenItem = (item) => {
   item.isMenuItem = !item.isMenuItem;
-
-  // array.forEach(callback(currentValue, index, arr), thisArg)
-  /*
-  callback: Một hàm được thực thi cho mỗi phần tử trong mảng. Nó có thể nhận tối đa ba tham số:
-
-  currentValue (bắt buộc): Giá trị của phần tử hiện tại.
-
-  index (tùy chọn): Chỉ số của phần tử hiện tại.
-
-  arr (tùy chọn): Mảng mà phương thức forEach() đang được gọi.
-
-  thisArg (tùy chọn): Một giá trị được sử dụng làm this khi thực thi hàm callback. Nếu không được cung cấp, this sẽ là undefined trong chế độ nghiêm ngặt và đối tượng toàn cầu (ví dụ: window trong trình duyệt) trong chế độ không nghiêm ngặt.
-  */
 
   item.subItems.forEach((listItem) => {
     console.log(listItem.isMenuSubItem);
@@ -301,4 +299,27 @@ const clickOpenSubItem = (subItem) => {
 };
 
 console.log(items.value);
+
+import { useRoute } from "vue-router";
+import BannerHome from "~/components/banner/BannerHome.vue";
+import BannerAll from "~/components/banner/BannerAll.vue";
+const route = useRoute();
+
+const bannerComponents = {
+  BannerHome,
+  BannerAll,
+};
+
+const bannerComponent = computed(() => {
+  const componentName = route.meta.banner;
+  return bannerComponents[componentName] || null;
+});
+
+watch(isMenuOpen, (newVal) => {
+  if (newVal) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+});
 </script>

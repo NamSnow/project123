@@ -56,4 +56,8 @@ import Testimonials from "~/components/Testimonials.vue";
 import LatestBlog from "~/components/LatestBlog.vue";
 import Header from "~/components/layout/Header.vue";
 import Footer from "~/components/layout/Footer.vue";
+
+definePageMeta({
+  banner: "BannerHome",
+});
 </script>
