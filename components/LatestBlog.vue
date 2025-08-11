@@ -45,9 +45,9 @@
               <div
                 class="border-b border-solid border-divider pb-7.5 mb-7.5 font-bold text-xl h-full"
               >
-                <div class="line-clamp-2">
+                <NuxtLink to="" class="line-clamp-2 cursor-pointer">
                   {{ product.title }}
-                </div>
+                </NuxtLink>
               </div>
               <div class="flex justify-between flex-col @3xs:flex-row">
                 <div class="flex items-center gap-2">

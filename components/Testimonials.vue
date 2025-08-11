@@ -44,7 +44,7 @@
             <img
               src="/images/testimonial-image.jpg"
               alt=""
-              class="object-cover w-full h-full md:h-1/2 lg:h-full aspect-[1/0.6] lg:aspect-auto"
+              class="object-cover w-full h-full md:h-1/2 lg:h-full aspect-5/3 lg:aspect-auto"
             />
           </div>
 
