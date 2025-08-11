@@ -62,7 +62,7 @@
               @click="activeFaq(index)"
             >
               <div
-                class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition duration-300"
+                class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition duration-500"
                 :class="{
                   'border-b border-solid border-darkdivider text-white':
                     activeBtn === index,
