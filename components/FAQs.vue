@@ -62,31 +62,67 @@
               @click="activeFaq(index)"
             >
               <div
-                class="flex justify-between py-4.5 pr-4 pl-5 font-bold transition duration-500"
+                class="flex justify-between py-3.75 pr-3.75 pl-3.75 lg:py-4.5 lg:pr-5 lg:pl-5 font-bold"
                 :class="{
-                  'border-b border-solid border-darkdivider text-white':
-                    activeBtn === index,
+                  ' text-white': activeBtn === index,
                 }"
               >
                 {{ faq.title }}
                 <span>
                   <i
-                    class="fas fa-chevron-down transform transition-transform duration-500"
+                    class="fas fa-chevron-down transition duration-500"
                     :class="{ '-rotate-180': activeBtn === index }"
                   ></i>
                 </span>
               </div>
-              <p
-                class="text-white transition-all duration-500 ease-in-out overflow-hidden"
+              <div
+                class="grid transition-[grid-template-rows] duration-500 ease-in-out"
                 :class="{
-                  'h-0 opacity-0 invisible py-0 px-4': activeBtn !== index,
-                  'opacity-100 py-4 pr-12.5 pl-4': activeBtn === index,
+                  'grid-rows-[0fr]': activeBtn !== index,
+                  'grid-rows-[1fr]': activeBtn === index,
                 }"
               >
-                {{ faq.content }}
-              </p>
+                <div class="overflow-hidden">
+                  <p
+                    class="text-white pt-2.5 pr-10 pb-3.75 pl-3.75 lg:pt-3.75 lg:pr-12.5 lg:pb-5 lg:pl-5 border-t border-solid border-darkdivider"
+                  >
+                    {{ faq.content }}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- <div class="flex flex-col gap-7.5">
+            <UCard
+              v-for="(faq, index) in faqs"
+              :key="index"
+              :class="{
+                'bg-accent text-white': activeBtn === index,
+                'bg-white': activeBtn !== index,
+              }"
+              @click="activeFaq(index)"
+              class="cursor-pointer transition-colors duration-200 ease-in-out"
+            >
+              <template #header>
+                <div class="flex justify-between items-center font-bold">
+                  {{ faq.title }}
+                  <UIcon
+                    name="i-heroicons-chevron-down-20-solid"
+                    :class="{ 'rotate-180': activeBtn === index }"
+                    class="transition-transform duration-300"
+                  />
+                </div>
+              </template>
+
+              <div
+                v-show="activeBtn === index"
+                class="transition-all duration-500 ease-in-out overflow-hidden"
+              >
+                {{ faq.content }}
+              </div>
+            </UCard>
+          </div> -->
         </div>
       </div>
     </div>

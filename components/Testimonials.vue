@@ -88,7 +88,7 @@
             </div>
 
             <div
-              class="flex gap-5 mt-8 lg:mt-10 justify-evenly sm:justify-center"
+              class="flex lg:gap-5 mt-8 lg:mt-10 justify-evenly lg:justify-center max-lg:w-full"
             >
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
@@ -193,6 +193,7 @@ const nextTestimonial = () => {
 };
 
 const prevTestimonial = () => {
+  // giảm phấn tử (nếu currentIndex < 0 thì -1 - 1 + 8 = 6 <pt 7) (%: lấy số dương)
   currentIndex.value = (currentIndex.value - 1 + total) % total;
 
   console.log("Prev", currentIndex.value);
