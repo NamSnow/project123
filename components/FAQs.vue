@@ -55,7 +55,7 @@
               class="block rounded-2xl overflow-hidden cursor-pointer"
               :class="{
                 'bg-accent': activeBtn === index,
-                'bg-white': activeBtn !== index,
+                'bg-white transition-colors duration-500': activeBtn !== index,
               }"
               v-for="(faq, index) in faqs"
               :key="index"
@@ -64,7 +64,7 @@
               <div
                 class="flex justify-between py-3.75 pr-3.75 pl-3.75 lg:py-4.5 lg:pr-5 lg:pl-5 font-bold"
                 :class="{
-                  ' text-white': activeBtn === index,
+                  'text-white': activeBtn === index,
                 }"
               >
                 {{ faq.title }}

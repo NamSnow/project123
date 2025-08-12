@@ -3,10 +3,10 @@
     <img
       src="/images/testimonial-bg.png"
       alt=""
-      class="absolute top-0 left-0 w-full h-full z-0 group"
+      class="absolute top-0 left-0 w-full h-full z-0 group object-cover"
     />
 
-    <div class="container">
+    <div class="container relative z-10">
       <div
         class="relative lg:py-25 py-12.5 text-white flex flex-col gap-2.5 sm:gap-5 lg:gap-12.5 z-10"
       >
@@ -20,6 +20,7 @@
               }"
             />
           </div>
+
           <div class="relative flex items-center lg:mt-0 gap-5 lg:gap-10">
             <div
               class="pr-7.5 sm:pr-10 border-r border-darkdivider border-solid"
@@ -40,7 +41,9 @@
         </div>
 
         <div class="flex flex-col lg:flex-row gap-7.5 lg:gap-12.5 p-2.5">
-          <div class="w-full relative group overflow-hidden rounded-[20px]">
+          <div
+            class="w-full lg:w-3/10 relative group overflow-hidden rounded-[20px]"
+          >
             <img
               src="/images/testimonial-image.jpg"
               alt=""
@@ -48,41 +51,45 @@
             />
           </div>
 
-          <div class="flex flex-col items-center justify-center">
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative overflow-hidden"
-            >
+          <div
+            class="flex flex-col items-center justify-center transition-all duration-500 overflow-hidden w-full lg:w-7/10"
+          >
+            <div class="w-full relative overflow-hidden">
               <div
-                v-for="(testimonial, index) in showTes"
-                :key="index"
-                class="w-full transition duration-500"
-                :class="{ 'hidden sm:block': index === 1 }"
+                class="flex sm:gap-4 transition-transform duration-500 ease-in-out"
+                :style="{ transform: `translateX(-${slideX}%)` }"
               >
                 <div
-                  class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
+                  v-for="(testimonial, index) in testis"
+                  :key="index"
+                  class="flex-shrink-0 w-full sm:w-[calc(50%-16px)]"
                 >
-                  <div class="flex text-yellow-500">
-                    <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
-                  </div>
-                  <p class="mt-5">"{{ testimonial.text }}"</p>
-                </div>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-3.5">
-                    <img
-                      :src="testimonial.image"
-                      :alt="testimonial.author"
-                      class="rounded-md w-12 h-12 object-cover"
-                    />
-                    <div>
-                      <strong class="mb-1">{{ testimonial.author }}</strong>
-                      <div>{{ testimonial.role }}</div>
+                  <div
+                    class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
+                  >
+                    <div class="flex text-yellow-500">
+                      <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
                     </div>
+                    <p class="mt-5">"{{ testimonial.text }}"</p>
                   </div>
-                  <img
-                    src="/icons/phay.svg"
-                    alt="Quote icon"
-                    class="text-white w-8 h-8"
-                  />
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-3.5">
+                      <img
+                        :src="testimonial.image"
+                        :alt="testimonial.author"
+                        class="rounded-md w-12 h-12 object-cover"
+                      />
+                      <div>
+                        <strong class="mb-1">{{ testimonial.author }}</strong>
+                        <div>{{ testimonial.role }}</div>
+                      </div>
+                    </div>
+                    <img
+                      src="/icons/phay.svg"
+                      alt="Quote icon"
+                      class="text-white w-8 h-8"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -166,46 +173,41 @@ const testis = ref([
 ]);
 
 const currentIndex = ref(0);
-const total = testis.value.length;
 
-const showTes = ref([
-  testis.value[currentIndex.value],
-  testis.value[currentIndex.value + 1],
-]);
-
-// console.log("Chung", currentIndex.value);
+const slideX = computed(() => {
+  if (typeof window === "undefined") return 0;
+  const screenWidth = window.innerWidth;
+  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
+  const maxIndex = testis.value.length - itemsPerSlide;
+  const normalizedIndex = Math.min(currentIndex.value, maxIndex);
+  const slidePercentage = screenWidth >= 640 ? 50 : 100;
+  return normalizedIndex * slidePercentage;
+});
 
 const nextTestimonial = () => {
-  // cập nhật cái hiện tại để chuyển nó sang cái tiếp theo
-  currentIndex.value = (currentIndex.value + 1) % total;
+  const totalItems = testis.value.length;
+  const screenWidth = window.innerWidth;
+  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
+  const maxIndex = totalItems - itemsPerSlide;
 
-  // nếu currentIndex là total - 1, nextIndex bị reset về 0
-  // cập nhật tiếp cái testi tiếp theo dựa trên currentIndex.value
-  const nextIndex = (currentIndex.value + 1) % total;
-
-  console.log("Next", currentIndex.value);
-
-  // console.log(1);
-  // showTes.value.splice(0, 1);
-  // showTes.value.push(testis.value[currentIndex.value]);
-
-  showTes.value = [testis.value[currentIndex.value], testis.value[nextIndex]];
+  if (currentIndex.value >= maxIndex) {
+    currentIndex.value = 0;
+  } else {
+    currentIndex.value++;
+  }
 };
 
 const prevTestimonial = () => {
-  // giảm phấn tử (nếu currentIndex < 0 thì -1 - 1 + 8 = 6 <pt 7) (%: lấy số dương)
-  currentIndex.value = (currentIndex.value - 1 + total) % total;
+  const totalItems = testis.value.length;
+  const screenWidth = window.innerWidth;
+  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
+  const maxIndex = totalItems - itemsPerSlide;
 
-  console.log("Prev", currentIndex.value);
-
-  // tính toán lại nextIndex nếu curentIndex < 0
-  const nextIndex = (currentIndex.value + 1) % total;
-
-  // console.log(currentIndex.value);
-  // showTes.value.splice(1, 1);
-  // showTes.value.unshift(testis.value[currentIndex.value]);
-
-  showTes.value = [testis.value[currentIndex.value], testis.value[nextIndex]];
+  if (currentIndex.value <= 0) {
+    currentIndex.value = maxIndex;
+  } else {
+    currentIndex.value--;
+  }
 };
 </script>
 
