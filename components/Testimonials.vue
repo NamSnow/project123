@@ -48,7 +48,7 @@
             />
           </div>
 
-          <div class="flex flex-col items-center justify-center lg:w-70/100">
+          <div class="flex flex-col items-center justify-center lg:w-7/10">
             <div class="overflow-hidden w-full">
               <div
                 class="flex w-full"
