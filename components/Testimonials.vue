@@ -3,10 +3,10 @@
     <img
       src="/images/testimonial-bg.png"
       alt=""
-      class="absolute top-0 left-0 w-full h-full z-0 group object-cover"
+      class="absolute top-0 left-0 w-full h-full z-0 group"
     />
 
-    <div class="container relative z-10">
+    <div class="container">
       <div
         class="relative lg:py-25 py-12.5 text-white flex flex-col gap-2.5 sm:gap-5 lg:gap-12.5 z-10"
       >
@@ -20,7 +20,6 @@
               }"
             />
           </div>
-
           <div class="relative flex items-center lg:mt-0 gap-5 lg:gap-10">
             <div
               class="pr-7.5 sm:pr-10 border-r border-darkdivider border-solid"
@@ -41,9 +40,7 @@
         </div>
 
         <div class="flex flex-col lg:flex-row gap-7.5 lg:gap-12.5 p-2.5">
-          <div
-            class="w-full lg:w-3/10 relative group overflow-hidden rounded-[20px]"
-          >
+          <div class="w-full relative group overflow-hidden rounded-[20px]">
             <img
               src="/images/testimonial-image.jpg"
               alt=""
@@ -51,18 +48,21 @@
             />
           </div>
 
-          <div
-            class="flex flex-col items-center justify-center transition-all duration-500 overflow-hidden w-full lg:w-7/10"
-          >
-            <div class="w-full relative overflow-hidden">
+          <div class="flex flex-col items-center justify-center lg:w-70/100">
+            <div class="overflow-hidden w-full">
               <div
-                class="flex sm:gap-4 transition-transform duration-500 ease-in-out"
-                :style="{ transform: `translateX(-${slideX}%)` }"
+                class="flex w-full"
+                :style="{ transform: `translateX(-${translateX}%)` }"
+                :class="{
+                  'transition-transform duration-600 ease-in-out': isAnimating,
+                }"
+                @transitionend="onTransitionEnd"
               >
                 <div
-                  v-for="(testimonial, index) in testis"
+                  v-for="(slide, index) in slideShowed"
                   :key="index"
-                  class="flex-shrink-0 w-full sm:w-[calc(50%-16px)]"
+                  :style="{ flex: `0 0 ${100 / slidesPerView}%` }"
+                  class="pr-4"
                 >
                   <div
                     class="border-b border-solid border-darkdivider mb-7.5 pb-7.5"
@@ -70,18 +70,18 @@
                     <div class="flex text-yellow-500">
                       <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
                     </div>
-                    <p class="mt-5">"{{ testimonial.text }}"</p>
+                    <p class="mt-5">"{{ slide?.text }}"</p>
                   </div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-3.5">
                       <img
-                        :src="testimonial.image"
-                        :alt="testimonial.author"
+                        :src="slide?.image"
+                        :alt="slide?.author"
                         class="rounded-md w-12 h-12 object-cover"
                       />
                       <div>
-                        <strong class="mb-1">{{ testimonial.author }}</strong>
-                        <div>{{ testimonial.role }}</div>
+                        <strong class="mb-1">{{ slide?.author }}</strong>
+                        <div>{{ slide?.role }}</div>
                       </div>
                     </div>
                     <img
@@ -99,14 +99,14 @@
             >
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-                @click="prevTestimonial"
+                @click="handlePrevSlide"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </div>
 
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-                @click="nextTestimonial"
+                @click="handleNextSlide"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
@@ -172,43 +172,58 @@ const testis = ref([
   },
 ]);
 
-const currentIndex = ref(0);
+const current = ref(0);
+const isMobile = ref(false);
+const translateX = ref(50);
+const isAnimating = ref(false);
+let direction = 0;
 
-const slideX = computed(() => {
-  if (typeof window === "undefined") return 0;
-  const screenWidth = window.innerWidth;
-  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
-  const maxIndex = testis.value.length - itemsPerSlide;
-  const normalizedIndex = Math.min(currentIndex.value, maxIndex);
-  const slidePercentage = screenWidth >= 640 ? 50 : 100;
-  return normalizedIndex * slidePercentage;
+const slidesPerView = computed(() => {
+  return isMobile.value ? 1 : 2;
 });
 
-const nextTestimonial = () => {
-  const totalItems = testis.value.length;
-  const screenWidth = window.innerWidth;
-  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
-  const maxIndex = totalItems - itemsPerSlide;
-
-  if (currentIndex.value >= maxIndex) {
-    currentIndex.value = 0;
-  } else {
-    currentIndex.value++;
+const slideShowed = computed(() => {
+  const result = [];
+  const items = testis.value;
+  for (let i = -1; i < items.length; i++) {
+    let slideIndex = (current.value + i + items.length) % items.length;
+    result.push(items[slideIndex]);
   }
-};
+  return result;
+});
 
-const prevTestimonial = () => {
-  const totalItems = testis.value.length;
-  const screenWidth = window.innerWidth;
-  const itemsPerSlide = screenWidth >= 640 ? 2 : 1;
-  const maxIndex = totalItems - itemsPerSlide;
+function checkMobile() {
+  isMobile.value = window.innerWidth < 768;
+  translateX.value = isMobile.value ? 0 : 50;
+}
 
-  if (currentIndex.value <= 0) {
-    currentIndex.value = maxIndex;
-  } else {
-    currentIndex.value--;
-  }
-};
+function handlePrevSlide() {
+  if (isAnimating.value) return;
+  direction = -1;
+  isAnimating.value = true;
+  translateX.value = isMobile.value ? 0 : 0;
+}
+
+function handleNextSlide() {
+  if (isAnimating.value) return;
+  direction = 1;
+  isAnimating.value = true;
+  translateX.value = isMobile.value ? 100 : 100;
+}
+
+function onTransitionEnd() {
+  isAnimating.value = false;
+  current.value =
+    (current.value + direction + testis.value.length) % testis.value.length;
+  translateX.value = isMobile.value ? 0 : 50;
+}
+
+onMounted(() => {
+  checkMobile();
+  window.addEventListener("resize", checkMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", checkMobile);
+});
 </script>
-
-<style lang="scss" scoped></style>
