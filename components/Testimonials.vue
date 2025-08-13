@@ -59,9 +59,9 @@
                 @transitionend="onTransitionEnd"
               >
                 <div
-                  v-for="(slide, index) in slideShowed"
+                  v-for="(testis, index) in testisShowed"
                   :key="index"
-                  :style="{ flex: `0 0 ${100 / slidesPerView}%` }"
+                  :style="{ flex: `0 0 ${100 / testissPerView}%` }"
                   class="pr-4"
                 >
                   <div
@@ -70,18 +70,18 @@
                     <div class="flex text-yellow-500">
                       <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
                     </div>
-                    <p class="mt-5">"{{ slide?.text }}"</p>
+                    <p class="mt-5">"{{ testis?.text }}"</p>
                   </div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-3.5">
                       <img
-                        :src="slide?.image"
-                        :alt="slide?.author"
+                        :src="testis?.image"
+                        :alt="testis?.author"
                         class="rounded-md w-12 h-12 object-cover"
                       />
                       <div>
-                        <strong class="mb-1">{{ slide?.author }}</strong>
-                        <div>{{ slide?.role }}</div>
+                        <strong class="mb-1">{{ testis?.author }}</strong>
+                        <div>{{ testis?.role }}</div>
                       </div>
                     </div>
                     <img
@@ -99,14 +99,14 @@
             >
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-                @click="handlePrevSlide"
+                @click="handlePrevtestis"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </div>
 
               <div
                 class="text-white w-10 h-10 bg-darkdivider rounded-full flex justify-center items-center hover:bg-accent cursor-pointer transition duration-500 ease-in-out"
-                @click="handleNextSlide"
+                @click="handleNexttestis"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
@@ -178,16 +178,16 @@ const translateX = ref(50);
 const isAnimating = ref(false);
 let direction = 0;
 
-const slidesPerView = computed(() => {
+const testissPerView = computed(() => {
   return isMobile.value ? 1 : 2;
 });
 
-const slideShowed = computed(() => {
+const testisShowed = computed(() => {
   const result = [];
   const items = testis.value;
   for (let i = -1; i < items.length; i++) {
-    let slideIndex = (current.value + i + items.length) % items.length;
-    result.push(items[slideIndex]);
+    let testisIndex = (current.value + i + items.length) % items.length;
+    result.push(items[testisIndex]);
   }
   return result;
 });
@@ -197,14 +197,14 @@ function checkMobile() {
   translateX.value = isMobile.value ? 0 : 50;
 }
 
-function handlePrevSlide() {
+function handlePrevtestis() {
   if (isAnimating.value) return;
   direction = -1;
   isAnimating.value = true;
   translateX.value = isMobile.value ? 0 : 0;
 }
 
-function handleNextSlide() {
+function handleNexttestis() {
   if (isAnimating.value) return;
   direction = 1;
   isAnimating.value = true;
