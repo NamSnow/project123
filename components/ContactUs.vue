@@ -41,9 +41,9 @@
 
         <div class="p-2.5">
           <div
-            class="bg-white flex justify-between rounded-[20px] flex-col lg:flex-row"
+            class="bg-white flex justify-between rounded-[20px] flex-col lg:flex-row min-h-full"
           >
-            <div class="p-10 flex flex-col gap-3.75 lg:w-1/2">
+            <div class="p-5 sm:p-7.5 lg:p-10 flex flex-col gap-3.75 lg:w-1/2">
               <div class="mb-5 lg:mb-6.25">
                 <Title
                   :title="{
@@ -54,17 +54,17 @@
                 />
               </div>
 
-              <form action="" class="flex flex-col gap-6">
-                <div class="flex max-sm:flex-col gap-7.5">
+              <form action="" class="flex flex-col gap-4">
+                <div class="flex max-sm:flex-col gap-4 sm:gap-7.5">
                   <input
                     type="text"
                     placeholder="First Name"
-                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full"
+                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
-                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full"
+                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full focus:outline-none"
                   />
                 </div>
 
@@ -72,7 +72,7 @@
                   <input
                     type="email"
                     placeholder="Email"
-                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full"
+                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full focus:outline-none"
                   />
                 </div>
 
@@ -80,20 +80,20 @@
                   <input
                     type="number"
                     placeholder="Phone"
-                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full"
+                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full focus:outline-none"
                   />
                 </div>
 
                 <div>
                   <textarea
                     placeholder="Write Message..."
-                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full"
+                    class="px-3.75 py-3 max-lg:h-12.5 lg:py-4.25 lg:px-5 border border-solid border-divider rounded-[10px] font-normal leading-[3/2] text-text w-full min-h-24.5 lg:min-h-27 focus:outline-none"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  class="bg-accent block mt-6 py-3.75 px-5 lg:py-4.25 lg:px-7.5 font-bold text-white rounded-full cursor-pointer"
+                  class="bg-accent block mt-6 py-3.75 px-5 lg:py-4.25 lg:px-7.5 font-bold text-white rounded-full cursor-pointer hover:bg-black transition-all duration-500"
                 >
                   Submit Message
                 </button>
@@ -102,7 +102,7 @@
 
             <div class="lg:w-1/2">
               <iframe
-                class="object-cover w-full h-full max-lg:rounded-b-[20px] lg:rounded-r-[20px]"
+                class="object-cover w-full min-h-87.5 sm:min-h-112.5 lg:min-h-full max-lg:rounded-b-[20px] lg:rounded-r-[20px]"
                 loading="lazy"
                 src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
                 title="London Eye, London, United Kingdom"

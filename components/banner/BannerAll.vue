@@ -4,7 +4,7 @@
       class="relative flex flex-col items-center justify-center py-13.75 lg:py-27.5 text-white gap-2.5"
     >
       <div
-        class="text-[30px] sm:text-[45px] lg:text-7xl font-bold leading-[6/5] sm:text-sm text-base"
+        class="text-[30px] sm:text-[45px] lg:text-7xl font-bold sm:text-sm text-base"
       >
         {{ formattedText }}
       </div>

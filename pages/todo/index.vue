@@ -61,16 +61,21 @@
       </div>
 
       <div class="divide-y divide-indigo-400">
-        <div class="flex mt-7.5 mx-28.75 justify-between items-center">
+        <div
+          class="flex mt-3 mx-28.75 pb-3 justify-between items-center"
+          v-for="(item, index) in items"
+          :key="index"
+        >
           <label
             class="flex gap-4.25 text-[20px] font-medium cursor-pointer items-center"
           >
             <input type="checkbox" class="w-6.5 h-6.5" />
-            <div>11111</div>
+            <div v-if="!isEditing">{{ item.text }}</div>
+            <input v-else type="text" v-model="item.text" />
           </label>
 
           <div class="flex gap-2.5">
-            <div class="cursor-pointer">
+            <div class="cursor-pointer" @click="toggleEditItem()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -87,7 +92,7 @@
               </svg>
             </div>
 
-            <div class="cursor-pointer">
+            <div class="cursor-pointer" @click="toggleDeleteItem()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -155,7 +160,10 @@
 </template>
 
 <script setup>
-const items = ref([]);
+import { useLocalStorage } from "@vueuse/core";
+const items = useLocalStorage("items-local-save", []);
+
+const newItem = ref("");
 
 const boxItem = ref(false);
 
@@ -163,7 +171,17 @@ const toggleItem = () => {
   boxItem.value = !boxItem.value;
 };
 
-const toggleAddItem = () => {};
+const toggleAddItem = () => {
+  items.value.push({ text: newItem.value, isEditing: false });
+  newItem.value = "";
+  boxItem.value = false;
+};
+
+const toggleEditItem = () => {
+  isEditing.value = true;
+};
+
+const toggleDeleteItem = () => {};
 </script>
 
 <style lang="scss" scoped></style>

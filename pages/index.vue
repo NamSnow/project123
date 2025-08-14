@@ -40,9 +40,6 @@
 </template>
 
 <script setup>
-import Button from "~/components/Button.vue";
-import { ref } from "vue";
-import Title from "~/components/Title.vue";
 import AboutUs from "~/components/AboutUs.vue";
 import WhyChooseUs from "~/components/WhyChooseUs.vue";
 import OurProduct from "~/components/OurProduct.vue";
