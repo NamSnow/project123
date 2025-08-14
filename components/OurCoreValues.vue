@@ -43,14 +43,16 @@
             >
               <div>
                 <div
-                  class="bg-accent w-12.5 h-12.5 rounded-full flex items-center justify-center mb-5 lg:mb-7.5"
+                  class="bg-accent w-12.5 h-12.5 lg:w-15 lg:h-15 rounded-full flex items-center justify-center mb-5 lg:mb-7.5"
                 >
                   <icons-pre
                     class="w-7.5 h-7.5 lg:w-8.75 lg:h-8.75 text-white"
                   />
                 </div>
 
-                <div class="font-bold text-black mb-2.5 text-lg sm:text-xl">
+                <div
+                  class="font-bold text-black mb-2.5 text-lg sm:text-xl leading-[6/5]"
+                >
                   Natural Healing
                 </div>
 
@@ -85,15 +87,17 @@
             >
               <div>
                 <div
-                  class="bg-accent w-12.5 h-12.5 rounded-full flex items-center justify-center mb-5 lg:mb-7.5"
+                  class="bg-accent w-12.5 h-12.5 lg:w-15 lg:h-15 rounded-full flex items-center justify-center mb-5 lg:mb-7.5"
                 >
                   <icons-pre
                     class="w-7.5 h-7.5 sm:w-8.75 sm:h-8.75 text-white"
                   />
                 </div>
 
-                <div class="font-bold text-black mb-2.5 text-lg sm:text-xl">
-                  Natural Healing
+                <div
+                  class="font-bold text-black mb-2.5 text-lg sm:text-xl leading-[6/5]"
+                >
+                  Easy & Mess-Free
                 </div>
 
                 <p class="text-text">
