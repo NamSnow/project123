@@ -315,11 +315,11 @@ const bannerComponent = computed(() => {
   return bannerComponents[componentName] || null;
 });
 
-watch(isMenuOpen, (isMenu) => {
-  if (isMenu) {
-    document.body.classList.add("overflow-hidden");
-  } else {
-    document.body.classList.remove("overflow-hidden");
-  }
-});
+// watch(isMenuOpen, (isMenu) => {
+//   if (isMenu) {
+//     document.body.classList.add("overflow-hidden");
+//   } else {
+//     document.body.classList.remove("overflow-hidden");
+//   }
+// });
 </script>
