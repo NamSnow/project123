@@ -7,7 +7,7 @@
       </div>
     </div>
     <div
-      class="text-[26px] sm:text-4xl lg:text-[46px] font-semibold leading-[6/5]"
+      class="text-[26px] sm:text-4xl lg:text-[46px] font-semibold leading-[1.2em]"
     >
       {{ title.mainTitle }}
       <span class="font-normal italic">{{ title.subTitle }}</span>
