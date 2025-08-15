@@ -26,6 +26,7 @@ const pageMap = [
   { path: "/contact_us", name: "Contact Us" },
   { path: "/about_us", name: "About Us" },
   { path: "/blog", name: "Lastest Blog" },
+  { path: "/shop", name: "Shop" },
 ];
 
 const formattedText = computed(() => {

@@ -228,8 +228,8 @@ const items = ref([
     isMenuItem: false,
     subItems: [
       { label: "Home - Main", to: "/" },
-      { label: "Home - Video", to: "#" },
-      { label: "Home - Slider", to: "#" },
+      { label: "Home - Video", to: "/home-video" },
+      { label: "Home - Slider", to: "/home-slider" },
     ],
   },
   { label: "About Us", to: "/about_us" },
@@ -239,7 +239,7 @@ const items = ref([
     to: "#",
     isMenuItem: false,
     subItems: [
-      { label: "Product", to: "#" },
+      { label: "Product", to: "/shop" },
       { label: "Product Single", to: "#" },
       { label: "Cart", to: "#" },
       { label: "My Account", to: "#" },
